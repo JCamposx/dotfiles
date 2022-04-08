@@ -1,0 +1,60 @@
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+# You can set picom to use either xrender or glx
+# Change if issues
+#autorandr horizontal
+
+export PATH=$HOME/.local/bin:$PATH
+
+#$HOME/.config/polybar/launch.sh &
+
+#(am-conky-session --autostart) &
+
+# install xcape - press super to get menu
+xcape -e 'Super_L=Super_L|space'
+
+# On laptops without seperate numeric keyboard put hashtag in front
+numlockx on &
+
+# GNOME PolicyKit authentication
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Desktop notification
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+
+## Volume control for systray
+(volumeicon) &
+
+
+## Turn off/on System Beep
+xset b off
+
+## Enable power management
+xfce4-power-manager &
+
+##Clipboard Manager
+(xfce4-clipman) &
+
+## XFCE4 Settings
+#xfsettingsd &
+
+(nm-applet) &
+
+#(plank) &
+
+#discord &
+
+#insync start &
+
+udiskie -t &
+
+
+# Set dual monitor settings
+xrandr --output HDMI-0 --mode 1920x1080 --rate 144.00 --pos 2560x0 --rotate right --output DP-0 --off --output DP-1 --off --output DP-2 --primary --mode 2560x1440 --rate 165.00 --pos 0x261 --rotate normal --output DP-3 --off --output DP-4 --off --output DP-5 --off
+
+# Set background image
+nitrogen --restore
+
+picom -b --config ~/.config/picom.conf &

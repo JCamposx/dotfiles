@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/jesus/Im%C3%A1genes/Wallpapers/Kame-house-screen-1.jpg" added="2022-04-02T05:29:10.640372Z" modified="2022-04-02T05:29:10.890402Z" visited="2022-04-02T05:29:10.640373Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-02T05:29:10.890400Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Im%C3%A1genes/Wallpapers/Kame-house-screen-2.jpg" added="2022-04-02T05:29:24.049026Z" modified="2022-04-02T05:29:24.299616Z" visited="2022-04-02T05:29:24.049027Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-02T05:29:24.299614Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Im%C3%A1genes/Wallpapers" added="2022-04-02T05:29:53.697746Z" modified="2022-04-05T14:57:26.366105Z" visited="2022-04-02T05:29:53.697746Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="nitrogen" exec="&apos;nitrogen %u&apos;" modified="2022-04-02T05:29:53.697747Z" count="1"/>
+          <bookmark:application name="arcolinux-betterlockscreen.py" exec="&apos;arcolinux-betterlockscreen.py %u&apos;" modified="2022-04-05T14:57:26.366104Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas/UbuntuMono.zip" added="2022-04-02T05:51:30.448233Z" modified="2022-04-02T05:51:30.698707Z" visited="2022-04-02T05:51:30.448234Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-02T05:51:30.698705Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas/Hermit.zip" added="2022-04-02T05:51:58.364039Z" modified="2022-04-02T05:51:58.614128Z" visited="2022-04-02T05:51:58.364040Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-02T05:51:58.614127Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas/CascadiaCode.zip" added="2022-04-02T05:52:08.830223Z" modified="2022-04-02T05:52:09.081235Z" visited="2022-04-02T05:52:08.830224Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-02T05:52:09.081234Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas/Material-Black-Cherry-3.36_1.9.3.zip" added="2022-04-02T06:02:48.557394Z" modified="2022-04-02T06:02:48.807387Z" visited="2022-04-02T06:02:48.557394Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-02T06:02:48.807386Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/2022-04-02-145336_3640x1920_scrot.png" added="2022-04-02T19:53:37.914519Z" modified="2022-04-02T19:53:37.914525Z" visited="2022-04-02T19:53:37.914520Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="ristretto" exec="&apos;ristretto %u&apos;" modified="2022-04-02T19:53:37.914522Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/.config/Code/User/globalStorage/cweijan.vscode-mysql-client2/1648965386180@@127.0.0.1@3306@first_app@contacts_app/contacts_app.sql" added="2022-04-03T06:34:21.704640Z" modified="2022-04-03T06:36:03.723771Z" visited="2022-04-03T06:34:21.704641Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/sql"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2022-04-03T06:36:03.723769Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas/Sesi%C3%B3n%201%20TPI%202020-1.pptx" added="2022-04-05T16:18:01.663801Z" modified="2022-04-05T16:18:01.670097Z" visited="2022-04-05T16:18:01.663802Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-05T16:18:01.670096Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas/Sesi%C3%B3n%201%20TPI%202020-1.pdf" added="2022-04-05T16:18:18.373505Z" modified="2022-04-05T16:18:18.624058Z" visited="2022-04-05T16:18:18.373506Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-05T16:18:18.624057Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas" added="2022-04-05T16:20:00.582034Z" modified="2022-04-05T16:20:00.588919Z" visited="2022-04-05T16:20:00.582035Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-05T16:20:00.588918Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Escritorio/Semana%201-Unidad%201_%20ISW1%202022.pdf" added="2022-04-07T04:03:07.860018Z" modified="2022-04-07T04:03:08.110738Z" visited="2022-04-07T04:03:07.860018Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-07T04:03:08.110737Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/2022-04-07-000212_3640x1920_scrot.png" added="2022-04-07T05:03:03.315405Z" modified="2022-04-07T05:03:57.990430Z" visited="2022-04-07T05:03:03.315406Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-07T05:03:57.990429Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas/Taller%201%20-%20Caso%20sony%20playstation.pdf" added="2022-04-07T12:22:04.794029Z" modified="2022-04-07T12:22:45.545791Z" visited="2022-04-07T12:22:04.794030Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-07T12:22:45.545789Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas/SSTI%20-%202022-1%20Semana%2001%20-%20Parte%201%20-vf.pdf" added="2022-04-07T12:23:07.504730Z" modified="2022-04-07T12:23:07.754782Z" visited="2022-04-07T12:23:07.504731Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-07T12:23:07.754780Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas/SSTI%20-%202022-1%20Semana%2001%20-%20Parte%202.pdf" added="2022-04-07T12:23:12.779314Z" modified="2022-04-07T12:23:13.029761Z" visited="2022-04-07T12:23:12.779315Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-07T12:23:13.029760Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas/Semana%201-Unidad%201_%20ISW1%202022.pdf" added="2022-04-07T13:03:27.809100Z" modified="2022-04-07T13:03:28.059755Z" visited="2022-04-07T13:03:27.809101Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-07T13:03:28.059753Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Talleres/Taller-1/Taller%201%20-%20Conceptos%20de%20Seguridad%20TI.xlsx" added="2022-04-07T14:31:24.794812Z" modified="2022-04-07T14:32:00.253032Z" visited="2022-04-07T14:31:24.794812Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-07T14:32:00.253030Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Talleres/Taller-1/Taller%201%20-%20Caso%20sony%20playstation.pdf" added="2022-04-07T23:24:45.796805Z" modified="2022-04-07T23:24:45.803743Z" visited="2022-04-07T23:24:45.796806Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-07T23:24:45.803742Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Descargas/Taller%201%20-%20Caso%20sony%20playstation%20(1).pdf" added="2022-04-07T23:25:03.948309Z" modified="2022-04-07T23:25:04.198728Z" visited="2022-04-07T23:25:03.948309Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-07T23:25:04.198726Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

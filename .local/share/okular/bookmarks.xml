@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xbel>
+<xbel xmlns:kdepriv="http://www.kde.org/kdepriv" xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks" xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info" dbusName="okular">
+ <folder href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-1/SSTI - 2022-1 Semana 01 - Parte 1 -vf.pdf">
+  <title>/home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-1/SSTI - 2022-1 Semana 01 - Parte 1 -vf.pdf</title>
+ </folder>
+</xbel>
