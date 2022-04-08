@@ -90,12 +90,11 @@ def primary_widgets():
         
         powerline('dark', 'dark'),
         
-        icon(fg='color4', bg='dark', text='', fontsize=18),
+        icon(fg='color4', bg='dark', text='  '),
         
-        widget.Memory(
+        widget.Battery(
             **base(fg='color4', bg='dark'),
-            format='{MemUsed: .0f}{mm}',
-            update_interval=1,
+            format='{percent:2.0%}',
             fontsize=15
         ),
         
@@ -107,7 +106,7 @@ def primary_widgets():
 
         widget.Net(
             **base(fg='color3', bg='dark'),
-            interface='eno1',
+            interface='wlo1',
             fontsize=15,
             format='{down}' #Icon: nf-fa-arrow_circle_o_down
         ),
@@ -116,7 +115,7 @@ def primary_widgets():
         
         widget.Net(
             **base(fg='color3', bg='dark'),
-            interface='eno1',
+            interface='wlo1',
             fontsize=15,
             format='{up}' #Icon: nf-fa-arrow_circle_o_up
         ),
