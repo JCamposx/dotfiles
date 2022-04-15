@@ -7,21 +7,23 @@ from libqtile.config import Match
 
 layout_conf = {
     'border_focus': colors['focus'][0],
-    'border_width': 1,
-    'margin': 6
+    'border_normal': colors['dark'][0],
+    'border_width': 2,
+    'margin': 8
 }
 
 layouts = [
     layout.Max(),
     layout.MonadTall(**layout_conf),
-    layout.MonadWide(**layout_conf),
+    # layout.MonadWide(**layout_conf),
     # layout.Bsp(**layout_conf),
     # layout.Matrix(columns=2, **layout_conf),
     # layout.RatioTile(**layout_conf),
     # layout.Columns(),
     # layout.Tile(),
-    # layout.TreeTab(),
-    # layout.VerticalTile(),
+    # layout.TreeTab(**layout_conf),
+    layout.Spiral(**layout_conf),
+    layout.VerticalTile(**layout_conf),
     # layout.Zoomy(),
 ]
 

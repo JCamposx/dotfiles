@@ -198,3 +198,217 @@ xcffib.ConnectionException: xcb connection errors because of socket, pipe and ot
 2022-04-15 15:13:33,024 ERROR libqtile manager.py:cmd_reload_config():L260 Configuration error: cannot import name 'widget_defaults' from 'settings.widgets' (/home/jesus/.config/qtile/settings/widgets.py)
 2022-04-15 15:13:33,024 WARNING libqtile utils.py:send_notification():L246 dbus-next is not installed. Unable to send notifications.
 2022-04-15 15:13:34,209 WARNING libqtile lifecycle.py:_atexit():L37 Qtile will now terminate
+2022-04-15 15:42:09,965 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:42:17,136 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:43:01,077 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:43:12,960 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:43:30,349 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:43:41,037 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:43:49,928 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:44:00,051 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:44:12,929 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:44:22,480 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:44:26,029 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:26,500 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:26,728 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:27,033 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:27,456 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:27,595 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:27,712 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:27,784 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:27,943 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:28,044 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:28,172 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:28,219 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:28,678 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:28,779 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:28,949 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:29,045 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:29,158 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:29,275 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:30,182 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:30,391 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:30,568 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:30,676 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:30,804 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:30,937 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:31,054 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:31,176 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:31,305 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:45,308 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:45,632 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:45,862 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:45,996 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:46,125 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:46,252 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:44:46,386 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:44:46,905 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:48,697 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:48,848 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:48,948 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:49,122 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:49,270 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:49,369 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:49,500 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:49,591 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:49,677 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:49,820 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:49,941 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:50,043 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:50,169 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:50,293 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:50,427 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:50,545 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:50,703 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:50,790 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:50,917 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:51,019 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:51,184 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:51,257 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:51,393 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:51,480 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:51,648 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:51,737 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:51,916 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:52,027 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:52,189 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:52,295 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:52,454 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:52,565 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:52,713 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:52,798 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:52,988 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:53,031 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:53,202 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:53,284 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:53,441 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:44:53,504 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:44:53,639 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:45:08,070 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:45:08,215 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:45:08,436 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:45:08,583 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:45:08,731 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:45:08,862 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:45:09,034 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:45:09,261 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:45:09,356 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:45:09,456 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:45:12,471 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:45:12,651 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:45:12,802 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:45:12,947 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:45:13,044 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:45:13,182 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:45:13,290 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:45:13,434 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:45:13,549 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:45:13,682 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:45:13,799 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_down: No such command
+2022-04-15 15:45:13,926 ERROR libqtile manager.py:process_key_event():L392 KB command error shuffle_up: No such command
+2022-04-15 15:45:44,990 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:45:57,185 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:46:20,388 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:47:06,994 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:07,296 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:08,297 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:08,571 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:08,923 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:09,015 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:09,165 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:09,250 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:09,444 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:09,719 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:09,954 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:10,195 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:10,198 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:19,794 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:47:20,398 ERROR libqtile group.py:layout():L128 No such layout: matrix
+2022-04-15 15:47:31,637 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:47:49,623 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:49,802 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:49,970 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:50,671 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:50,858 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:51,028 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:51,155 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:51,271 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:51,377 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:51,524 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:51,620 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:51,765 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:51,843 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:51,976 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:52,056 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:52,210 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:52,290 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:52,439 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:52,537 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:54,537 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:54,693 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:54,840 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:55,062 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:55,218 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:55,368 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:55,663 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:55,820 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:56,016 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:56,152 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:56,291 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:56,402 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:47:56,504 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:47:56,604 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:03,771 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:03,938 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:04,098 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:04,354 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:04,533 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:04,681 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:05,136 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:05,319 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:07,352 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:07,546 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:07,726 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:07,881 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:07,981 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:08,099 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:08,225 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:08,319 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:08,470 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:08,602 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:08,800 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:08,861 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:09,050 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:09,109 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:09,305 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:09,380 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:09,526 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:09,611 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:09,754 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:09,857 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:10,039 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:10,110 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:10,245 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:10,308 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:10,418 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:10,493 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:10,624 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:10,708 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:10,839 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:10,890 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:10,999 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
+2022-04-15 15:48:11,100 ERROR libqtile manager.py:process_key_event():L392 KB command error shrink: No such command
+2022-04-15 15:48:15,713 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:48:40,297 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:49:43,476 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:50:58,574 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:51:30,936 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:51:46,483 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:51:56,671 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:52:22,136 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:53:10,310 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:53:45,755 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:55:15,158 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:55:45,775 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:56:00,539 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-15 15:56:01,120 ERROR libqtile group.py:layout():L128 No such layout: tile
