@@ -227,4 +227,54 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-2/XSS-Reflejado.txt" added="2022-04-15T18:28:15.853180Z" modified="2022-04-15T18:28:16.103174Z" visited="2022-04-15T18:28:15.853180Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-15T18:28:16.103172Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-2/SSTI%20-%202022-1%20Semana%2002a.pdf" added="2022-04-15T18:28:22.728109Z" modified="2022-04-15T18:28:22.978785Z" visited="2022-04-15T18:28:22.728110Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-15T18:28:22.978783Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-2/Formato%20Ejercicio%202_Inventario%20Activos%20de%20Informacion.xls" added="2022-04-15T18:28:28.305001Z" modified="2022-04-15T18:28:28.554989Z" visited="2022-04-15T18:28:28.305002Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-15T18:28:28.554988Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-2/Examen%20escrito%201.txt" added="2022-04-15T18:28:32.986825Z" modified="2022-04-15T18:28:33.237703Z" visited="2022-04-15T18:28:32.986826Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-15T18:28:33.237702Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-2/Ejercicios%20c%C3%A1lculo%20de%20riesgo.txt" added="2022-04-15T18:28:37.012435Z" modified="2022-04-15T18:28:37.262620Z" visited="2022-04-15T18:28:37.012436Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-15T18:28:37.262618Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
