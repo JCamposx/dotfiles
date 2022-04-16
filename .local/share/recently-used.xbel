@@ -277,4 +277,24 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-1/SSTI%20-%202022-1%20Semana%2001%20-%20Parte%201%20-vf.pdf" added="2022-04-15T23:18:50.436468Z" modified="2022-04-15T23:18:50.443116Z" visited="2022-04-15T23:18:50.436469Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-15T23:18:50.443114Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-1/SSTI%20-%202022-1%20Semana%2001%20-%20Parte%201%20-vf_removed.pdf" added="2022-04-15T23:19:47.588215Z" modified="2022-04-15T23:19:47.839069Z" visited="2022-04-15T23:19:47.588216Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-15T23:19:47.839067Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

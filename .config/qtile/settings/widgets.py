@@ -18,7 +18,7 @@ def separator():
     )
 
 
-def icon(fg='text', bg='dark', fontsize=16, text='?'):
+def icon(fg='text', bg='dark', fontsize=17, text='?'):
     return widget.TextBox(
         **base(fg, bg),
         fontsize=fontsize,
@@ -58,12 +58,13 @@ def workspaces(icon_fontsize=19, window_name_font_size=15):
             other_current_screen_border=colors['dark'],
             other_screen_border=colors['dark'],
             disable_drag=True,
-            use_mouse_wheel=False,
+            use_mouse_wheel=False
         ),
         separator(),
         widget.WindowName(**base(fg='focus'), fontsize=window_name_font_size, padding=5),
         separator(),
     ]
+
 
 def primary_widgets():
     return [
@@ -83,20 +84,17 @@ def primary_widgets():
             display_format='{updates}',
             update_interval=30,
             custom_command='checkupdates',
-        	fontsize=15
         ),
         
         separator(),
         
         powerline('dark', 'dark'),
         
-        icon(fg='color4', bg='dark', text='', fontsize=18),
+        icon(fg='color4', bg='dark', text=' ', fontsize=18), # nf-dev-aptana
         
-        widget.Memory(
+        widget.CPU(
             **base(fg='color4', bg='dark'),
-            format='{MemUsed: .0f}{mm}',
-            update_interval=1,
-            fontsize=15
+            format='{load_percent}%',
         ),
         
 		separator(),
@@ -108,7 +106,6 @@ def primary_widgets():
         widget.Net(
             **base(fg='color3', bg='dark'),
             interface='eno1',
-            fontsize=15,
             format='{down}' #Icon: nf-fa-arrow_circle_o_down
         ),
         
@@ -117,7 +114,6 @@ def primary_widgets():
         widget.Net(
             **base(fg='color3', bg='dark'),
             interface='eno1',
-            fontsize=15,
             format='{up}' #Icon: nf-fa-arrow_circle_o_up
         ),
         
@@ -127,13 +123,11 @@ def primary_widgets():
 
         widget.CurrentLayoutIcon(
             **base(fg='color2', bg='dark'),
-            scale=0.65,
-            fontsize=15
+            scale=0.55,
         ),
 
         widget.CurrentLayout(
             **base(fg='color2', bg='dark'),
-            fontsize=15
         ),
         
         separator(),
@@ -145,7 +139,6 @@ def primary_widgets():
         widget.Clock(
             **base(fg='color1', bg='dark'),
             format='%d %b %Y %H:%M',
-            fontsize=15
         ),
         
         separator(),
@@ -154,6 +147,8 @@ def primary_widgets():
             background=colors['dark'],
             padding=5
         ),
+        
+        separator(),
     ]
 
 
@@ -167,11 +162,13 @@ def secondary_widgets():
         
         widget.CurrentLayoutIcon(
             **base(fg='color2', bg='dark'),
-            scale=0.65
+            scale=0.65,
+            fontsize=14
         ),
 
         widget.CurrentLayout(
-        	**base(fg='color2', bg='dark')
+        	**base(fg='color2', bg='dark'),
+         	fontsize=14
          ),
         
         separator(),
@@ -182,7 +179,8 @@ def secondary_widgets():
         
 		widget.Clock(
       		**base(fg='color1', bg='dark'),
-        	format='%d %b %Y %H:%M'
+        	format='%d %b %Y %H:%M',
+         	fontsize=14
         ),
 
         separator(),
@@ -190,7 +188,7 @@ def secondary_widgets():
 
 widget_defaults = {
     'font': 'UbuntuMono Nerd Font Bold',
-    'fontsize': 14,
+    'fontsize': 16,
     'padding': 1,
 }
 extension_defaults = widget_defaults.copy()
