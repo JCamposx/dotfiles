@@ -297,4 +297,34 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/jesus/index.js" added="2022-04-16T08:07:06.559656Z" modified="2022-04-16T08:07:06.810106Z" visited="2022-04-16T08:07:06.559657Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-16T08:07:06.810104Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Documentos/helper.js" added="2022-04-16T08:18:04.376992Z" modified="2022-04-16T08:18:04.627845Z" visited="2022-04-16T08:18:04.376993Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-16T08:18:04.627844Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Documentos/index%20(1).js" added="2022-04-16T08:18:13.703294Z" modified="2022-04-16T08:18:13.953564Z" visited="2022-04-16T08:18:13.703295Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-16T08:18:13.953563Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
