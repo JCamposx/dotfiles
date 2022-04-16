@@ -948,3 +948,4 @@ IndexError: Replacement index 0 out of range for positional args tuple
 2022-04-16 03:38:52,645 ERROR libqtile manager.py:process_key_event():L392 KB command error grow: No such command
 2022-04-16 11:17:06,131 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
 2022-04-16 11:17:14,785 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
+2022-04-16 11:42:40,647 WARNING libqtile lifecycle.py:_atexit():L33 Restarting Qtile with os.execv(...)
