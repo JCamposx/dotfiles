@@ -327,4 +327,84 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/VIII-Ciclo/Taller-prop-inv/Semana-1/Sesi%C3%B3n%201%20TPI%202022-1.pdf" added="2022-04-18T06:17:34.891035Z" modified="2022-04-18T06:17:35.141613Z" visited="2022-04-18T06:17:34.891036Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-18T06:17:35.141612Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/VIII-Ciclo/Taller-prop-inv/Semana-2/Sesi%C3%B3n%202%20TPI%202022-1-Guillermo%20v2.pdf" added="2022-04-18T06:18:25.610141Z" modified="2022-04-18T06:18:25.860266Z" visited="2022-04-18T06:18:25.610142Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-18T06:18:25.860265Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/futureinternet-14-00097.pdf" added="2022-04-18T07:10:00.284928Z" modified="2022-04-18T07:10:00.535621Z" visited="2022-04-18T07:10:00.284929Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-18T07:10:00.535620Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/IX-Ciclo/Gest-proyectos/Semana-3/S3%20-%20Gestion%20del%20Alcance%20v2-%202021-2.pdf" added="2022-04-18T12:19:57.723152Z" modified="2022-04-18T12:19:57.973832Z" visited="2022-04-18T12:19:57.723152Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-18T12:19:57.973830Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/2022-04-18-094803_510x299_scrot.png" added="2022-04-18T14:48:11.126847Z" modified="2022-04-18T14:48:11.132989Z" visited="2022-04-18T14:48:11.126848Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-18T14:48:11.132988Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/VIII-Ciclo/Taller-prop-inv/Semana-2/Actividad-20220412-Campos.pptx" added="2022-04-18T17:07:31.788071Z" modified="2022-04-18T17:08:41.412285Z" visited="2022-04-18T17:07:31.788072Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-18T17:08:41.412284Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/VIII-Ciclo/Taller-prop-inv/Semana-2/Actividad-20220418-Campos.pptx" added="2022-04-18T17:07:44.459628Z" modified="2022-04-18T17:09:18.077650Z" visited="2022-04-18T17:07:44.459629Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-18T17:09:18.077649Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/VII-Ciclo/Ing-soft-I/Semana-3/Semana%203-Unidad%202_%20ISW1%202022.pdf" added="2022-04-18T20:10:49.794086Z" modified="2022-04-18T20:10:50.044429Z" visited="2022-04-18T20:10:49.794087Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-18T20:10:50.044427Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

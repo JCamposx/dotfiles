@@ -1,30 +1,30 @@
 /home/jesus/.xprofile: línea 16: xcape: orden no encontrada
 /home/jesus/.xprofile: línea 38: xfce4-clipman: orden no encontrada
 
-** (xfce4-power-manager:1308): WARNING **: 13:15:58.699: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.freedesktop.PowerManagement': no such name
+** (xfce4-power-manager:1303): WARNING **: 11:02:10.654: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.freedesktop.PowerManagement': no such name
 
 
-** (xfce4-power-manager:1308): WARNING **: 13:15:58.699: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.xfce.PowerManager': no such name
+** (xfce4-power-manager:1303): WARNING **: 11:02:10.654: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.xfce.PowerManager': no such name
 
 
-(xfce4-power-manager:1308): xfce4-power-manager-WARNING **: 13:15:58.701: Unable to connect to session manager : No se pudo conectar con el gestor de sesiones: SESSION_MANAGER environment variable not defined
+(xfce4-power-manager:1303): xfce4-power-manager-WARNING **: 11:02:10.657: Unable to connect to session manager : No se pudo conectar con el gestor de sesiones: SESSION_MANAGER environment variable not defined
 
-(xfce4-power-manager:1308): libnotify-WARNING **: 13:15:58.712: Failed to connect to proxy
+(xfce4-power-manager:1303): libnotify-WARNING **: 11:02:10.668: Failed to connect to proxy
 
-(xfce4-power-manager:1308): GLib-GObject-WARNING **: 13:15:58.773: ../glib/gobject/gsignal.c:2613: signal 'Changed' is invalid for instance '0x561e06496880' of type 'GDBusProxy'
+(xfce4-power-manager:1303): GLib-GObject-WARNING **: 11:02:10.729: ../glib/gobject/gsignal.c:2613: signal 'Changed' is invalid for instance '0x55cf510f2880' of type 'GDBusProxy'
 
-(xfce4-power-manager:1308): xfce4-power-manager-WARNING **: 13:15:58.908: could not map keysym 1008ffa8 to keycode
+(xfce4-power-manager:1303): xfce4-power-manager-WARNING **: 11:02:10.852: could not map keysym 1008ffa8 to keycode
 
 
-(xfce4-power-manager:1308): xfce4-power-manager-WARNING **: 13:15:58.928: Failed to get keyboard max brightness level : GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: El objeto no existe en la ruta «/org/freedesktop/UPower/KbdBacklight»
+(xfce4-power-manager:1303): xfce4-power-manager-WARNING **: 11:02:10.875: Failed to get keyboard max brightness level : GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: El objeto no existe en la ruta «/org/freedesktop/UPower/KbdBacklight»
 Could not find Xinerama screen number 2
 Could not find Xinerama screen number 3
 
-** (volumeicon:1306): WARNING **: 13:15:59.907: Binding 'AudioRaiseVolume' failed!
+** (volumeicon:1301): WARNING **: 11:02:11.862: Binding 'AudioRaiseVolume' failed!
 Failed to bind AudioRaiseVolume
 
-** (volumeicon:1306): WARNING **: 13:15:59.907: Binding 'AudioLowerVolume' failed!
+** (volumeicon:1301): WARNING **: 11:02:11.862: Binding 'AudioLowerVolume' failed!
 Failed to bind AudioLowerVolume
 
-** (volumeicon:1306): WARNING **: 13:15:59.907: Binding 'AudioMute' failed!
+** (volumeicon:1301): WARNING **: 11:02:11.862: Binding 'AudioMute' failed!
 Failed to bind AudioMute

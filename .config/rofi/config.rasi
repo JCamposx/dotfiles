@@ -23,7 +23,7 @@ configuration {
 	drun-match-fields: "name,generic,exec,categories";
 	drun-show-actions: false;
 	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
-	disable-history: false;
+	disable-history: true;
 	ignored-prefixes: "";
 	sort: false;
 	case-sensitive: false;

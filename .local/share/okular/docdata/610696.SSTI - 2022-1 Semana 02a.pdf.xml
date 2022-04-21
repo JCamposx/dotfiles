@@ -3,22 +3,22 @@
 <documentInfo url="/home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-2/SSTI - 2022-1 Semana 02a.pdf">
  <generalInfo>
   <history>
-   <oldPage viewport="24;C2:0.499498:0.982111:1"/>
-   <oldPage viewport="25;C2:0.499498:0.855098:1"/>
-   <oldPage viewport="26;C2:0.499498:0.906977:1"/>
-   <oldPage viewport="27;C2:0.499498:0.958855:1"/>
-   <oldPage viewport="28;C2:0.499498:0.831843:1"/>
-   <oldPage viewport="29;C2:0.499498:0.883721:1"/>
-   <oldPage viewport="30;C2:0.499498:0.935599:1"/>
-   <oldPage viewport="31;C2:0.499498:0.987478:1"/>
-   <oldPage viewport="32;C2:0.499498:0.860465:1"/>
-   <oldPage viewport="33;C2:0.499498:0.912343:1"/>
-   <current viewport="34;C2:0.499498:0.466905:1"/>
+   <oldPage viewport="27;C2:0.42446:0.537037:1"/>
+   <oldPage viewport="30;C2:0.618705:0.157407:1"/>
+   <oldPage viewport="29;C2:0.338129:0.435185:1"/>
+   <oldPage viewport="30;C2:0.453237:0.314815:1"/>
+   <oldPage viewport="31;C2:0.604317:0.138889:1"/>
+   <oldPage viewport="32;C2:0.589928:0.768519:1"/>
+   <oldPage viewport="33;C2:0.57554:0.972222:1"/>
+   <oldPage viewport="28;C2:0.316547:0.694444:1"/>
+   <oldPage viewport="29;C2:0.417266:0.0740741:1"/>
+   <oldPage viewport="30;C2:0.467626:0.0555556:1"/>
+   <current viewport="31;C2:0.568345:0.555556:1"/>
   </history>
   <views>
    <view name="PageView">
-    <zoom value="0.685838" mode="1"/>
-    <continuous mode="1"/>
+    <zoom mode="1" value="0.720267"/>
+    <continuous mode="0"/>
     <viewMode mode="0"/>
     <trimMargins value="0"/>
    </view>

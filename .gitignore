@@ -15,3 +15,5 @@
 !.Xresources
 !.config
 !.local
+!.vim
+!.nvimrc
