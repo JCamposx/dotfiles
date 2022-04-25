@@ -1,12 +1,14 @@
 let mapleader=" "
 
-nmap <C-F> <Plug>(easymotion-s2)
+" PLugins keybinds
+nmap <Leader>f <Plug>(easymotion-s2)
 nmap <Leader>t :NERDTreeFind<CR>
-nmap <Leader>w :bd<CR>
+nmap <Leader>r :NERDTreeFocus<CR>RR<C-L>
 
 " Save changes
 nmap <C-S> :w<CR>
 imap <C-S> <Esc><C-S>
+vmap <C-S> <Esc><C-S>
 
 " Quit VIM
 nmap <C-Q> :q<CR>
@@ -15,24 +17,47 @@ nmap <C-Q> :q<CR>
 nmap <Tab> :bn<CR>
 nmap <S-Tab> :bp<CR>
 
+" Split tabs
+nmap <Leader>s :vsplit<CR>
+nmap <Leader><S-S> :split<CR>
+
+" Close tab
+nmap <Leader>w :b#<bar>bd#<CR>
+
 " Paste
 nmap <C-V> p
-imap <C-V> <Esc>pi<Right>
+imap <C-V> <Esc>pi
 
-" Copy and paste actual line to below
-nmap <C-Down> yyP<End>
-imap <C-Down> <Esc><C-Down>i<End>
+" Move line(s) down
+nmap <A-Down> :m+1<CR>
+imap <A-Down> <Esc><A-Down>i<Right>
+vmap <A-Down> :m '>+1<CR>gv
 
-" Copy and paste actual line to above
-nmap <C-Up> yyp<End>
-imap <C-Up> <Esc><C-Up>i<End>
+" Move line(s) up
+nmap <A-Up> :m-2<CR>
+imap <A-Up> <Esc><A-Up>i<Right>
+vmap <A-Up> :m-2<CR>gv
+
+" Change between windows
+nmap <A-Left> <C-H>
+nmap <A-Right> <C-L> 
+
+" Tab line on normal mode
+nmap > >>
+nmap < <<
+
+" Tab lines visual mode
+vnoremap > >gv
+vnoremap < <gv
 
 " Backspace on normal mode
 nmap <BS> X
+vmap <BS> x
 
 " Undo
-nmap <C-Z> :undo<CR>
+nmap <C-Z> <Esc>:undo<CR>
 imap <C-Z> <Esc><C-Z>i
+vmap <C-Z> <Esc><C-Z>
 
 " Redo
 imap <C-R> <Esc><C-R>i
@@ -47,13 +72,41 @@ imap <C-Del> <Esc><Right>dawi
 " Delete actual line
 nmap <C-E> dd
 imap <C-E> <Esc>ddi<End>
+vmap dd :d<CR>
+vmap <C-E> d
 
 " Delete below line
 nmap <C-D> <Down><C-E><Up><End>
 imap <C-D> <Esc><C-D>i<End>
 
 " Special enter
-nnoremap \ i<CR><Esc>
+nnoremap <CR> i<CR><Esc>
 nnoremap ' o<Esc>
 nnoremap " O<Esc>
 
+" Multiple cursor
+nmap <RightMouse> \\\
+imap <RightMouse> <Esc>\\\
+
+" Search words
+nmap <C-F> /
+imap <C-F> <Esc><C-F>
+vmap <C-F> <Esc><C-F>
+
+" Clear search highlighting
+nmap <Leader>h :noh<CR>
+
+" Comment line
+nnoremap <Leader>/ :call nerdcommenter#Comment(0,"toggle")<CR>
+vnoremap <Leader>/ :call nerdcommenter#Comment(0,"toggle")<CR>
+
+" Select suggestion with tab
+inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<C-g>u\<TAB>"
+
+" Quick ; at the end of line
+nnoremap <Leader>; $a;<Esc>
+
+" Start terminal
+nmap <M-,> :!
+imap <M-,> <Esc><M-,>
+vmap <M-,> <Esc><M-,>

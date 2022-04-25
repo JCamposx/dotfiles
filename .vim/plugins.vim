@@ -11,13 +11,22 @@ Plug 'alvan/vim-closetag'
 Plug 'ryanoasis/vim-devicons'
 Plug 'yggdroot/indentline'
 Plug 'preservim/nerdcommenter'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Git
+Plug 'mhinz/vim-signify'
 
 " Typing
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-surround'
 
 " Status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" Themes
+Plug 'joshdick/onedark.vim'
 
 call plug#end()

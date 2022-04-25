@@ -8,6 +8,8 @@ alias ls "exa --group-directories-first"
 alias la "exa --group-directories-first -a --long --header"
 alias tree "exa -T"
 alias dotfiles "git --git-dir $HOME/.dotfiles/ --work-tree $HOME"
+alias vim "nvim"
+alias rm "rm -i"
 
 # Prompt
 
