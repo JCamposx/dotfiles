@@ -18,7 +18,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mhinz/vim-signify'
 
 " Typing
-Plug 'jiangmiao/auto-pairs'
+Plug 'townk/vim-autoclose'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 

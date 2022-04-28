@@ -30,12 +30,12 @@ imap <C-V> <Esc>pi
 
 " Move line(s) down
 nmap <A-Down> :m+1<CR>
-imap <A-Down> <Esc><A-Down>i<Right>
+imap <A-Down> <Esc><A-Down>a
 vmap <A-Down> :m '>+1<CR>gv
 
 " Move line(s) up
 nmap <A-Up> :m-2<CR>
-imap <A-Up> <Esc><A-Up>i<Right>
+imap <A-Up> <Esc><A-Up>a
 vmap <A-Up> :m-2<CR>gv
 
 " Change between windows
@@ -71,16 +71,20 @@ imap <C-Del> <Esc><Right>dawi
 
 " Delete actual line
 nmap <C-E> dd
-imap <C-E> <Esc>ddi<End>
+imap <C-E> <Esc>ddA
 vmap dd :d<CR>
 vmap <C-E> d
 
 " Delete below line
 nmap <C-D> <Down><C-E><Up><End>
-imap <C-D> <Esc><C-D>i<End>
+imap <C-D> <Esc><C-D>A
+
+" Delete above line
+nmap <C-C> -<C-E><End>
+imap <C-C> <Esc><C-C>A
 
 " Special enter
-nnoremap <CR> i<CR><Esc>
+nnoremap = i<CR><Esc>
 nnoremap ' o<Esc>
 nnoremap " O<Esc>
 

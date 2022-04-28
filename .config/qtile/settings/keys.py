@@ -54,7 +54,8 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "b", lazy.spawn("chromium")),
     
     # PDF Reader
-    ([mod], "p", lazy.spawn("okular")),
+
+    ([mod], "o", lazy.spawn("okular")),
     
     # Audio controller
     ([mod], "a", lazy.spawn("pavucontrol")),
@@ -70,8 +71,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "shift"], "r", lazy.spawn("redshift -x")),
 
     # Screenshot
-    ([mod], "s", lazy.spawn("scrot")),
-    ([mod, "shift"], "s", lazy.spawn("scrot -s")),
+    ([mod], "s", lazy.spawn("xfce4-screenshooter -f -c")),
+    ([mod, "shift"], "s", lazy.spawn("xfce4-screenshooter -r -c")),
+    ([mod, alt], "s", lazy.spawn("xfce4-screenshooter -w --no-border -c")),
 
 
     # ------------ Hardware Configs ------------

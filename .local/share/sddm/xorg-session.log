@@ -1,30 +1,35 @@
 /home/jesus/.xprofile: línea 16: xcape: orden no encontrada
-/home/jesus/.xprofile: línea 38: xfce4-clipman: orden no encontrada
 
-** (xfce4-power-manager:1318): WARNING **: 11:45:32.998: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.freedesktop.PowerManagement': no such name
-
-
-** (xfce4-power-manager:1318): WARNING **: 11:45:32.998: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.xfce.PowerManager': no such name
+** (xfce4-power-manager:1325): WARNING **: 19:02:03.667: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.freedesktop.PowerManagement': no such name
 
 
-(xfce4-power-manager:1318): xfce4-power-manager-WARNING **: 11:45:32.999: Unable to connect to session manager : No se pudo conectar con el gestor de sesiones: SESSION_MANAGER environment variable not defined
-
-(xfce4-power-manager:1318): libnotify-WARNING **: 11:45:33.012: Failed to connect to proxy
-
-(xfce4-power-manager:1318): GLib-GObject-WARNING **: 11:45:33.072: ../glib/gobject/gsignal.c:2613: signal 'Changed' is invalid for instance '0x55af7749b880' of type 'GDBusProxy'
-
-(xfce4-power-manager:1318): xfce4-power-manager-WARNING **: 11:45:33.204: could not map keysym 1008ffa8 to keycode
+** (xfce4-power-manager:1325): WARNING **: 19:02:03.667: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.xfce.PowerManager': no such name
 
 
-(xfce4-power-manager:1318): xfce4-power-manager-WARNING **: 11:45:33.224: Failed to get keyboard max brightness level : GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: El objeto no existe en la ruta «/org/freedesktop/UPower/KbdBacklight»
+(xfce4-power-manager:1325): xfce4-power-manager-WARNING **: 19:02:03.668: Unable to connect to session manager : No se pudo conectar con el gestor de sesiones: SESSION_MANAGER environment variable not defined
+
+(xfce4-power-manager:1325): libnotify-WARNING **: 19:02:03.680: Failed to connect to proxy
+
+(xfce4-power-manager:1325): GLib-GObject-WARNING **: 19:02:03.741: ../glib/gobject/gsignal.c:2613: signal 'Changed' is invalid for instance '0x55e929460080' of type 'GDBusProxy'
+
+(xfce4-power-manager:1325): xfce4-power-manager-WARNING **: 19:02:03.859: could not map keysym 1008ffa8 to keycode
+
+
+(xfce4-power-manager:1325): xfce4-power-manager-WARNING **: 19:02:03.879: Failed to get keyboard max brightness level : GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: El objeto no existe en la ruta «/org/freedesktop/UPower/KbdBacklight»
 Could not find Xinerama screen number 2
 Could not find Xinerama screen number 3
 
-** (volumeicon:1316): WARNING **: 11:45:34.215: Binding 'AudioRaiseVolume' failed!
+** (volumeicon:1323): WARNING **: 19:02:04.900: Binding 'AudioRaiseVolume' failed!
 Failed to bind AudioRaiseVolume
 
-** (volumeicon:1316): WARNING **: 11:45:34.215: Binding 'AudioLowerVolume' failed!
+** (volumeicon:1323): WARNING **: 19:02:04.900: Binding 'AudioLowerVolume' failed!
 Failed to bind AudioLowerVolume
 
-** (volumeicon:1316): WARNING **: 11:45:34.215: Binding 'AudioMute' failed!
+** (volumeicon:1323): WARNING **: 19:02:04.901: Binding 'AudioMute' failed!
 Failed to bind AudioMute
+
+** (xfce4-clipman:1326): WARNING **: 19:02:28.725: Unable to register GApplication: Ya existe un objeto exportado para la interfaz org.gtk.Application en /org/xfce/clipman
+
+(xfce4-clipman:1326): GLib-GIO-CRITICAL **: 19:02:28.725: g_application_get_is_remote: assertion 'application->priv->is_registered' failed
+
+(xfce4-clipman:1326): GLib-WARNING **: 19:02:28.725: g_set_application_name() called multiple times

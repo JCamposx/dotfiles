@@ -42,5 +42,5 @@ autocmd FileType * set formatoptions-=ro
 
 so ~/.vim/plugins.vim
 so ~/.vim/plugins-config.vim
-so ~/.vim/maps.vim
+so ~/.vim/keymaps.vim
 so ~/.vim/theme.vim

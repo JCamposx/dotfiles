@@ -347,12 +347,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/jesus/futureinternet-14-00097.pdf" added="2022-04-18T07:10:00.284928Z" modified="2022-04-18T07:10:00.535621Z" visited="2022-04-18T07:10:00.284929Z">
+  <bookmark href="file:///home/jesus/futureinternet-14-00097.pdf" added="2022-04-18T07:10:00.284928Z" modified="2022-04-25T18:45:41.748151Z" visited="2022-04-18T07:10:00.284929Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/octet-stream"/>
         <bookmark:applications>
-          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-18T07:10:00.535620Z" count="2"/>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-25T18:45:41.748149Z" count="6"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -407,12 +407,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/jesus/Ulima/Acta%20de%20Reuni%C3%B3n%20de%20Asesor%C3%ADa.docx" added="2022-04-21T23:29:29.494911Z" modified="2022-04-22T00:46:09.170023Z" visited="2022-04-21T23:29:29.494912Z">
+  <bookmark href="file:///home/jesus/Ulima/Acta%20de%20Reuni%C3%B3n%20de%20Asesor%C3%ADa.docx" added="2022-04-21T23:29:29.494911Z" modified="2022-04-25T12:57:06.809290Z" visited="2022-04-21T23:29:29.494912Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
         <bookmark:applications>
-          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-22T00:46:09.170022Z" count="4"/>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-25T12:57:06.809289Z" count="6"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -523,6 +523,206 @@
         <mime:mime-type type="application/octet-stream"/>
         <bookmark:applications>
           <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-24T01:15:50.405148Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Plantilla%20Nota%201%20TPI%202022-1%20v2.pptx" added="2022-04-25T03:55:11.139563Z" modified="2022-04-25T03:55:31.643060Z" visited="2022-04-25T03:55:11.139564Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-25T03:55:31.643058Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="/home/jesus/SelecciÃ³n_001.png" added="2022-04-25T04:22:54.312189Z" modified="2022-04-25T04:23:25.560334Z" visited="2022-04-25T04:22:54.312189Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="shutter" exec="&apos;shutter %u&apos;" modified="2022-04-25T04:23:25.560332Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="/home/jesus/shutter -a ~_001.png" added="2022-04-25T04:23:29.120928Z" modified="2022-04-25T04:23:29.120930Z" visited="2022-04-25T04:23:29.120928Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="shutter" exec="&apos;shutter %u&apos;" modified="2022-04-25T04:23:29.120929Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="/home/jesus/SelecciÃ³n_002.png" added="2022-04-25T04:25:59.983927Z" modified="2022-04-25T04:25:59.983930Z" visited="2022-04-25T04:25:59.983927Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="shutter" exec="&apos;shutter %u&apos;" modified="2022-04-25T04:25:59.983929Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="/home/jesus/SelecciÃ³n_003.png" added="2022-04-25T04:26:41.737604Z" modified="2022-04-25T04:26:41.737608Z" visited="2022-04-25T04:26:41.737605Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="shutter" exec="&apos;shutter %u&apos;" modified="2022-04-25T04:26:41.737606Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/2022-04-25-001253_892x506_scrot.png" added="2022-04-25T05:13:25.892873Z" modified="2022-04-25T05:13:25.901165Z" visited="2022-04-25T05:13:25.892874Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-25T05:13:25.901164Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/2022-04-25-003813_809x459_scrot.png" added="2022-04-25T05:38:23.679633Z" modified="2022-04-25T05:38:43.474358Z" visited="2022-04-25T05:38:23.679633Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-25T05:38:43.474356Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/2022-04-25-003832_808x465_scrot.png" added="2022-04-25T05:39:13.275837Z" modified="2022-04-25T05:39:13.282076Z" visited="2022-04-25T05:39:13.275838Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-25T05:39:13.282074Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/IX-Ciclo/Gest-proyectos/Semana-4/S4%20-%20Cronograma%20del%20proyecto%20sesion%202.pdf" added="2022-04-25T12:18:07.585750Z" modified="2022-04-25T23:39:05.579165Z" visited="2022-04-25T12:18:07.585751Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-25T23:39:05.579163Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Actividades%20Valentino%20Campos.pdf" added="2022-04-25T15:15:36.880831Z" modified="2022-04-25T15:15:49.650198Z" visited="2022-04-25T15:15:36.880832Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-25T15:15:49.650196Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/pm_e1.docx" added="2022-04-25T21:53:59.522896Z" modified="2022-04-25T21:54:07.682524Z" visited="2022-04-25T21:53:59.522897Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-25T21:54:07.682522Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/IX-Ciclo/Gest-proyectos/Semana-4/S4%20-%20Cronograma%20del%20proyecto%20sesion1.pdf" added="2022-04-25T23:38:59.289259Z" modified="2022-04-25T23:38:59.540000Z" visited="2022-04-25T23:38:59.289259Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-25T23:38:59.539998Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/VII-Ciclo/Ing-soft-I/Semana-4/Semana%204-Unidad%202_%20ISW1%202022.pdf" added="2022-04-26T00:28:17.266141Z" modified="2022-04-26T00:28:17.516942Z" visited="2022-04-26T00:28:17.266142Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-26T00:28:17.516941Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/VIII-Ciclo/Taller-prop-inv/TPI-Nota_1.pptx" added="2022-04-27T03:47:17.276290Z" modified="2022-04-27T03:51:42.444226Z" visited="2022-04-27T03:47:17.276291Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-27T03:51:42.444225Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/VIII-Ciclo/Taller-prop-inv/Capturas-correos-para-solicitar-acta-de-asesoria.docx" added="2022-04-27T03:48:41.235465Z" modified="2022-04-27T03:48:48.939269Z" visited="2022-04-27T03:48:41.235465Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-27T03:48:48.939268Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/VIII-Ciclo/Taller-prop-inv/Capturas-prueba-correos-para-acta-asesoria.pdf" added="2022-04-27T03:49:47.427580Z" modified="2022-04-27T03:49:52.013695Z" visited="2022-04-27T03:49:47.427581Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-27T03:49:52.013693Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-3/Formato%20Ejercicio%203%20Analisis%20y%20Evaluaci%C3%B3n%20de%20Riesgos.xlsx" added="2022-04-27T16:57:33.282575Z" modified="2022-04-27T16:57:33.290104Z" visited="2022-04-27T16:57:33.282576Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;xdg-desktop-portal-gtk %u&apos;" modified="2022-04-27T16:57:33.290102Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/comunicado_rubrica_poesia_a_mama.pdf" added="2022-04-27T18:11:08.902038Z" modified="2022-04-27T18:11:09.153069Z" visited="2022-04-27T18:11:08.902039Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-27T18:11:09.153068Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-4/ISO%20IEC%2027002-2022.pdf" added="2022-04-27T18:21:25.856973Z" modified="2022-04-27T18:21:26.107462Z" visited="2022-04-27T18:21:25.856974Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-27T18:21:26.107461Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/jesus/Ulima/X-Ciclo/Seg-sist-TI/Semana-4/NQA-ISO-27002-Mapping-ES.pdf" added="2022-04-27T18:21:36.490565Z" modified="2022-04-27T18:21:36.741260Z" visited="2022-04-27T18:21:36.490566Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gtk" exec="&apos;gio open %u&apos;" modified="2022-04-27T18:21:36.741258Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
