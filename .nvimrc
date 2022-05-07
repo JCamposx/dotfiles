@@ -1,5 +1,5 @@
 syntax enable
-filetype plugin on
+filetype plugin indent on
 
 set number
 set mouse=a
@@ -8,7 +8,6 @@ set clipboard=unnamed
 set showcmd
 set ruler
 set showmatch
-set sw=2
 set relativenumber
 set laststatus=2
 set wrap linebreak
@@ -18,6 +17,7 @@ set ignorecase
 set termguicolors
 set cursorline
 set updatetime=1
+set autoindent expandtab ts=4 sw=4
 
 
 let loaded_netrwPlugin=1
@@ -27,10 +27,11 @@ autocmd VimEnter * NERDTree
 autocmd BufEnter NERD_tree_* | execute 'normal R'
 autocmd VimEnter */workspace/* NERDTree| wincmd p
 
+autocmd FileType php setlocal autoindent ts=2 noexpandtab
 
-aug python
-  autocmd FileType python setlocal noexpandtab sw=2
-aug end
+" augroup python
+  " autocmd FileType python setlocal autoindent ts=2 noexpandtab
+" augroup end
 
 
 autocmd FileType markdown let b:coc_suggest_disable = 1

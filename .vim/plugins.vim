@@ -19,6 +19,7 @@ Plug 'mhinz/vim-signify'
 
 " Typing
 Plug 'townk/vim-autoclose'
+Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 

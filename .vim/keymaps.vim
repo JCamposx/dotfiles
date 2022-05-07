@@ -72,8 +72,7 @@ imap <C-Del> <Esc><Right>dawi
 " Delete actual line
 nmap <C-E> dd
 imap <C-E> <Esc>ddA
-vmap dd :d<CR>
-vmap <C-E> d
+vmap <C-E> D<CR>
 
 " Delete below line
 nmap <C-D> <Down><C-E><Up><End>

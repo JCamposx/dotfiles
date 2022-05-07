@@ -21,8 +21,8 @@ sigint_symbol = "ﭦ"
 map_symbol = true
 
 [git_branch]
-symbol = " "
 format = "[$symbol$branch]($style) "
+symbol = " "
 
 [package]
 format = "[$symbol$version]($style) "
@@ -37,8 +37,8 @@ format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 symbol = " "
 
 [nodejs]
-symbol = " "
 format = "[$symbol($version )]($style)"
+symbol = " "
 
 [php]
 format = "[$symbol($version )]($style)"

@@ -71,7 +71,7 @@ def primary_widgets():
         *workspaces(),
 
         separator(),
-                
+ 
         powerline('dark', 'dark'),
 
         icon(fg='color5', bg='dark', text=' '), # Icon: nf-fa-download
@@ -85,19 +85,19 @@ def primary_widgets():
             update_interval=30,
             custom_command='checkupdates',
         ),
-        
+ 
         separator(),
-        
+ 
         powerline('dark', 'dark'),
-        
+ 
         icon(fg='color4', bg='dark', text=' ', fontsize=18), # nf-dev-aptana
-        
+ 
         widget.CPU(
             **base(fg='color4', bg='dark'),
             format='{load_percent}%',
         ),
-        
-		separator(),
+ 
+        separator(),
 
         powerline('dark', 'dark'),
 
@@ -108,15 +108,15 @@ def primary_widgets():
             interface='eno1',
             format='{down}' #Icon: nf-fa-arrow_circle_o_down
         ),
-        
+ 
         icon(fg='color3', bg='dark', text='  ', fontsize=18),  # Icon: nf-fa-feed
-        
+ 
         widget.Net(
             **base(fg='color3', bg='dark'),
             interface='eno1',
             format='{up}' #Icon: nf-fa-arrow_circle_o_up
         ),
-        
+ 
         separator(),
 
         powerline('dark', 'dark'),
@@ -129,7 +129,7 @@ def primary_widgets():
         widget.CurrentLayout(
             **base(fg='color2', bg='dark'),
         ),
-        
+
         separator(),
 
         powerline('dark', 'dark'),
@@ -140,14 +140,14 @@ def primary_widgets():
             **base(fg='color1', bg='dark'),
             format='%d %b %Y %H:%M',
         ),
-        
+ 
         separator(),
 
         widget.Systray(
             background=colors['dark'],
             padding=5
         ),
-        
+ 
         separator(),
     ]
 
