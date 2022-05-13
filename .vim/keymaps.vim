@@ -63,11 +63,11 @@ vmap <C-Z> <Esc><C-Z>
 imap <C-R> <Esc><C-R>i
 
 " Delete word before cursor
-nmap <C-W> diw
+nmap <C-W> i<C-W><Esc><Right>
 
 " Delete word after cursor
-nmap <C-Del> daw
-imap <C-Del> <Esc><Right>dawi
+nmap <C-Del> dw
+imap <C-Del> <Esc><Right>dwi
 
 " Delete actual line
 nmap <C-E> dd
@@ -87,9 +87,20 @@ nnoremap = i<CR><Esc>
 nnoremap ' o<Esc>
 nnoremap " O<Esc>
 
+" New line in insert mode
+imap <M-CR> <Esc>o
+
 " Multiple cursor
 nmap <RightMouse> \\\
 imap <RightMouse> <Esc>\\\
+
+" Select all lines
+nmap <C-A> ggVG
+imap <C-A> <Esc><C-A>
+
+" Find words and replace
+nmap <F2> \\A
+imap <F2> <Esc><F2>
 
 " Search words
 nmap <C-F> /
@@ -107,7 +118,8 @@ vnoremap <Leader>/ :call nerdcommenter#Comment(0,"toggle")<CR>
 inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<C-g>u\<TAB>"
 
 " Quick ; at the end of line
-nnoremap <Leader>; $a;<Esc>
+nmap <M-;> A;<Esc>
+imap <M-;> <Esc>A;
 
 " Start terminal
 nmap <M-,> :!

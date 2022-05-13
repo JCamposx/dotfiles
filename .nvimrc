@@ -6,7 +6,7 @@ set mouse=a
 set numberwidth=3
 set clipboard=unnamed
 set showcmd
-set ruler
+" set ruler
 set showmatch
 set relativenumber
 set laststatus=2
@@ -34,8 +34,8 @@ autocmd FileType php setlocal autoindent ts=2 noexpandtab
 " augroup end
 
 
-autocmd FileType markdown let b:coc_suggest_disable = 1
-autocmd FileType text let b:coc_suggest_disable = 1
+" autocmd FileType markdown let b:coc_suggest_disable = 1
+" autocmd FileType text let b:coc_suggest_disable = 1
 
 
 autocmd FileType * set formatoptions-=ro

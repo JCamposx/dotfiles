@@ -16,7 +16,7 @@ export PATH=$HOME/.local/bin:$PATH
 xcape -e 'Super_L=Super_L|space'
 
 # On laptops without seperate numeric keyboard put hashtag in front
-numlockx on &
+numlockx off &
 
 # GNOME PolicyKit authentication
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
@@ -29,7 +29,7 @@ numlockx on &
 
 
 ## Turn off/on System Beep
-xset b off
+xset b on
 
 ## Enable power management
 xfce4-power-manager &

@@ -55,7 +55,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     
     # PDF Reader
 
-    ([mod], "o", lazy.spawn("okular")),
+    ([mod], "p", lazy.spawn("okular")),
     
     # Audio controller
     ([mod], "a", lazy.spawn("pavucontrol")),
