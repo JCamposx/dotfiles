@@ -2,7 +2,7 @@ let mapleader=" "
 
 " PLugins keybinds
 nmap <Leader>f <Plug>(easymotion-s2)
-nmap <Leader>t :NERDTreeFind<CR>
+nmap <Leader>t :NERDTreeToggle<CR>
 nmap <Leader>r :NERDTreeFocus<CR>RR<C-L>
 
 " Save changes
@@ -23,10 +23,6 @@ nmap <Leader><S-S> :split<CR>
 
 " Close tab
 nmap <Leader>w :b#<bar>bd#<CR>
-
-" Paste
-nmap <C-V> p
-imap <C-V> <Esc>pi
 
 " Move line(s) down
 nmap <A-Down> :m+1<CR>
@@ -49,6 +45,14 @@ nmap < <<
 " Tab lines visual mode
 vnoremap > >gv
 vnoremap < <gv
+
+" Vertical move adjust
+nnoremap <Down> gj
+inoremap <Down> <C-O>gj
+vnoremap <Down> gj
+nnoremap <Up> gk
+inoremap <Up> <C-O>gk
+vnoremap <Up> gk
 
 " Backspace on normal mode
 nmap <BS> X
@@ -93,6 +97,9 @@ imap <M-CR> <Esc>o
 " Multiple cursor
 nmap <RightMouse> \\\
 imap <RightMouse> <Esc>\\\
+
+" Select multiple words
+imap <C-N> <Esc><C-N>
 
 " Select all lines
 nmap <C-A> ggVG

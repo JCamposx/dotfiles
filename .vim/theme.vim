@@ -7,7 +7,8 @@ colorscheme onedark
 let g:airline_theme='wombat'
 
 " Current line background
-highlight CursorLine guibg=#202020
+highlight CursorLine guibg=#303030
+highlight Visual guibg=#303030
 
 " Remove termnial background
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE

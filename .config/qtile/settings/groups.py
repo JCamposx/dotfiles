@@ -16,9 +16,9 @@ from .keys import mod, keys
 # nf-mdi-worker, 
 
 groups = [Group(i) for i in [
-    "  ", "  ", "  ", " 力 " ,"  ", "  ", " 華 ",
-    # " www ", " dev ", " term ", " serv " ," db ", " git ", " min ",
-]]
+    "  ", "  ", "  ", " 力 " ,"  ", "  ",
+    ]
+]
 
 for i, group in enumerate(groups):
     actual_key = str(i + 1)

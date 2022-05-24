@@ -15,7 +15,7 @@ layouts = [
     layout.Max(),
     layout.MonadTall(**layout_conf),
     layout.MonadWide(**layout_conf),
-    # layout.Bsp(**layout_conf),
+    #  layout.Bsp(**layout_conf),
     # layout.Matrix(columns=2, **layout_conf),
     # layout.RatioTile(**layout_conf),
     # layout.Columns(),
@@ -50,6 +50,7 @@ floating_layout = layout.Floating(
             {'title': 'Open File'},
         ]]
     ],
-    border_focus=colors['color4'][0],
+    border_focus=colors['color5'][0],
+    border_width=2,
     full_screen_border_width=0,
 )

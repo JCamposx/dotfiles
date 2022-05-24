@@ -1,6 +1,7 @@
 " NERD Tree
 let NERDTreeShowHidden=1
 let g:NERDTreeHijackNetrw=0
+let g:NERDTreeStatusline=''
 
 " Easymotion
 let g:EasyMotion_smartcase=1

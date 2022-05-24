@@ -13,6 +13,7 @@ Plug 'yggdroot/indentline'
 Plug 'preservim/nerdcommenter'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mattn/emmet-vim'
 
 " Git
 Plug 'mhinz/vim-signify'

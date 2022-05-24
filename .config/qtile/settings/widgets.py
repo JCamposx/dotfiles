@@ -36,7 +36,7 @@ def powerline(fg='light', bg='dark', fontsize=37, padding=-3):
     )
 
 
-def workspaces(icon_fontsize=19, window_name_font_size=15): 
+def workspaces(icon_fontsize=19, window_name_font_size=16): 
     return [
         separator(),
         widget.GroupBox(
@@ -45,7 +45,7 @@ def workspaces(icon_fontsize=19, window_name_font_size=15):
             fontsize=icon_fontsize,
             margin_y=3,
             margin_x=0,
-            padding_y=3,
+            padding_y=5,
             padding_x=3,
             borderwidth=3,
             active=colors['active'],
@@ -184,11 +184,12 @@ def secondary_widgets():
         ),
 
         separator(),
+        separator(),
     ]
 
 widget_defaults = {
     'font': 'UbuntuMono Nerd Font Bold',
-    'fontsize': 16,
+    'fontsize': 17,
     'padding': 1,
 }
 extension_defaults = widget_defaults.copy()
