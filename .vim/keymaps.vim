@@ -30,9 +30,9 @@ imap <silent> <A-Down> <Esc><A-Down>a
 vmap <silent> <A-Down> :m '>+1<CR>gv
 
 " Move line(s) up
-nmap <A-Up> :m-2<CR>
-imap <A-Up> <Esc><A-Up>a
-vmap <A-Up> :m-2<CR>gv
+nmap <silent> <A-Up> :m-2<CR>
+imap <silent> <A-Up> <Esc><A-Up>a
+vmap <silent> <A-Up> :m-2<CR>gv
 
 " Change between windows
 nmap <A-Left> <C-H>
