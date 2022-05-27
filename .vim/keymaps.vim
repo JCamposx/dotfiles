@@ -47,12 +47,12 @@ vnoremap > >gv
 vnoremap < <gv
 
 " Vertical move adjust
-nnoremap <Down> gj
-inoremap <Down> <C-O>gj
-vnoremap <Down> gj
-nnoremap <Up> gk
-inoremap <Up> <C-O>gk
-vnoremap <Up> gk
+nnoremap j gj
+" inoremap <Down> <C-O>gj
+vnoremap j gj
+nnoremap k gk
+" inoremap <Up> <C-O>gk
+vnoremap k gk
 
 " Backspace on normal mode
 nmap <BS> X
@@ -71,8 +71,10 @@ vmap <C-R> <Esc><C-R>
 nmap <C-W> i<C-W><Esc><Right>
 
 " Delete word after cursor
-nmap <C-Del> dw
-imap <C-Del> <Esc><Right>dwi
+nnoremap <M-D> dw
+nnoremap <M-d> dw
+inoremap <M-D> <Esc><Right>dwi
+inoremap <M-d> <Esc><Right>dwi
 
 " Delete actual line
 nmap <C-E> dd
@@ -90,8 +92,8 @@ imap <C-C> <Esc><C-C>A
 
 " Special enter
 nnoremap = i<CR><Esc>
-nnoremap ' o<Esc>
-nnoremap " O<Esc>
+nnoremap ' o<Esc><Up>
+nnoremap " O<Esc><Down>
 
 " New line in insert mode
 imap <M-CR> <Esc>o
