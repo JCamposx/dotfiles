@@ -16,7 +16,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 
     # Change window sizes (MonadTall)
     ([mod], "l", lazy.layout.grow()),
-    ([mod], "k", lazy.layout.shrink()),
+    ([mod], "h", lazy.layout.shrink()),
 
     # Toggle floating
     ([mod, "shift"], "f", lazy.window.toggle_floating()),
@@ -33,8 +33,8 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "c", lazy.window.kill()),
 
     # Switch focus of monitors
-    ([mod], "period", lazy.next_screen()),
-    ([mod], "comma", lazy.prev_screen()),
+    ([mod], "k", lazy.next_screen()),
+    ([mod], "j", lazy.prev_screen()),
 
     # Restart Qtile
     ([mod, "control"], "r", lazy.restart()),
@@ -54,7 +54,6 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "b", lazy.spawn("chromium")),
     
     # PDF Reader
-
     ([mod], "p", lazy.spawn("okular")),
     
     # Audio controller
