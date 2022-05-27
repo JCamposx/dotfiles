@@ -12,5 +12,4 @@ highlight Visual guibg=#303030
 
 " Remove termnial background
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
-" highlight clear LineNr
 highlight clear SignColumn

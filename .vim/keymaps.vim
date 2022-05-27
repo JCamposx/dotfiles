@@ -2,8 +2,8 @@ let mapleader=" "
 
 " PLugins keybinds
 nmap <Leader>f <Plug>(easymotion-s2)
-nmap <Leader>t :NERDTreeToggle<CR>
-nmap <Leader>r :NERDTreeFocus<CR>RR<C-L>
+nmap <silent> <Leader>t :NERDTreeToggle<CR>
+nmap <silent> <Leader>r :NERDTreeFocus<CR>RR<C-L>
 
 " Save changes
 nmap <C-S> :w<CR>
@@ -14,20 +14,20 @@ vmap <C-S> <Esc><C-S>
 nmap <C-Q> :q<CR>
 
 " Change between tabs
-nmap <Tab> :bn<CR>
-nmap <S-Tab> :bp<CR>
+nmap <silent> <Tab> :bn<CR>
+nmap <silent> <S-Tab> :bp<CR>
 
 " Split tabs
-nmap <Leader>s :vsplit<CR>
-nmap <Leader><S-S> :split<CR>
+nmap <silent> <Leader>s :vsplit<CR>
+nmap <silent> <Leader><S-S> :split<CR>
 
 " Close tab
-nmap <Leader>w :b#<bar>bd#<CR>
+nmap <silent> <Leader>w :b#<bar>bd#<CR>
 
 " Move line(s) down
-nmap <A-Down> :m+1<CR>
-imap <A-Down> <Esc><A-Down>a
-vmap <A-Down> :m '>+1<CR>gv
+nmap <silent> <A-Down> :m+1<CR>
+imap <silent> <A-Down> <Esc><A-Down>a
+vmap <silent> <A-Down> :m '>+1<CR>gv
 
 " Move line(s) up
 nmap <A-Up> :m-2<CR>
@@ -59,12 +59,13 @@ nmap <BS> X
 vmap <BS> x
 
 " Undo
-nmap <C-Z> <Esc>:undo<CR>
-imap <C-Z> <Esc><C-Z>i
-vmap <C-Z> <Esc><C-Z>
+nmap <C-Z> u
+imap <C-Z> <Esc>ui
+vmap <C-Z> <Esc>u
 
 " Redo
 imap <C-R> <Esc><C-R>i
+vmap <C-R> <Esc><C-R>
 
 " Delete word before cursor
 nmap <C-W> i<C-W><Esc><Right>
@@ -76,7 +77,8 @@ imap <C-Del> <Esc><Right>dwi
 " Delete actual line
 nmap <C-E> dd
 imap <C-E> <Esc>ddA
-vmap <C-E> D<CR>
+vmap <C-E> D
+vmap d D
 
 " Delete below line
 nmap <C-D> <Down><C-E><Up><End>
@@ -102,8 +104,8 @@ imap <RightMouse> <Esc>\\\
 imap <C-N> <Esc><C-N>
 
 " Select all lines
-nmap <C-A> ggVG
-imap <C-A> <Esc><C-A>
+nmap <silent> <C-A> ggVG
+imap <silent> <C-A> <Esc><C-A>
 
 " Find words and replace
 nmap <F2> \\A
@@ -115,18 +117,18 @@ imap <C-F> <Esc><C-F>
 vmap <C-F> <Esc><C-F>
 
 " Clear search highlighting
-nmap <Leader>h :noh<CR>
+nmap <silent> <Leader>h :noh<CR>
 
 " Comment line
-nnoremap <Leader>/ :call nerdcommenter#Comment(0,"toggle")<CR>
-vnoremap <Leader>/ :call nerdcommenter#Comment(0,"toggle")<CR>
+nnoremap <silent> <Leader>/ :call nerdcommenter#Comment(0,"toggle")<CR>
+vnoremap <silent> <Leader>/ :call nerdcommenter#Comment(0,"toggle")<CR>
 
 " Select suggestion with tab
 inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<C-g>u\<TAB>"
 
 " Quick ; at the end of line
-nmap <M-;> A;<Esc>
-imap <M-;> <Esc>A;
+nnoremap <silent> <M-;> :call setline('.', getline('.') . ';')<CR>
+inoremap <silent> <M-;> <Esc>:call setline('.', getline('.') . ';')<CR>a
 
 " Start terminal
 nmap <M-,> :!

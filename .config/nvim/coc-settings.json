@@ -1,10 +1,10 @@
 {
-	"suggest.noselect": false,
-	"diagnostic.checkCurrentLine": true,
+  "suggest.noselect": false,
+  "diagnostic.checkCurrentLine": true,
+  "html.format.wrapLineLength": 0,
+  "blade.bladeFormatter.optIndentSize": 2,
 
-
-
-	"jedi.enable": true,
+  "jedi.enable": true,
   "jedi.startupMessage": false,
   "jedi.markupKindPreferred": "plaintext",
   "jedi.trace.server": "off",

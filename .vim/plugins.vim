@@ -24,11 +24,11 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
+" Themes
+Plug 'joshdick/onedark.vim'
+
 " Status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
-" Themes
-Plug 'joshdick/onedark.vim'
 
 call plug#end()

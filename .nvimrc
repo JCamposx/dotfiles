@@ -23,14 +23,12 @@ let loaded_netrwPlugin=1
 autocmd VimEnter * NERDTree
 autocmd VimEnter */workspace/* NERDTree| wincmd p
 
-autocmd FileType php setlocal autoindent ts=2 noexpandtab
-
-" augroup python
-  " autocmd FileType python setlocal autoindent ts=2 noexpandtab
-" augroup end
-
 " autocmd FileType markdown let b:coc_suggest_disable = 1
 " autocmd FileType text let b:coc_suggest_disable = 1
+
+autocmd FileType html setlocal autoindent ts=2 sw=2 expandtab
+" autocmd FileType blade setlocal autoindent ts=2 sw=2 expandtab
+autocmd BufNewFile,BufRead *.blade.php set ft=html | set ft=blade | set syntax=html
 
 autocmd FileType * set formatoptions-=ro
 
