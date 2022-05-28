@@ -2,13 +2,12 @@
 let NERDTreeShowHidden=1
 let g:NERDTreeHijackNetrw=0
 let g:NERDTreeStatusline=''
+let NERDTreeAutoDeleteBuffer = 1
 
 " Easymotion
 let g:EasyMotion_smartcase=1
 
 " Airline
-" let g:airline#extensions#tabline#enabled=1
-" let g:airline#extensions#tabline#tab_min_count=2
 let g:airline_powerline_fonts=1
 
 " NERD Commenter

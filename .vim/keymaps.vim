@@ -9,6 +9,9 @@ nnoremap <silent> <C-X> :Buffers<CR>
 inoremap <silent> <C-X> <Esc>:Buffers<CR>
 vnoremap <silent> <C-X> <Esc>:Buffers<CR>
 
+" Close tab
+nmap <silent> <Leader>w :Bdelete<CR>
+
 " Fzf
 nmap <silent> <C-P> :Files<CR>
 
@@ -28,9 +31,6 @@ nmap <silent> <S-Tab> :bp<CR>
 nmap <silent> <Leader>s :vsplit<CR>
 nmap <silent> <Leader><S-S> :split<CR>
 
-" Close tab
-nmap <silent> <Leader>w :b#<bar>bd#<CR>
-
 " Move line(s) down
 nmap <silent> <A-Down> :m+1<CR>
 imap <silent> <A-Down> <Esc><A-Down>a
@@ -40,10 +40,6 @@ vmap <silent> <A-Down> :m '>+1<CR>gv
 nmap <silent> <A-Up> :m-2<CR>
 imap <silent> <A-Up> <Esc><A-Up>a
 vmap <silent> <A-Up> :m-2<CR>gv
-
-" Change between windows
-nmap <A-Left> <C-H>
-nmap <A-Right> <C-L> 
 
 " Tab line on normal mode
 nmap > >>
