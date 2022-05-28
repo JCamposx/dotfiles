@@ -1,13 +1,14 @@
 syntax enable
 filetype plugin indent on
+set encoding=UTF-8
 
 set number
-set mouse=a
 set numberwidth=3
+set relativenumber
+set mouse=a
 set clipboard=unnamed
 set showcmd
 set showmatch
-set relativenumber
 set laststatus=2
 set wrap linebreak
 set breakindent
@@ -18,10 +19,10 @@ set cursorline
 set updatetime=1
 set autoindent expandtab ts=4 sw=4
 
-let loaded_netrwPlugin=1
+" let loaded_netrwPlugin=1
 
 autocmd VimEnter * NERDTree
-autocmd VimEnter */workspace/* NERDTree| wincmd p
+" autocmd VimEnter */workspace/* NERDTree| wincmd p
 
 " autocmd FileType markdown let b:coc_suggest_disable = 1
 " autocmd FileType text let b:coc_suggest_disable = 1

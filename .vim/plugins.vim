@@ -4,14 +4,16 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 
 " IDE
-Plug 'easymotion/vim-easymotion'
-Plug 'scrooloose/nerdtree'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'alvan/vim-closetag'
 Plug 'ryanoasis/vim-devicons'
-Plug 'yggdroot/indentline'
+Plug 'scrooloose/nerdtree'
 Plug 'preservim/nerdcommenter'
+Plug 'yggdroot/indentline'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+
+" Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
 

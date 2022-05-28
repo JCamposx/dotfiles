@@ -1,9 +1,16 @@
 let mapleader=" "
 
 " PLugins keybinds
-nmap <Leader>f <Plug>(easymotion-s2)
 nmap <silent> <Leader>t :NERDTreeToggle<CR>
 nmap <silent> <Leader>r :NERDTreeFocus<CR>RR<C-L>
+
+" Buffers
+nnoremap <silent> <C-X> :Buffers<CR>
+inoremap <silent> <C-X> <Esc>:Buffers<CR>
+vnoremap <silent> <C-X> <Esc>:Buffers<CR>
+
+" Fzf
+nmap <silent> <C-P> :Files<CR>
 
 " Save changes
 nmap <C-S> :w<CR>
@@ -48,10 +55,8 @@ vnoremap < <gv
 
 " Vertical move adjust
 nnoremap j gj
-" inoremap <Down> <C-O>gj
 vnoremap j gj
 nnoremap k gk
-" inoremap <Up> <C-O>gk
 vnoremap k gk
 
 " Backspace on normal mode
@@ -136,3 +141,6 @@ inoremap <silent> <M-;> <Esc>:call setline('.', getline('.') . ';')<CR>a
 nmap <M-,> :!
 imap <M-,> <Esc><M-,>
 vmap <M-,> <Esc><M-,>
+
+" Go to function definition
+nmap <silent> gd <Plug>(coc-definition)
