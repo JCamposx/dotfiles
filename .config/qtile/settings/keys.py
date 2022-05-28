@@ -39,7 +39,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Restart Qtile
     ([mod, "control"], "r", lazy.restart()),
     ([mod, "control"], "q", lazy.shutdown()),
-    ([mod], "x", lazy.spawn("arcolinux-logout")),
+    ([mod], "x", lazy.spawn("archlinux-logout")),
 
 
     # ------------ App Configs ------------
