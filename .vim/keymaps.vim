@@ -28,8 +28,8 @@ nmap <silent> <Tab> :bn<CR>
 nmap <silent> <S-Tab> :bp<CR>
 
 " Split tabs
-nmap <silent> <Leader>s :vsplit<CR>
-nmap <silent> <Leader><S-S> :split<CR>
+nmap <silent> <Leader>s :vsplit<CR><C-L>
+nmap <silent> <Leader><S-S> :split<CR><C-J>
 
 " Move line(s) down
 nmap <silent> <A-Down> :m+1<CR>

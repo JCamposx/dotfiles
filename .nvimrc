@@ -3,7 +3,7 @@ filetype plugin indent on
 set encoding=UTF-8
 
 set number
-set numberwidth=3
+set numberwidth=1
 set relativenumber
 set mouse=a
 set clipboard=unnamed
@@ -25,6 +25,11 @@ autocmd FileType html setlocal autoindent ts=2 sw=2 expandtab
 autocmd BufNewFile,BufRead *.blade.php set ft=html | set ft=blade | set syntax=html
 
 autocmd FileType * set formatoptions-=ro
+
+augroup RestoreCursorShapeOnExit
+    autocmd!
+    autocmd VimLeave * set guicursor=a:ver15
+augroup END
 
 so ~/.vim/plugins.vim
 so ~/.vim/plugins-config.vim
