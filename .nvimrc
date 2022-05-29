@@ -26,11 +26,6 @@ autocmd BufNewFile,BufRead *.blade.php set ft=html | set ft=blade | set syntax=h
 
 autocmd FileType * set formatoptions-=ro
 
-augroup RestoreCursorShapeOnExit
-    autocmd!
-    autocmd VimLeave * set guicursor=a:ver15
-augroup END
-
 so ~/.vim/plugins.vim
 so ~/.vim/plugins-config.vim
 so ~/.vim/keymaps.vim
