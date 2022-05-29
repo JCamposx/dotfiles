@@ -21,6 +21,7 @@ Plug 'mattn/emmet-vim'
 
 " Git
 Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
 
 " Typing
 Plug 'townk/vim-autoclose'
