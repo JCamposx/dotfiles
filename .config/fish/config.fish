@@ -16,4 +16,5 @@ starship init fish | source
 # Env variables
 export EDITOR=nvim
 export BROWSER=chromium
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow'
+export FZF_DEFAULT_COMMAND='find -L'
+export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
