@@ -2,7 +2,6 @@ let mapleader=" "
 
 " PLugins keybinds
 nmap <silent> <Leader>t :NERDTreeToggle<CR>
-nmap <silent> <Leader>r :NERDTreeFocus<CR>RR<C-L>
 
 " Buffers
 nnoremap <silent> <C-X> :Buffers<CR>
@@ -14,6 +13,9 @@ nmap <silent> <Leader>w :Bdelete<CR>
 
 " Fzf
 nmap <silent> <C-P> :Files<CR>
+
+" Floating terminal
+noremap <silent> <C-T> :FloatermToggle<CR>
 
 " Save changes
 nmap <C-S> :w<CR>
