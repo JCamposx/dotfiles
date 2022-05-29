@@ -12,11 +12,6 @@ colors:
     background: '#050505'
     bright_foreground: '#e6efff'
     foreground: '#abb2bf'
-cursor:
-  style:
-    shape: Beam
-  vi_mode_style:
-    shape: Beam
 font:
   bold:
     family: JetBrains Mono ExtraBold Nerd Font
