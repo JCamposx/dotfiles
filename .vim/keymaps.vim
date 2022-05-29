@@ -83,7 +83,6 @@ inoremap <M-d> <Esc><Right>dwi
 nmap <C-E> dd
 imap <C-E> <Esc>ddA
 vmap <C-E> D
-vmap d D
 
 " Delete below line
 nmap <C-D> <Down><C-E><Up><End>
