@@ -14,8 +14,16 @@ nmap <silent> <Leader>w :Bdelete<CR>
 " Fzf
 nmap <silent> <C-P> :Files<CR>
 
-" Floating terminal
+" Terminal
 noremap <silent> <C-T> :FloatermToggle<CR>
+
+" Vertical resize
+nnoremap <silent> = :vertical resize +2<CR>
+nnoremap <silent> - :vertical resize -2<CR>
+
+" Horizontal resize
+nnoremap <silent> + :resize +2<CR>
+nnoremap <silent> _ :resize -2<CR>
 
 " Save changes
 nmap <C-S> :w<CR>
@@ -93,7 +101,7 @@ nmap <C-C> -<C-E><End>
 imap <C-C> <Esc><C-C>A
 
 " Special enter
-nnoremap = i<CR><Esc>
+nnoremap ; i<CR><Esc>
 nnoremap ' o<Esc><Up>
 nnoremap " O<Esc><Down>
 

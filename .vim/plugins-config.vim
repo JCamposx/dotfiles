@@ -1,3 +1,6 @@
+" Netrw
+let g:netrw_fastbrowse = 0
+
 " NERD Tree
 let NERDTreeShowHidden=1
 let g:NERDTreeHijackNetrw=0

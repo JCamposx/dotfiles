@@ -3,7 +3,7 @@ filetype plugin indent on
 set encoding=UTF-8
 
 set number
-set numberwidth=1
+set numberwidth=3
 set relativenumber
 set mouse=a
 set clipboard=unnamed

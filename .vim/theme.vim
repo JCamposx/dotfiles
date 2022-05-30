@@ -12,7 +12,6 @@ highlight Visual guibg=#303030
 
 " Floaterm border background
 hi FloatermBorder guibg=#303030
-hi FloatermNC guibg=#303030
 
 " Remove termnial background
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
