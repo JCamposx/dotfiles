@@ -1,7 +1,7 @@
 let mapleader=" "
 
 " PLugins keybinds
-nmap <silent> <Leader>t :NERDTreeToggle<CR>
+nnoremap <silent> <Leader>t :CocCommand explorer<CR>
 
 " Buffers
 nnoremap <silent> <C-X> :Buffers<CR>

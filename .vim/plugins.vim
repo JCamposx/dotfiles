@@ -5,7 +5,6 @@ Plug 'sheerun/vim-polyglot'
 
 " IDE
 Plug 'ryanoasis/vim-devicons'
-Plug 'scrooloose/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'yggdroot/indentline'
 Plug 'christoomey/vim-tmux-navigator'

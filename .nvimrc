@@ -19,7 +19,7 @@ set cursorline
 set updatetime=1
 set autoindent expandtab ts=4 sw=4
 
-autocmd VimEnter * NERDTree| wincmd p
+autocmd User CocNvimInit :CocCommand explorer
 
 autocmd FileType html setlocal autoindent ts=2 sw=2 expandtab
 autocmd BufNewFile,BufRead *.blade.php set ft=html | set ft=blade | set syntax=html

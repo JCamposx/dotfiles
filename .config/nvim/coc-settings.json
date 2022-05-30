@@ -3,6 +3,18 @@
   "diagnostic.checkCurrentLine": true,
   "html.format.wrapLineLength": 0,
   "blade.bladeFormatter.optIndentSize": 2,
+  "explorer.focus": false,
+
+  // Coc Explorer
+  "explorer.width": 30,
+  "explorer.contentWidthType": "win-width",
+  "explorer.file.showHiddenFiles":true,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.file.reveal.auto": true,
+  "explorer.file.child.template": "[git | 2] [selection | clip | 1] [indent][icon | 1] [diagnosticError & 1][filename omitCenter 1][modified][readonly] [linkIcon & 1][link growRight 1 omitCenter 5]",
+  "explorer.buffer.root.template": "[icon & 1] [title]",
+  "explorer.file.root.template": "[icon & 1] [title] [root]",
+  "explorer.icon.source":"vim-devicons",
 
   "jedi.enable": true,
   "jedi.startupMessage": false,

@@ -1,15 +1,6 @@
 " Netrw
 let g:netrw_fastbrowse = 0
 
-" NERD Tree
-let NERDTreeShowHidden=1
-let g:NERDTreeHijackNetrw=0
-let g:NERDTreeStatusline=''
-let NERDTreeAutoDeleteBuffer = 1
-
-" Easymotion
-let g:EasyMotion_smartcase=1
-
 " Floaterm
 let g:floaterm_title='Fish'
 let g:floaterm_wintype='split'
@@ -23,6 +14,9 @@ let g:airline_powerline_fonts=1
 let g:NERDSpaceDelims=1
 let g:NERDToggleCheckAllLines=1
 let g:NERDCompactSexyComs = 0
+
+" Indenline
+let g:indentLine_fileTypeExclude=["coc-explorer"]
 
 " Emmet
 let g:user_emmet_settings = {
