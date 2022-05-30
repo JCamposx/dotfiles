@@ -13,6 +13,8 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'famiu/bufdelete.nvim'
 Plug 'voldikss/vim-floaterm'
+Plug 'honza/vim-snippets'
+Plug 'gregsexton/MatchTag'
 
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

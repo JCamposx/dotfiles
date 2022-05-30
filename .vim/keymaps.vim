@@ -12,7 +12,7 @@ vnoremap <silent> <C-X> <Esc>:Buffers<CR>
 nmap <silent> <Leader>w :Bdelete<CR>
 
 " Fzf
-nmap <silent> <C-P> :Files<CR>
+noremap <silent> <C-P> <Esc>:Files<CR>
 
 " Terminal
 noremap <silent> <C-T> :FloatermToggle<CR>
