@@ -70,10 +70,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "shift"], "r", lazy.spawn("redshift -x")),
 
     # Screenshot
-    ([mod], "s", lazy.spawn("xfce4-screenshooter -f -c")),
+    ([], "Print", lazy.spawn("xfce4-screenshooter -f -c")),
+    ([alt], "Print", lazy.spawn("xfce4-screenshooter -w --no-border -c")),
     ([mod, "shift"], "s", lazy.spawn("xfce4-screenshooter -r -c")),
-    ([mod, alt], "s", lazy.spawn("xfce4-screenshooter -w --no-border -c")),
-
 
     # ------------ Hardware Configs ------------
 
