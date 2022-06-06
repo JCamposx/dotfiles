@@ -49,12 +49,12 @@ imap <silent> <A-Up> <Esc><A-Up>a
 vmap <silent> <A-Up> :m-2<CR>gv
 
 " Tab line on normal mode
-nmap > >>
-nmap < <<
+nnoremap <Tab> >>
+nnoremap <S-Tab> <<
 
 " Tab lines visual mode
-vnoremap > >gv
-vnoremap < <gv
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 
 " Vertical move adjust
 nnoremap <Down> gj
@@ -138,11 +138,6 @@ inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<C-g>u\<TAB>"
 " Quick ; at the end of line
 nnoremap <silent> <M-;> :call setline('.', getline('.') . ';')<CR>
 inoremap <silent> <M-;> <Esc>:call setline('.', getline('.') . ';')<CR>a
-
-" Start terminal
-nmap <M-,> :!
-imap <M-,> <Esc><M-,>
-vmap <M-,> <Esc><M-,>
 
 " Go to function definition
 nmap <silent> gd <Plug>(coc-definition)
