@@ -23,6 +23,7 @@ autocmd User CocNvimInit :CocCommand explorer
 
 autocmd FileType html setlocal autoindent ts=2 sw=2 expandtab
 autocmd BufNewFile,BufRead *.blade.php set ft=html | set ft=blade | set syntax=html
+autocmd BufNewFile,BufRead *.ejs set ft=html | set syntax=html
 
 autocmd FileType * set formatoptions-=ro
 
