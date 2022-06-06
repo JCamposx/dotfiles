@@ -15,6 +15,7 @@ colors:
 cursor:
   style:
     shape: Beam
+    blinking: Never
   vi_mode_style:
     shape: Beam
 font:
