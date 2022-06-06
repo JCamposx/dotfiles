@@ -1,12 +1,6 @@
 " Netrw
 let g:netrw_fastbrowse = 0
 
-" Floaterm
-let g:floaterm_title='Fish'
-let g:floaterm_wintype='split'
-let g:floaterm_position='belowright'
-let g:floaterm_height=0.3
-
 " Airline
 let g:airline_powerline_fonts=1
 

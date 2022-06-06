@@ -12,7 +12,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'famiu/bufdelete.nvim'
-Plug 'voldikss/vim-floaterm'
 Plug 'gregsexton/MatchTag'
 
 " Autocomplete

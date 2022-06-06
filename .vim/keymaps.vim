@@ -14,9 +14,6 @@ nmap <silent> <Leader>w :Bdelete<CR>
 " Fzf
 noremap <silent> <C-P> <Esc>:Files<CR>
 
-" Terminal
-noremap <silent> <C-T> :FloatermToggle<CR>
-
 " Vertical resize
 nnoremap <silent> = :vertical resize +2<CR>
 nnoremap <silent> - :vertical resize -2<CR>
