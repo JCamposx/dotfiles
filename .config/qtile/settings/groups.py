@@ -16,7 +16,7 @@ from .keys import mod, keys
 # nf-mdi-worker, 
 
 groups = [Group(i) for i in [
-    "  ", "  ", "  ", " 力 " ,"  ", "  ",
+    "  ", "  ", "  ", " 力 " ,"  ",
     ]
 ]
 
