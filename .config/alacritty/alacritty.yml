@@ -14,8 +14,8 @@ colors:
     foreground: '#abb2bf'
 cursor:
   style:
-    shape: Beam
     blinking: Never
+    shape: Beam
   vi_mode_style:
     shape: Beam
 font:
@@ -31,7 +31,7 @@ font:
   normal:
     family: JetBrains Mono Medium Nerd Font
     style: Regular
-  size: 12.0
+  size: 11.0
 scrolling:
   history: 50000
 window:
