@@ -9,7 +9,11 @@ inoremap <silent> <C-X> <Esc>:Buffers<CR>
 vnoremap <silent> <C-X> <Esc>:Buffers<CR>
 
 " Close tab
-nmap <silent> <Leader>w :Bdelete<CR>
+nnoremap <silent> <Leader>w :Bdelete<CR>
+
+" Split tabs
+nnoremap <silent> <Leader>s :vsplit<CR><C-L>
+nnoremap <silent> <Leader><S-S> :split<CR><C-J>
 
 " Fzf
 noremap <silent> <C-P> <Esc>:Files<CR>
@@ -23,30 +27,24 @@ nnoremap <silent> + :resize +2<CR>
 nnoremap <silent> _ :resize -2<CR>
 
 " Save changes
-nmap <C-S> :w<CR>
-imap <C-S> <Esc><C-S>
-vmap <C-S> <Esc><C-S>
+nnoremap <C-S> :w<CR>
+inoremap <C-S> <Esc><C-S>
+vnoremap <C-S> <Esc><C-S>
 
-" Quit VIM
-nmap <C-Q> :q<CR>
-
-" Change between tabs
-nmap <silent> <Tab> :bn<CR>
-nmap <silent> <S-Tab> :bp<CR>
-
-" Split tabs
-nmap <silent> <Leader>s :vsplit<CR><C-L>
-nmap <silent> <Leader><S-S> :split<CR><C-J>
+" Quit
+inoremap <C-Q> <Esc>
+nnoremap <C-Q> :q<CR>
+vnoremap <C-Q> <Esc>:q<CR>
 
 " Move line(s) down
-nmap <silent> <A-Down> :m+1<CR>
-imap <silent> <A-Down> <Esc><A-Down>a
-vmap <silent> <A-Down> :m '>+1<CR>gv
+nnoremap <silent> <A-Down> :m+1<CR>
+inoremap <silent> <A-Down> <Esc><A-Down>a
+vnoremap <silent> <A-Down> :m '>+1<CR>gv
 
 " Move line(s) up
-nmap <silent> <A-Up> :m-2<CR>
-imap <silent> <A-Up> <Esc><A-Up>a
-vmap <silent> <A-Up> :m-2<CR>gv
+nnoremap <silent> <A-Up> :m-2<CR>
+inoremap <silent> <A-Up> <Esc><A-Up>a
+vnoremap <silent> <A-Up> :m-2<CR>gv
 
 " Tab line on normal mode
 nnoremap <Tab> >>
@@ -62,21 +60,27 @@ vnoremap <Down> gj
 nnoremap <Up> gk
 vnoremap <Up> gk
 
-" Backspace on normal mode
-nmap <BS> X
-vmap <BS> x
+" Move between words adjust
+nnoremap <C-Right> w
+vnoremap <C-Right> w
+nnoremap <C-Left> w
+vnoremap <C-Left> w
+
+" Backspace adjust
+nnoremap <BS> X
+vnoremap <BS> x
 
 " Undo
-nmap <C-Z> u
-imap <C-Z> <Esc>ui
-vmap <C-Z> <Esc>u
+nnoremap <C-Z> u
+inoremap <C-Z> <Esc>ui
+vnoremap <C-Z> <Esc>ugv
 
 " Redo
-imap <C-R> <Esc><C-R>i
-vmap <C-R> <Esc><C-R>
+inoremap <C-R> <Esc><C-R>i
+vnoremap <C-R> <Esc><C-R>
 
 " Delete word before cursor
-nmap <C-W> i<C-W><Esc><Right>
+nnoremap <C-W> i<C-W><Esc><Right>
 
 " Delete word after cursor
 nnoremap <M-D> dw
@@ -84,49 +88,31 @@ nnoremap <M-d> dw
 inoremap <M-D> <Esc><Right>dwi
 inoremap <M-d> <Esc><Right>dwi
 
-" Delete actual line
-nmap <C-E> dd
-imap <C-E> <Esc>ddA
-vmap <C-E> D
-
-" Delete below line
-nmap <C-D> <Down><C-E><Up><End>
-imap <C-D> <Esc><C-D>A
-
-" Delete above line
-nmap <C-C> -<C-E><End>
-imap <C-C> <Esc><C-C>A
-
 " Special enter
 nnoremap ; i<CR><Esc>
 nnoremap ' o<Esc><Up>
 nnoremap " O<Esc><Down>
 
 " New line in insert mode
-imap <M-CR> <Esc>o
+inoremap <M-CR> <Esc>o
 
 " Multiple cursor
-nmap <RightMouse> \\\
-imap <RightMouse> <Esc>\\\
+nnoremap <RightMouse> \\\
+inoremap <RightMouse> <Esc>\\\
 
 " Select multiple words
-imap <C-N> <Esc><C-N>
+inoremap <C-N> <Esc><C-N>
 
 " Select all lines
-nmap <silent> <C-A> ggVG
-imap <silent> <C-A> <Esc><C-A>
+nnoremap <silent> <C-A> ggVG
+inoremap <silent> <C-A> <Esc><C-A>
 
 " Find words and replace
-nmap <F2> \\A
-imap <F2> <Esc><F2>
-
-" Search words
-nmap <C-F> /
-imap <C-F> <Esc><C-F>
-vmap <C-F> <Esc><C-F>
+nnoremap <F2> \\A
+inoremap <F2> <Esc><F2>
 
 " Clear search highlighting
-nmap <silent> <Leader>h :noh<CR>
+nnoremap <silent> <Leader>h :noh<CR>
 
 " Comment line
 nnoremap <silent> <Leader>/ :call nerdcommenter#Comment(0,"toggle")<CR>
@@ -140,4 +126,7 @@ nnoremap <silent> <M-;> :call setline('.', getline('.') . ';')<CR>
 inoremap <silent> <M-;> <Esc>:call setline('.', getline('.') . ';')<CR>a
 
 " Go to function definition
-nmap <silent> gd <Plug>(coc-definition)
+nnoremap <silent> gd <Plug>(coc-definition)
+nnoremap <silent> gy <Plug>(coc-type-definition)
+nnoremap <silent> gi <Plug>(coc-implementation)
+nnoremap <silent> gr <Plug>(coc-references)

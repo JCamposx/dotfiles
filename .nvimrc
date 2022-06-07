@@ -27,10 +27,7 @@ autocmd BufNewFile,BufRead *.ejs set ft=html | set syntax=html
 
 autocmd FileType * set formatoptions-=ro
 
-augroup RestoreCursorShapeOnExit
-    autocmd!
-    autocmd VimLeave * set guicursor=a:ver15
-augroup END
+autocmd VimLeave * set guicursor=a:ver15
 
 so ~/.vim/plugins.vim
 so ~/.vim/plugins-config.vim
