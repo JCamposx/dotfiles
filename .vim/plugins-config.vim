@@ -3,6 +3,8 @@ let g:netrw_fastbrowse=0
 
 " Airline
 let g:airline_powerline_fonts=1
+let g:airline_symbols={}
+let g:airline_symbols.branch=''
 
 " NERD Commenter
 let g:NERDSpaceDelims=1

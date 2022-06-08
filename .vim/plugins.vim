@@ -9,10 +9,12 @@ Plug 'preservim/nerdcommenter'
 Plug 'yggdroot/indentline'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
 Plug 'famiu/bufdelete.nvim'
 Plug 'gregsexton/MatchTag'
+
+" Telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

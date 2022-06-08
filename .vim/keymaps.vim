@@ -3,10 +3,18 @@ let mapleader=" "
 " PLugins keybinds
 nnoremap <silent> <Leader>t :CocCommand explorer<CR>
 
+" Telescope
+nnoremap <silent> <C-P> :Telescope find_files hidden=true<CR>
+inoremap <silent> <C-P> <EsC><C-P>
+vnoremap <silent> <C-P> <EsC><C-P>
+nnoremap <silent> <C-T> :Telescope live_grep<CR>
+inoremap <silent> <C-T> <Esc><C-T>
+vnoremap <silent> <C-T> <Esc><C-T>
+
 " Buffers
-nnoremap <silent> <C-X> :Buffers<CR>
-inoremap <silent> <C-X> <Esc>:Buffers<CR>
-vnoremap <silent> <C-X> <Esc>:Buffers<CR>
+nnoremap <silent> <C-X> :Telescope buffers<CR>
+inoremap <silent> <C-X> <C-X>
+vnoremap <silent> <C-X> <C-X>
 
 " Close tab
 nnoremap <silent> <Leader>w :Bdelete<CR>
@@ -14,9 +22,6 @@ nnoremap <silent> <Leader>w :Bdelete<CR>
 " Split tabs
 nnoremap <silent> <Leader>s :vsplit<CR><C-L>
 nnoremap <silent> <Leader><S-S> :split<CR><C-J>
-
-" Fzf
-noremap <silent> <C-P> <Esc>:Files<CR>
 
 " Vertical resize
 nnoremap <silent> = :vertical resize +2<CR>
@@ -28,12 +33,12 @@ nnoremap <silent> _ :resize -2<CR>
 
 " Save changes
 nnoremap <C-S> :w<CR>
-inoremap <C-S> <Esc><C-S>
-vnoremap <C-S> <Esc><C-S>
+inoremap <C-S> <Esc>:w<CR>
+vnoremap <C-S> <Esc>:w<CR>gv
 
 " Quit
-inoremap <C-Q> <Esc>
 nnoremap <C-Q> :q<CR>
+inoremap <C-Q> <Esc>
 vnoremap <C-Q> <Esc>:q<CR>
 
 " Move line(s) down
@@ -100,16 +105,13 @@ inoremap <M-CR> <Esc>o
 nnoremap <RightMouse> \\\
 inoremap <RightMouse> <Esc>\\\
 
-" Select multiple words
-inoremap <C-N> <Esc><C-N>
-
 " Select all lines
 nnoremap <silent> <C-A> ggVG
 inoremap <silent> <C-A> <Esc><C-A>
 
 " Find words and replace
-nnoremap <F2> \\A
-inoremap <F2> <Esc><F2>
+nmap <F2> \\A
+imap <F2> <Esc><F2>
 
 " Clear search highlighting
 nnoremap <silent> <Leader>h :noh<CR>
