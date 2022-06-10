@@ -18,10 +18,11 @@ set termguicolors
 set cursorline
 set updatetime=1
 set autoindent expandtab ts=4 sw=4
+set colorcolumn=80
 
 autocmd User CocNvimInit :CocCommand explorer
 
-autocmd FileType html setlocal autoindent ts=2 sw=2 expandtab
+autocmd FileType html setlocal autoindent expandtab ts=2 sw=2
 autocmd BufNewFile,BufRead *.blade.php set ft=html | set ft=blade | set syntax=html
 autocmd BufNewFile,BufRead *.ejs set ft=html | set syntax=html
 
