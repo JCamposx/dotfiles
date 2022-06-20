@@ -1,8 +1,8 @@
 xkb_keymap {
-xkb_keycodes "evdev+aliases(qwerty)" {
+xkb_keycodes "evdev_aliases(qwerty)" {
     minimum = 8;
     maximum = 255;
-     <ESC> = 9;
+    <ESC> = 9;
     <AE01> = 10;
     <AE02> = 11;
     <AE03> = 12;
@@ -427,7 +427,6 @@ xkb_types "complete" {
     };
     type "LOCAL_EIGHT_LEVEL" {
         modifiers= Shift+Lock+Control+LevelThree;
-        map[Shift+Lock]= Level1;
         map[Shift]= Level2;
         map[Lock]= Level2;
         map[LevelThree]= Level3;
@@ -657,7 +656,6 @@ xkb_types "complete" {
     };
     type "FOUR_LEVEL_MIXED_KEYPAD" {
         modifiers= Shift+NumLock+LevelThree;
-        map[Shift+NumLock]= Level1;
         map[NumLock]= Level2;
         map[Shift]= Level2;
         map[LevelThree]= Level3;
@@ -1216,7 +1214,7 @@ xkb_compatibility "complete" {
     };
 };
 
-xkb_symbols "pc+us(altgr-intl)+inet(evdev)+terminate(ctrl_alt_bksp)" {
+xkb_symbols "pc_us(altgr-intl)_inet(evdev)_terminate(ctrl_alt_bksp)" {
 
     name[group1]="English (intl., with AltGr dead keys)";
 
