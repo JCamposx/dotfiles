@@ -54,7 +54,7 @@ udiskie -t &
 
 # Dual monitor settings
 # xrandr --output DP-2 --primary --mode 2560x1440 --rate 165.00 --pos 0x261 --rotate normal --output DP-3 --off --output DP-4 --off --output DP-5 --off --output HDMI-0 --mode 1920x1080 --rate 144.00 --pos 2560x0 --rotate right --output DP-0 --off --output DP-1 --off
-xrandr --output HDMI-0 --mode 1920x1080 --rate 144.0 --pos 0x360 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --primary --mode 2560x1440 --rate 165.0 --pos 1920x0 --rotate normal --output DP-3 --off --output DP-4 --off --output DP-5 --off
+xrandr --output HDMI-0 --mode 1920x1080 --rate 144.0 --pos 0x360 --rotate inverted --output DP-0 --off --output DP-1 --off --output DP-2 --primary --mode 2560x1440 --rate 165.0 --pos 1920x0 --rotate normal --output DP-3 --off --output DP-4 --off --output DP-5 --off
 
 # Set background image
 nitrogen --restore
