@@ -3,18 +3,20 @@ let mapleader=" "
 " PLugins keybinds
 nnoremap <silent> <Leader>t :CocCommand explorer<CR>
 
-" Telescope
+" Telescope files
 nnoremap <silent> <C-P> :Telescope find_files hidden=true<CR>
-inoremap <silent> <C-P> <EsC><C-P>
-vnoremap <silent> <C-P> <EsC><C-P>
-nnoremap <silent> <C-T> :Telescope live_grep<CR>
-inoremap <silent> <C-T> <Esc><C-T>
-vnoremap <silent> <C-T> <Esc><C-T>
+inoremap <silent> <C-P> <Esc>:Telescope find_files hidden=true<CR>
+vnoremap <silent> <C-P> <Esc>:Telescope find_files hidden=true<CR>
 
-" Buffers
-nnoremap <silent> <C-X> :Telescope buffers<CR>
-inoremap <silent> <C-X> <C-X>
-vnoremap <silent> <C-X> <C-X>
+" Telescope words
+nnoremap <silent> <C-T> :Telescope live_grep<CR>
+inoremap <silent> <C-T> <Esc>:Telescope live_grep<CR>
+vnoremap <silent> <C-T> <Esc>:Telescope live_grep<CR>
+
+" Telescope buffers
+nnoremap <silent> <C-X> :Telescope buffers sort_lastused=true<CR>
+inoremap <silent> <C-X> <Esc>:Telescope buffers sort_lastused=true<CR>
+vnoremap <silent> <C-X> <Esc>:Telescope buffers sort_lastused=true<CR>
 
 " Close tab
 nnoremap <silent> <Leader>w :Bdelete<CR>
@@ -68,8 +70,8 @@ vnoremap <Up> gk
 " Move between words adjust
 nnoremap <C-Right> w
 vnoremap <C-Right> w
-nnoremap <C-Left> w
-vnoremap <C-Left> w
+nnoremap <C-Left> b
+vnoremap <C-Left> b
 
 " Backspace adjust
 nnoremap <BS> X
@@ -101,10 +103,6 @@ nnoremap " O<Esc><Down>
 " New line in insert mode
 inoremap <M-CR> <Esc>o
 
-" Multiple cursor
-nnoremap <RightMouse> \\\
-inoremap <RightMouse> <Esc>\\\
-
 " Select all lines
 nnoremap <silent> <C-A> ggVG
 inoremap <silent> <C-A> <Esc><C-A>
@@ -127,8 +125,11 @@ inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<C-g>u\<TAB>"
 nnoremap <silent> <M-;> :call setline('.', getline('.') . ';')<CR>
 inoremap <silent> <M-;> <Esc>:call setline('.', getline('.') . ';')<CR>a
 
-" Go to function definition
+" Coc functions GoTo
 nnoremap <silent> gd <Plug>(coc-definition)
 nnoremap <silent> gy <Plug>(coc-type-definition)
 nnoremap <silent> gi <Plug>(coc-implementation)
 nnoremap <silent> gr <Plug>(coc-references)
+
+" Coc hide normal mode popup
+nnoremap <silent> <Esc> :nohlsearch \| match none \| 2match none \| call coc#float#close_all()<CR>

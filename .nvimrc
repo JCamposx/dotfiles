@@ -18,7 +18,7 @@ set termguicolors
 set cursorline
 set updatetime=1
 set autoindent expandtab ts=4 sw=4
-set colorcolumn=80
+set colorcolumn=81
 
 autocmd User CocNvimInit :CocCommand explorer
 

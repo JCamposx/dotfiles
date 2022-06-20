@@ -7,9 +7,15 @@ colorscheme onedark
 let g:airline_theme='wombat'
 
 " Current line background
-highlight CursorLine guibg=#303030
-highlight Visual guibg=#303030
-highlight ColorColumn guibg=#282828
+highlight CursorLine guibg=#282828
+highlight Visual guibg=#383838
+highlight ColorColumn guibg=#353535
+
+" Coc Custom Theme
+highlight Pmenu guibg=#282828
+" highlight Pmenusel guibg=#dfac3f
+highlight PmenuSbar guibg=#353535
+highlight PmenuThumb guibg=#606060
 
 " Remove termnial background
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
