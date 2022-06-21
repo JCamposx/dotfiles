@@ -47,6 +47,7 @@ symbol = " "
 [java]
 format = "[$symbol($version )]($style)"
 symbol = " "
+style = "red"
 
 [rust]
 format = "[$symbol($version )]($style)"
