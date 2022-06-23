@@ -8,9 +8,6 @@
 
 export PATH=$HOME/.local/bin:$PATH
 
-# Keyboard caps lock dilay disabled
-xkbcomp /home/$USER/.config/.keyboard $DISPLAY
-
 #$HOME/.config/polybar/launch.sh &
 
 #(am-conky-session --autostart) &
