@@ -12,11 +12,10 @@ from .keys import mod, keys
 # nf-dev-terminal, 
 # nf-mdi-server, 
 # nf-dev-database, 
-# nf-oct-git_merge, 
-# nf-mdi-worker, 
+# nf-mdi-file_document, 
 
 groups = [Group(i) for i in [
-    "  ", "  ", "  ", " 力 " ,"  ",
+    "  ", "  ", "  ", " 力 " ,"  ", "  ",
     ]
 ]
 
