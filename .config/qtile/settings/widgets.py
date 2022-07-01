@@ -18,7 +18,7 @@ def separator():
     )
 
 
-def icon(fg='text', bg='dark', fontsize=17, text='?'):
+def icon(fg='text', bg='dark', fontsize=19, text='?'):
     return widget.TextBox(
         **base(fg, bg),
         fontsize=fontsize,
@@ -90,7 +90,7 @@ def primary_widgets():
  
         powerline('dark', 'dark'),
  
-        icon(fg='color4', bg='dark', text=' ', fontsize=18), # nf-dev-aptana
+        icon(fg='color4', bg='dark', text=' '), # nf-dev-aptana
  
         widget.CPU(
             **base(fg='color4', bg='dark'),
@@ -101,7 +101,7 @@ def primary_widgets():
 
         powerline('dark', 'dark'),
 
-        icon(fg='color3', bg='dark', text=' ', fontsize=18),  # Icon: nf-fa-feed
+        icon(fg='color3', bg='dark', text=' '),  # Icon: nf-fa-feed
 
         widget.Net(
             **base(fg='color3', bg='dark'),
@@ -109,7 +109,7 @@ def primary_widgets():
             format='{down}' #Icon: nf-fa-arrow_circle_o_down
         ),
  
-        icon(fg='color3', bg='dark', text='  ', fontsize=18),  # Icon: nf-fa-feed
+        icon(fg='color3', bg='dark', text='  '),  # Icon: nf-fa-feed
  
         widget.Net(
             **base(fg='color3', bg='dark'),
