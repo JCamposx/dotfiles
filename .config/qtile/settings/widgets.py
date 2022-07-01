@@ -149,6 +149,7 @@ def primary_widgets():
         ),
  
         separator(),
+        separator(),
     ]
 
 
