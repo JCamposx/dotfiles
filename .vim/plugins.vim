@@ -32,6 +32,7 @@ Plug 'tpope/vim-surround'
 
 " Themes
 Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 
 " Status bar
 Plug 'vim-airline/vim-airline'

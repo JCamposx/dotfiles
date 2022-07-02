@@ -1,10 +1,14 @@
-" Theme
-let g:onedark_termcolors=256
-let g:onedark_terminal_italics=1
-colorscheme onedark
+" Theme Onedark
+" let g:onedark_termcolors=256
+" let g:onedark_terminal_italics=1
+" colorscheme onedark
+
+" Theme Gruvbox
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
 
 " Status bar
-let g:airline_theme='wombat'
+let g:airline_theme='gruvbox'
 
 " Current line background
 highlight CursorLine guibg=#282828
