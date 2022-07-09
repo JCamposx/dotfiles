@@ -52,10 +52,10 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 
     # Browser
     ([mod], "b", lazy.spawn("chromium")),
-    
+
     # PDF Reader
     ([mod], "p", lazy.spawn("okular")),
-    
+
     # Audio controller
     ([mod], "a", lazy.spawn("pavucontrol")),
 
@@ -64,10 +64,6 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 
     # Terminal
     ([mod], "Return", lazy.spawn("alacritty")),
-
-    # Redshift
-    ([mod], "r", lazy.spawn("redshift -O 4800")),
-    ([mod, "shift"], "r", lazy.spawn("redshift -x")),
 
     # Screenshot
     ([], "Print", lazy.spawn("xfce4-screenshooter -f -c")),
@@ -86,7 +82,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([], "XF86AudioMute", lazy.spawn(
         "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     )),
-    
+
     # Multimedia    
     ([], "XF86AudioPlay", lazy.spawn(
         "playerctl play-pause"
