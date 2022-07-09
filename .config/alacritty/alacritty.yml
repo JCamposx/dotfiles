@@ -37,5 +37,5 @@ scrolling:
 window:
   opacity: 0.85
   padding:
-    x: 10
-    y: 10
+    x: 12
+    y: 12
