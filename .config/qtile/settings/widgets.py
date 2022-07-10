@@ -3,7 +3,7 @@ from .theme import colors
 
 # Get the icons at https://www.nerdfonts.com/cheat-sheet (you need a Nerd Font)
 
-def base(fg='text', bg='dark'): 
+def base(fg='text', bg='dark'):
     return {
         'foreground': colors[fg],
         'background': colors[bg]
@@ -36,7 +36,7 @@ def powerline(fg='light', bg='dark', fontsize=37, padding=-3):
     )
 
 
-def workspaces(icon_fontsize=19, window_name_font_size=16): 
+def workspaces(icon_fontsize=19, window_name_font_size=16):
     return [
         separator(),
         widget.GroupBox(
@@ -71,7 +71,7 @@ def primary_widgets():
         *workspaces(),
 
         separator(),
- 
+
         powerline('dark', 'dark'),
 
         icon(fg='color5', bg='dark', text=' '), # Icon: nf-fa-download
@@ -85,18 +85,18 @@ def primary_widgets():
             update_interval=1800,
             custom_command='checkupdates',
         ),
- 
+
         separator(),
- 
+
         powerline('dark', 'dark'),
- 
+
         icon(fg='color4', bg='dark', text=' '), # nf-dev-aptana
- 
+
         widget.CPU(
             **base(fg='color4', bg='dark'),
             format='{load_percent}%',
         ),
- 
+
         separator(),
 
         powerline('dark', 'dark'),
@@ -108,15 +108,15 @@ def primary_widgets():
             interface='eno1',
             format='{down}' #Icon: nf-fa-arrow_circle_o_down
         ),
- 
+
         icon(fg='color3', bg='dark', text='  '),  # Icon: nf-fa-feed
- 
+
         widget.Net(
             **base(fg='color3', bg='dark'),
             interface='eno1',
             format='{up}' #Icon: nf-fa-arrow_circle_o_up
         ),
- 
+
         separator(),
 
         powerline('dark', 'dark'),
@@ -140,14 +140,14 @@ def primary_widgets():
             **base(fg='color1', bg='dark'),
             format='%d %b %Y %H:%M',
         ),
- 
+
         separator(),
 
         widget.Systray(
             background=colors['dark'],
             padding=5
         ),
- 
+
         separator(),
         separator(),
     ]
@@ -160,7 +160,7 @@ def secondary_widgets():
         separator(),
 
         powerline('dark', 'dark'),
-        
+
         widget.CurrentLayoutIcon(
             **base(fg='color2', bg='dark'),
             scale=0.65,
@@ -168,20 +168,20 @@ def secondary_widgets():
         ),
 
         widget.CurrentLayout(
-        	**base(fg='color2', bg='dark'),
-         	fontsize=14
+            **base(fg='color2', bg='dark'),
+            fontsize=14
          ),
-        
+
         separator(),
 
         powerline('dark', 'dark'),
 
         icon(fg='color1', bg='dark', text=' '), # Icon: nf-mdi-calendar_clock
-        
+
 		widget.Clock(
-      		**base(fg='color1', bg='dark'),
-        	format='%d %b %Y %H:%M',
-         	fontsize=14
+            **base(fg='color1', bg='dark'),
+            format='%d %b %Y %H:%M',
+            fontsize=14
         ),
 
         separator(),
