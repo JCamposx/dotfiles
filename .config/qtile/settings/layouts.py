@@ -7,7 +7,7 @@ from libqtile.config import Match
 
 layout_conf = {
     'border_focus': colors['focus'][0],
-    'border_width': 2,
+    'border_width': 1,
     'margin': 8
 }
 
@@ -51,6 +51,6 @@ floating_layout = layout.Floating(
         ]]
     ],
     border_focus=colors['color5'][0],
-    border_width=2,
+    border_width=1,
     full_screen_border_width=0,
 )
