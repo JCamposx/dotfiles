@@ -6,16 +6,15 @@ from .keys import mod, keys
 
 
 # Get the icons at https://www.nerdfonts.com/cheat-sheet (you need a Nerd Font)
-# Icons: 
-# nf-dev-firefox, 
-# nf-dev-python, 
-# nf-dev-terminal, 
-# nf-mdi-server, 
-# nf-dev-database, 
-# nf-mdi-file_document, 
+# Icons:
+# nf-dev-firefox,
+# nf-dev-python,
+# nf-dev-terminal,
+# nf-mdi-server,
+# nf-mdi-file_document,
 
 groups = [Group(i) for i in [
-    "  ", "  ", "  ", " 力 " ,"  ", "  ",
+    "  ", "  ", "  ", " 力 ", "  ",
     ]
 ]
 

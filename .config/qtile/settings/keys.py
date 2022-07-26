@@ -83,7 +83,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
         "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     )),
 
-    # Multimedia    
+    # Multimedia
     ([], "XF86AudioPlay", lazy.spawn(
         "playerctl play-pause"
     )),
