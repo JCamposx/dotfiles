@@ -9,12 +9,12 @@ from .keys import mod, keys
 # Icons:
 # nf-dev-firefox,
 # nf-dev-python,
+# nf-mdi-file_document,
 # nf-dev-terminal,
 # nf-mdi-server,
-# nf-mdi-file_document,
 
 groups = [Group(i) for i in [
-    "  ", "  ", "  ", " 力 ", "  ",
+    "  ", "  ", "  ", "  ", " 力 ",
     ]
 ]
 
