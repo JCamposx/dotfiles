@@ -50,7 +50,7 @@ def workspaces(icon_fontsize=19, window_name_font_size=16):
             borderwidth=3,
             active=colors['active'],
             inactive=colors['inactive'],
-            block_highlight_text_color='#95d567',
+            block_highlight_text_color=colors['color4'],
             urgent_alert_method='text',
             urgent_text=colors['urgent'],
             this_current_screen_border=colors['focus'],
