@@ -12,10 +12,9 @@ from .keys import mod, keys
 # nf-seti-folder,
 # nf-dev-terminal,
 # nf-dev-database,
-# nf-linux-docker
 
 groups = [Group(i) for i in [
-    "  ", "  ", "  ", "  ", "  ", "  ",
+    "  ", "  ", "  ", "  ", "  ",
     ]
 ]
 
