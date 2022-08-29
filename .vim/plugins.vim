@@ -17,7 +17,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 " Autocomplete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'tag':'v0.0.81', 'branch': 'release'}
 Plug 'mattn/emmet-vim'
 
 " Git
