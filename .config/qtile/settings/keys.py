@@ -11,19 +11,25 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ------------ Window Configs ------------
 
     # Switch between windows in current stack pane
-    ([alt], "Tab", lazy.layout.down()),
-    ([alt, "shift"], "Tab", lazy.layout.up()),
+    ([mod], "j", lazy.layout.down()),
+    ([mod], "k", lazy.layout.up()),
+    ([mod], "h", lazy.layout.left()),
+    ([mod], "l", lazy.layout.right()),
 
     # Change window sizes (MonadTall)
-    ([mod], "l", lazy.layout.grow()),
-    ([mod], "h", lazy.layout.shrink()),
+    ([mod, "shift"], "l", lazy.layout.grow()),
+    ([mod, "shift"], "h", lazy.layout.shrink()),
 
     # Toggle floating
     ([mod, "shift"], "f", lazy.window.toggle_floating()),
 
     # Move windows up or down in current stack
-    ([alt], "w", lazy.layout.shuffle_down()),
-    ([alt], "q", lazy.layout.shuffle_up()),
+    ([mod, "shift"], "j", lazy.layout.shuffle_down()),
+    ([mod, "shift"], "k", lazy.layout.shuffle_up()),
+
+    # Move to next/prev stack
+    ([alt], "Tab", lazy.screen.next_group()),
+    ([alt, "shift"], "Tab", lazy.screen.prev_group()),
 
     # Toggle between different layouts as defined below
     ([mod], "Tab", lazy.next_layout()),
@@ -33,14 +39,14 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "c", lazy.window.kill()),
 
     # Switch focus of monitors
-    ([mod], "k", lazy.next_screen()),
-    ([mod], "j", lazy.prev_screen()),
+    ([mod], "period", lazy.next_screen()),
+    ([mod], "comma", lazy.prev_screen()),
 
     # Restart Qtile
     ([mod, "control"], "r", lazy.restart()),
+
     ([mod, "control"], "q", lazy.shutdown()),
     ([mod], "x", lazy.spawn("archlinux-logout")),
-
 
     # ------------ App Configs ------------
 
