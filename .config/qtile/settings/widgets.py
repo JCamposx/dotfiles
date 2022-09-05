@@ -90,11 +90,11 @@ def primary_widgets():
 
         powerline('dark', 'dark'),
 
-        icon(fg='color4', bg='dark', text=' '), # nf-dev-aptana
+        icon(fg='color4', bg='dark', text='﨎'), # nf-mdi-thermometer
 
-        widget.CPU(
+        widget.NvidiaSensors(
             **base(fg='color4', bg='dark'),
-            format='{load_percent}%',
+            format='{temp}°C',
         ),
 
         separator(),
