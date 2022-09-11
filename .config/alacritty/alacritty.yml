@@ -35,7 +35,7 @@ font:
 scrolling:
   history: 50000
 window:
-  opacity: 0.85
+  opacity: 0.8
   padding:
     x: 10
     y: 10
