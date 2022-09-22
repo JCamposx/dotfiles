@@ -21,7 +21,7 @@ layouts = [
     # layout.Columns(),
     # layout.Tile(),
     # layout.TreeTab(**layout_conf),
-    # layout.Spiral(**layout_conf),
+    layout.Spiral(**layout_conf),
     # layout.VerticalTile(**layout_conf),
     # layout.Zoomy(),
 ]
