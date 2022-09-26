@@ -6,7 +6,7 @@ set number
 set numberwidth=3
 set relativenumber
 set mouse=a
-set clipboard=unnamed
+set clipboard=unnamedplus
 set showcmd
 set showmatch
 set laststatus=2
