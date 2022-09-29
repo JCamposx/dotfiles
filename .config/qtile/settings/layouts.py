@@ -8,6 +8,7 @@ from libqtile.config import Match
 layout_conf = {
     'border_focus': colors['focus'][0],
     'border_width': 1,
+    'border_normal': '#000000',
     'margin': 8
 }
 
@@ -22,7 +23,7 @@ layouts = [
     # layout.Tile(),
     # layout.TreeTab(**layout_conf),
     layout.Spiral(**layout_conf),
-    # layout.VerticalTile(**layout_conf),
+    layout.VerticalTile(**layout_conf),
     # layout.Zoomy(),
 ]
 
