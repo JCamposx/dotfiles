@@ -45,6 +45,7 @@ floating_layout = layout.Floating(
             {'wm_class': 'Arandr'},
             {'wm_class': 'feh'},
             {'wm_class': 'Galculator'},
+            {'wm_class': 'gwe'},
             {'wm_class': 'arcolinux-logout'},
             {'wm_class': 'xfce4-terminal'},
             {'title': 'branchdialog'},
