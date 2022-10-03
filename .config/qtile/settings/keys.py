@@ -59,6 +59,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Browser
     ([mod], "b", lazy.spawn("google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode")),
 
+    # VSCode
+    ([mod], "v", lazy.spawn("code")),
+
     # PDF Reader
     ([mod], "p", lazy.spawn("okular")),
 
