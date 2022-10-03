@@ -22,7 +22,7 @@ layouts = [
     # layout.Columns(),
     # layout.Tile(),
     # layout.TreeTab(**layout_conf),
-    layout.Spiral(**layout_conf),
+    # layout.Spiral(**layout_conf),
     layout.VerticalTile(**layout_conf),
     # layout.Zoomy(),
 ]
@@ -46,6 +46,8 @@ floating_layout = layout.Floating(
             {'wm_class': 'feh'},
             {'wm_class': 'Galculator'},
             {'wm_class': 'gwe'},
+            {'wm_class': 'pcmanfm'},
+            {'wm_class': 'nvidia-settings'},
             {'wm_class': 'arcolinux-logout'},
             {'wm_class': 'xfce4-terminal'},
             {'title': 'branchdialog'},
