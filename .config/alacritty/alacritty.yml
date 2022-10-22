@@ -20,16 +20,16 @@ cursor:
     shape: Beam
 font:
   bold:
-    family: JetBrains Mono ExtraBold Nerd Font
+    family: Caskaydia Cove Nerd Font
     style: Bold
   bold_italic:
     family: monospace
     style: Bold Italic
   italic:
-    family: JetBrains Mono Medium Nerd Font
+    family: Caskaydia Cove Nerd Font
     style: Italic
   normal:
-    family: JetBrains Mono Medium Nerd Font
+    family: Caskaydia Cove Nerd Font
     style: Regular
   size: 10.5
 scrolling:
