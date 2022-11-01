@@ -82,7 +82,7 @@ def primary_widgets():
             colour_no_updates=colors['color5'],
             no_update_string='N/A',
             display_format='{updates}',
-            update_interval=1800,
+            update_interval=10,
             custom_command='checkupdates',
         ),
 

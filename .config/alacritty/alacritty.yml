@@ -2,11 +2,11 @@ colors:
   normal:
     black: '#1e2127'
     blue: '#61afef'
-    cyan: '#56b6c2'
-    green: '#98c379'
-    magenta: '#c678dd'
-    red: '#f07178'
-    white: '#e6efff'
+    cyan: '#2bbac5'
+    green: '#89ca78'
+    magenta: '#d55fde'
+    red: '#ef596f'
+    white: '#abb2bf'
     yellow: '#d19a66'
   primary:
     background: '#050505'
@@ -37,5 +37,5 @@ scrolling:
 window:
   opacity: 0.8
   padding:
-    x: 10
-    y: 10
+    x: 5
+    y: 5
