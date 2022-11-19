@@ -12,7 +12,6 @@ vim.api.nvim_set_keymap("n", "<Leader><Esc>", ":ToggleTerm size=50 direction=ver
 
 -- Toggle terminal in term mode
 vim.api.nvim_set_keymap("t", "<A-Esc>", "<C-\\><C-n>:ToggleTerm<CR>", opts)
-vim.api.nvim_set_keymap("t", "<Leader><Esc>", "<C-\\><C-n>:ToggleTerm<CR>", opts)
 vim.api.nvim_set_keymap("t", "<C-q>", "<C-\\><C-n>:ToggleTerm<CR>", opts)
 
 -- Move between split tabs in term mode
@@ -23,3 +22,9 @@ vim.api.nvim_set_keymap("t", "<C-l>", "<C-\\><C-n>:wincmd l<CR>", opts)
 
 -- Terminal to normal mode
 vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", opts)
+
+-- Clear terminal
+vim.api.nvim_set_keymap("t", "<C-l>", "clear<CR>", opts)
+
+-- Disable leader on term mode
+vim.api.nvim_set_keymap("t", "<Leader>", " ", opts)
