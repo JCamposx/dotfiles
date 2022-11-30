@@ -52,7 +52,7 @@ windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace
 
 myStartupHook :: X ()
 myStartupHook = do
-    spawnOnce "trayer --edge top --monitor 0 --widthtype request --width 50 --heighttype pixel --height 17 --align right --transparent true --tint 0x050505 --iconspacing 6 --distance 7 --padding 5 &"
+    spawnOnce "trayer --edge top --monitor 0 --widthtype request --width 30 --heighttype pixel --height 14 --align right --transparent true --alpha 0 --tint 0x050505 --iconspacing 4 --distance 7 --padding 4 &"
     setWMName "LG3D"
 
 mySpacing :: Integer -> l a -> XMonad.Layout.LayoutModifier.ModifiedLayout Spacing l a
