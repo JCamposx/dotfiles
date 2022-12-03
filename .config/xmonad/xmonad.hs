@@ -180,7 +180,7 @@ myKeys =
     ("M-S-m", spawn "rofi -show"),
 
     -- Browser
-    ("M-b", spawn "google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode"),
+    ("M-b", spawn "brave"),
 
     -- VSCode
     ("M-v", spawn "code"),

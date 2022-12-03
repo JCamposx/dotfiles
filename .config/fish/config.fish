@@ -16,7 +16,7 @@ starship init fish | source
 
 # Env variables
 export EDITOR=nvim
-export BROWSER=google-chrome-stable
+export BROWSER=brave
 export CLIPMAN_IMG=$HOME/.cache/xfce4/clipman/image0.png
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 export FZF_DEFAULT_COMMAND='find -L'
