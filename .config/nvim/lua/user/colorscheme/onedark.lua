@@ -46,6 +46,6 @@ require("onedarkpro").setup({
   }
 })
 
-vim.cmd("colorscheme onedarkpro")
+vim.cmd("colorscheme onedark_vivid")
 
 vim.cmd("highlight NvimTreeOpenedFolderName guifg=#61afef")
