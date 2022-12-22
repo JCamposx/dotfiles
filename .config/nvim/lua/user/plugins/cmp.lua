@@ -1,8 +1,8 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
 
-luasnip.filetype_extend("mysql", {"sql"})
-luasnip.filetype_extend("blade", {"html"})
+luasnip.filetype_extend("mysql", { "sql" })
+luasnip.filetype_extend("blade", { "html" })
 
 require("luasnip.loaders.from_vscode").lazy_load()
 
