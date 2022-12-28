@@ -242,10 +242,10 @@ myManageHook = composeAll
   , className =? "Cpupower-gui"     --> doCenterFloat
   , className =? "Nvidia-settings"  --> doCenterFloat
   , className =? "Galculator"       --> doCenterFloat
-  , className =? "Pavucontrol"       --> doCenterFloat
+  , className =? "Pavucontrol"      --> doCenterFloat
 
   , title =? "Open Folder"          --> doCenterFloat
-  , title =? "Pantalla en pantalla" --> doCenterFloat
+  , title =? "Pantalla en pantalla" --> doFloat
   , title =? "zoom"                 --> doCenterFloat
 
   -- , className =? "Google-chrome"    --> doShift ( myWorkspaces !! 4 )
