@@ -20,10 +20,6 @@ not_executable_symbol = ""
 sigint_symbol = "ﭦ"
 map_symbol = true
 
-[character]
-success_symbol = "[➜](bold green)"
-error_symbol = "[➜](bold red)"
-
 [git_branch]
 format = "[$symbol$branch]($style) "
 symbol = " "
