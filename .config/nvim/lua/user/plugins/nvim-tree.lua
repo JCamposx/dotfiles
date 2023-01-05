@@ -2,7 +2,6 @@
 
 local opts = { noremap = true, silent = true, nowait = true }
 
--- Toggle NvimTree
 vim.api.nvim_set_keymap("n", "<Leader>tt", ":NvimTreeToggle<CR>", opts)
 vim.api.nvim_set_keymap("v", "<Leader>tt", "<Esc>:NvimTreeToggle<CR>", opts)
 vim.api.nvim_set_keymap("t", "<Leader>tt", "<C-\\><C-n>:NvimTreeToggle<CR>a", opts)
