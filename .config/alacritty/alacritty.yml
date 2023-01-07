@@ -16,8 +16,6 @@ cursor:
   style:
     blinking: Never
     shape: Beam
-  vi_mode_style:
-    shape: Beam
 font:
   bold:
     family: Caskaydia Cove Nerd Font
