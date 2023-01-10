@@ -12,7 +12,6 @@ local servers = {
   "sqlls",
   "tsserver",
   "vimls",
-  "vuels",
 }
 
 local navic = require("nvim-navic")
