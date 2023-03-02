@@ -11,7 +11,7 @@ Config {
     position = TopH 28,
     commands = [
         Run Date "  %d %b %Y %H:%M" "date" 600,
-        Run Network "eno1" ["-t", " <rx>kb  <tx>kb"] 10,
+        Run Network "eno1" ["-t", "  <rx>kb   <tx>kb"] 10,
         Run Cpu ["-t", " <total>%"] 10,
         Run Memory ["-t", "  <used>M"] 10,
         Run Com "bash" ["-c", "checkupdates | wc -l"] "updates" 10,
