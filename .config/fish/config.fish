@@ -22,3 +22,9 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 export FZF_DEFAULT_COMMAND='find -L'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+export ANDROID_HOME="$HOME/Android/Sdk"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/tools"
+export PATH="$PATH:$ANDROID_HOME/tools/bin"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
