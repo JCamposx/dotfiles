@@ -57,3 +57,11 @@ nitrogen --restore
 
 # Picom
 picom -b --config ~/.config/picom.conf &
+
+# Nvidia fan control
+nvidia-settings -a '[gpu:0]/GPUFanControlState=1'
+nvidia-settings -a '[fan:0]/GPUTargetFanSpeed=30'
+nvidia-settings -a '[fan:1]/GPUTargetFanSpeed=30'
+
+# Set cpupower-gui to default profile
+cpupower-gui config
