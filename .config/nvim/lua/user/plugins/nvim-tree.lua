@@ -11,7 +11,7 @@ vim.api.nvim_set_keymap("t", "<Leader>tt", "<C-\\><C-n>:NvimTreeToggle<CR>a", op
 local tree_cb = require("nvim-tree.config").nvim_tree_callback
 
 require("nvim-tree").setup({
-  open_on_setup = true,
+  -- open_on_setup = true, -- deprecated
   hijack_cursor = true,
   actions = {
     open_file = {

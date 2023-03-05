@@ -8,7 +8,7 @@ local servers = {
   "jsonls",
   "marksman",
   "pyright",
-  "sumneko_lua",
+  "lua_ls",
   "sqlls",
   "tsserver",
   "vimls",
