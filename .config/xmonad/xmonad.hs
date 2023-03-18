@@ -1,5 +1,3 @@
-{-# OPTIONS_GHC -Wno-deprecations #-}
-
 -- Data
 import Data.Monoid
 import Data.Tree
@@ -16,11 +14,13 @@ import XMonad.Actions.UpdatePointer
 import XMonad.Hooks.DynamicLog (PP (..), dynamicLogWithPP, shorten, wrap, xmobarColor, xmobarPP)
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.FadeInactive
-import XMonad.Hooks.ManageDocks (ToggleStruts (..), avoidStruts, docksEventHook, manageDocks)
+import XMonad.Hooks.ManageDocks (ToggleStruts (..), avoidStruts, docks, manageDocks)
 import XMonad.Hooks.ManageHelpers (doFullFloat, isFullscreen, doCenterFloat, isDialog)
 import XMonad.Hooks.SetWMName
 import XMonad.Hooks.WorkspaceHistory
 import XMonad.Hooks.InsertPosition
+import XMonad.Layout.TrackFloating
+import XMonad.Hooks.RefocusLast (refocusLastLayoutHook, refocusLastWhen, isFloat)
 
 -- Layouts
 import XMonad.Layout.GridVariants(Grid (Grid))
@@ -81,7 +81,8 @@ floats = renamed [Replace "floats"] $ limitWindows 20 simplestFloat
 
 -- Layout hook
 
-myLayoutHook = avoidStruts
+myLayoutHook = refocusLastLayoutHook . trackFloating
+    $ avoidStruts
     $ smartBorders
     $ mouseResize
     $ windowArrange
@@ -248,8 +249,6 @@ myManageHook = composeAll
   , title =? "Pantalla en pantalla" --> doFloat
   , title =? "zoom"                 --> doCenterFloat
 
-  -- , className =? "Google-chrome"    --> doShift ( myWorkspaces !! 4 )
-
   , isFullscreen                    -->  doFullFloat
   , isDialog                        -->  doCenterFloat <+> insertPosition Master Newer
   , className =? "polkit-gnome-authentication-agent-1" --> doCenterFloat <+> insertPosition Master Newer
@@ -271,9 +270,8 @@ main = do
     xmobarMonitor1 <- spawnPipe "xmobar -x 0 ~/.config/xmobar/primary.hs"
     xmobarMonitor2 <- spawnPipe "xmobar -x 1 ~/.config/xmobar/secondary.hs"
     -- Xmonad
-    xmonad $ ewmh def {
+    xmonad $ docks . ewmh $ def {
         manageHook = myManageHook <+> manageDocks <+> insertPosition Below Newer,
-        handleEventHook = docksEventHook,
         modMask = myModMask,
         terminal = myTerminal,
         startupHook = myStartupHook,
