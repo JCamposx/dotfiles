@@ -1,3 +1,26 @@
+if not vim.g.vscode then
+  require("user.colorscheme")
+
+  require("user.plugins.barbar")
+  require("user.plugins.gitsigns")
+  require("user.plugins.cmp")
+
+  require("user.plugins.illuminate")
+  require("user.plugins.indent-blankline")
+
+  require("user.plugins.lualine")
+  require("user.plugins.neogen")
+  require("user.plugins.null-ls")
+  require("user.plugins.nvim-autoapirs")
+  require("user.plugins.nvim-tree")
+  require("user.plugins.notify")
+  require("user.plugins.telescope")
+  require("user.plugins.toggleterm")
+  require("user.plugins.treesitter")
+
+  require("user.lsp")
+end
+
 vim.cmd([[
   augroup VimOptions
     set laststatus=3

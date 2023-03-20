@@ -59,15 +59,6 @@ packer.startup(function(use)
     requires = { "rafamadriz/friendly-snippets" },
   })
 
-  use({
-    "kristijanhusak/vim-dadbod-ui",
-    requires = {
-      "tpope/vim-dadbod",
-      "kristijanhusak/vim-dadbod-completion",
-      "tpope/vim-dotenv",
-    },
-  })
-
   use({ "SmiteshP/nvim-navic" })
 
   use({ "RRethy/vim-illuminate" })
