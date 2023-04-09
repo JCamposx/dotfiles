@@ -5,7 +5,6 @@ if not vim.g.vscode then
   require("user.plugins.gitsigns")
   require("user.plugins.cmp")
 
-  require("user.plugins.illuminate")
   require("user.plugins.indent-blankline")
 
   require("user.plugins.lualine")
