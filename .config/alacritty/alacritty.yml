@@ -29,7 +29,7 @@ font:
   normal:
     family: Caskaydia Cove Nerd Font
     style: Regular
-  size: 8.5
+  size: 9
 scrolling:
   history: 50000
 window:
