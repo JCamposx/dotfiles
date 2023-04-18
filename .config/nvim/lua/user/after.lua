@@ -24,19 +24,19 @@ vim.cmd([[
   augroup VimOptions
     set laststatus=3
 
-    highlight Visual guibg=#323844
+    highlight Visual guibg=#272e3b
 
-    highlight ColorColumn guibg=#1e2227
+    highlight ColorColumn guibg=#1f2229
 
-    highlight CursorLine guibg=#252a33
-    highlight CursorLineNr guibg=#252a33 guifg=#e4e4e4
-    highlight CursorLineNrNC guibg=#252a33
+    highlight CursorLine guibg=#1f2329
+    highlight CursorLineNr guibg=#1f2329 guifg=#e4e4e4
+    highlight CursorLineNrNC guibg=#1f2329
 
     highlight ExtraWhitespace guibg=#5a0d0d
 
-    highlight IlluminatedWordText guibg=#282c36
-    highlight IlluminatedWordRead guibg=#282c36
-    highlight IlluminatedWordWrite guibg=#282c36
+    highlight IlluminatedWordText guibg=underline
+    highlight IlluminatedWordRead guibg=underline
+    highlight IlluminatedWordWrite guibg=underline
 
     autocmd BufNewFile,BufRead *.lock set ft=json
 
