@@ -101,6 +101,8 @@ packer.startup(function(use)
 
   use({ "olimorris/onedarkpro.nvim" })
 
+  use({ "NvChad/nvim-colorizer.lua" })
+
   use({
     "romgrk/barbar.nvim",
     requires = { "kyazdani42/nvim-web-devicons" },

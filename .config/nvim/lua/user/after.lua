@@ -6,6 +6,7 @@ if not vim.g.vscode then
   require("user.plugins.cmp")
 
   require("user.plugins.indent-blankline")
+  require("user.plugins.colorizer")
 
   require("user.plugins.lualine")
   require("user.plugins.neogen")
