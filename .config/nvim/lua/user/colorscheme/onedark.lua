@@ -31,7 +31,7 @@ require("onedarkpro").setup({
     operators = "NONE", -- Style that is applied to operators
     variables = "NONE", -- Style that is applied to variables
     conditionals = "NONE", -- Style that is applied to conditionals
-    virtual_text = "NONE", -- Style that is applied to virtual text
+    virtual_text = "italic", -- Style that is applied to virtual text
   },
   options = {
     bold = false, -- Use bold styles?

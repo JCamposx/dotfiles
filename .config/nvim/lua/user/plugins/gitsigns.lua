@@ -1,5 +1,12 @@
 require("gitsigns").setup({
-  current_line_blame_formatter = "● <author>, <summary>, <author_time:%d/%m/%Y>",
+  current_line_blame_formatter = "   <author>, <author_time:%d/%m/%Y>  <summary>",
+  current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
+  current_line_blame_opts = {
+    virt_text = true,
+    virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
+    delay = 250,
+    ignore_whitespace = false,
+  },
   on_attach = function(bufnr)
     local gs = package.loaded.gitsigns
 

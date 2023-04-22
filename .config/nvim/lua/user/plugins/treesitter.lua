@@ -48,4 +48,27 @@ require("nvim-treesitter.configs").setup({
     enable = true,
     enable_autocmd = true,
   },
+
+  autotag = {
+    enable = true,
+    filetypes = {
+      'html',
+      'javascript',
+      'javascriptreact',
+      'typescript',
+      'typescriptreact',
+      'svelte',
+      'vue',
+      'tsx',
+      'jsx',
+      'rescript',
+      'xml',
+      'php',
+      'markdown',
+      'astro',
+      'glimmer',
+      'handlebars',
+      'hbs',
+    }
+  }
 })

@@ -7,14 +7,14 @@ local colors = {
   bg       = '#202328',
   fg       = '#BBBBBB',
   yellow   = '#ECBE7B',
-  cyan     = '#008080',
+  cyan     = '#2BBAC5',
   darkblue = '#081633',
   green    = '#98BE65',
   orange   = '#FF8800',
-  violet   = '#A9A1E1',
-  magenta  = '#C678DD',
-  blue     = '#51AFEF',
-  red      = '#EC5F67',
+  violet   = '#D55FDE',
+  magenta  = '#D55FDE',
+  blue     = '#61AFEF',
+  red      = '#EF596F',
 }
 
 local conditions = {

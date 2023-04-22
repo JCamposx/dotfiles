@@ -12,10 +12,16 @@ vim.api.nvim_set_keymap("n", "<C-t>", ":Telescope live_grep<CR>", opts)
 vim.api.nvim_set_keymap("i", "<C-t>", "<Esc>:Telescope live_grep<CR>", opts)
 vim.api.nvim_set_keymap("v", "<C-t>", "<Esc>:Telescope live_grep<CR>", opts)
 
+-- Live grep word under cursor
+vim.api.nvim_set_keymap("n", "<C-f>", ":Telescope grep_string search=<C-r><C-w><CR>", opts)
+vim.api.nvim_set_keymap("i", "<C-f>", "<Esc>:Telescope grep_string search=<C-r><C-w><CR>", opts)
+vim.api.nvim_set_keymap("v", "<C-f>", "<Esc>:Telescope grep_string search=<C-r><C-w><CR>", opts)
+
 -- Buffers
 vim.api.nvim_set_keymap("n", "<C-x>", ":Telescope buffers sort_lastused=true<CR>", opts)
 vim.api.nvim_set_keymap("i", "<C-x>", "<Esc>:Telescope buffers sort_lastused=true<CR>", opts)
 vim.api.nvim_set_keymap("v", "<C-x>", "<Esc>:Telescope buffers sort_lastused=true<CR>", opts)
+
 
 -- Setup
 

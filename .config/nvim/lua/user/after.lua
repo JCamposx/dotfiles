@@ -40,9 +40,11 @@ vim.cmd([[
     highlight IlluminatedWordWrite guibg=underline
 
     autocmd BufNewFile,BufRead *.lock set ft=json
+    autocmd BufNewFile,BufRead *.env.* set ft=sh
 
     autocmd FileType php set tabstop=4 shiftwidth=4 softtabstop=4
     autocmd FileType blade set tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd FileType json set tabstop=2 shiftwidth=2 softtabstop=2
 
     autocmd FileType * vnoremap <nowait> <buffer> [ <Esc>`>a]<Esc>`<i[<Esc>lvwh]
     autocmd FileType * set formatoptions-=ro | set colorcolumn=81 | set autoindent

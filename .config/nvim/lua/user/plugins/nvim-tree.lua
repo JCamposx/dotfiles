@@ -2,9 +2,9 @@
 
 local opts = { noremap = true, silent = true, nowait = true }
 
-vim.api.nvim_set_keymap("n", "<Leader>tt", ":NvimTreeToggle<CR>", opts)
-vim.api.nvim_set_keymap("v", "<Leader>tt", "<Esc>:NvimTreeToggle<CR>", opts)
-vim.api.nvim_set_keymap("t", "<Leader>tt", "<C-\\><C-n>:NvimTreeToggle<CR>a", opts)
+vim.api.nvim_set_keymap("n", "<Leader>b", ":NvimTreeToggle<CR>", opts)
+vim.api.nvim_set_keymap("v", "<Leader>b", "<Esc>:NvimTreeToggle<CR>", opts)
+vim.api.nvim_set_keymap("t", "<Leader>b", "<C-\\><C-n>:NvimTreeToggle<CR>a", opts)
 
 -- Setup
 
@@ -45,13 +45,13 @@ require("nvim-tree").setup({
     indent_markers = {
       enable = true,
       inline_arrows = true,
-      icons = {
-        corner = "└",
-        edge = "│",
-        item = "│",
-        bottom = "─",
-        none = " ",
-      },
+      -- icons = {
+      --   corner = "└",
+      --   edge = "│",
+      --   item = "│",
+      --   bottom = "─",
+      --   none = " ",
+      -- },
     },
     icons = {
       glyphs = {

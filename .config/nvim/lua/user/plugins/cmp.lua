@@ -3,6 +3,8 @@ local luasnip = require("luasnip")
 
 luasnip.filetype_extend("mysql", { "sql" })
 luasnip.filetype_extend("blade", { "html" })
+luasnip.filetype_extend("javascript", { "javascriptreact" })
+luasnip.filetype_extend("javascript", { "html" })
 
 require("luasnip.loaders.from_vscode").lazy_load()
 

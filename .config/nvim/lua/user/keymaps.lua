@@ -24,9 +24,6 @@ keymap("v", "<C-z>", "<Esc>ugv")
 keymap("i", "<C-r>", "<Esc><C-r>i")
 keymap("v", "<C-r>", "<Esc><C-r><CR>gv")
 
--- Open last closed buffer
-keymap("n", "<Leader>\\", ":vsplit# | :wincmd l | :q<CR>")
-
 -- Unmap page up/down
 keymap("n", "<PageUp>", "<Nop>")
 keymap("n", "<PageDown>", "<Nop>")
@@ -35,18 +32,19 @@ keymap("i", "<PageDown>", "<Nop>")
 keymap("v", "<PageUp>", "<Nop>")
 keymap("v", "<PageDown>", "<Nop>")
 
--- Unmap record macro
-keymap("n", "q", "<Nop>")
-keymap("v", "q", "<Nop>")
-keymap("v", "qq", "<Nop>")
-
 -- Delete word before cursor
 keymap("n", "<C-w>", "a<C-w><Esc>")
+
+-- Delete word after cursor
+keymap("n", "<A-d>", "dw")
+keymap("n", "<A-D>", "dw")
+keymap("i", "<A-d>", "<Esc>ldwi")
+keymap("i", "<A-D>", "<Esc>ldwi")
 
 -- Go to next line
 keymap("i", "<A-CR>", "<Esc>o")
 
--- Horizontal mouse scroll adjust
+-- Horizontal mouse scroll adjustment
 keymap("i", "<S-ScrollWheelUp>", "<Esc>2zha")
 keymap("i", "<S-ScrollWheelDown>", "<Esc>2zla")
 keymap("n", "<S-ScrollWheelUp>", "2zh")
@@ -54,7 +52,7 @@ keymap("n", "<S-ScrollWheelDown>", "2zl")
 keymap("v", "<S-ScrollWheelUp>", "2zh")
 keymap("v", "<S-ScrollWheelDown>", "2zh")
 
--- Vertical mouse scroll adjust
+-- Vertical mouse scroll adjustment
 keymap("i", "<ScrollWheelUp>", "<Esc>2<C-y>a")
 keymap("i", "<ScrollWheelDown>", "<Esc>2<C-e>a")
 keymap("n", "<ScrollWheelUp>", "2<C-y>")
@@ -62,18 +60,12 @@ keymap("n", "<ScrollWheelDown>", "2<C-e>")
 keymap("v", "<ScrollWheelUp>", "2<C-y>")
 keymap("v", "<ScrollWheelDown>", "2<C-e>")
 
--- Surround mouse selection
+-- Surround visual mode selection
 keymap("v", '"', '<Esc>`>a"<Esc>`<i"<Esc>`>ll')
 keymap("v", "'", "<Esc>`>a'<Esc>`<i'<Esc>`>ll")
 keymap("v", "`", "<Esc>`>a`<Esc>`<i`<Esc>`>ll")
 keymap("v", "(", "<Esc>`>a)<Esc>`<i(<Esc>`>ll")
 keymap("v", "{", "<Esc>`>a}<Esc>`<i{<Esc>`>ll")
-
--- Delete word after cursor
-keymap("n", "<A-d>", "dw")
-keymap("n", "<A-D>", "dw")
-keymap("i", "<A-d>", "<Esc>ldwi")
-keymap("i", "<A-D>", "<Esc>ldwi")
 
 -- Tab lines
 keymap("n", ">", ">>")
@@ -128,3 +120,12 @@ keymap("n", "<Leader>hh", ":noh<CR>")
 -- Quick ; at the end of line
 keymap("n", "<A-;>", ":call setline('.', getline('.') . ';')<CR>")
 keymap("i", "<A-;>", "<Esc>:call setline('.', getline('.') . ';')<CR>a")
+
+-- Quick ; at the end of line
+keymap("n", "<A-,>", ":call setline('.', getline('.') . ',')<CR>")
+keymap("i", "<A-,>", "<Esc>:call setline('.', getline('.') . ',')<CR>a")
+
+-- Select all ocurrences of one word with visual-multi
+keymap("n", "<F2>", "<Plug>(VM-Select-All)")
+keymap("i", "<F2>", "<ESC><Plug>(VM-Select-All)")
+keymap("v", "<F2>", "<ESC><Plug>(VM-Select-All)")
