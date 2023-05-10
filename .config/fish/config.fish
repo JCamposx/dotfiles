@@ -7,9 +7,9 @@ alias ls "exa --group-directories-first"
 alias la "exa -a --group-directories-first --header --long"
 alias tree "exa -T"
 alias dotfiles "git --git-dir $HOME/.dotfiles/ --work-tree $HOME"
-alias vim nvim
+alias vim "nvim"
 alias rm "rm -i"
-alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+alias sail "[ -f sail ] && bash sail || bash vendor/bin/sail"
 
 # Prompt
 starship init fish | source
