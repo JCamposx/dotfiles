@@ -2,7 +2,7 @@ set fish_greeting ""
 
 # Aliases
 alias grep "grep --color=auto"
-alias cat "bat --style=plain --paging=never"
+alias cat "bat"
 alias ls "exa --group-directories-first"
 alias la "exa -a --group-directories-first --header --long"
 alias tree "exa -T"
