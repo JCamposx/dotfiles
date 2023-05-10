@@ -9,7 +9,7 @@ colors:
     white: '#abb2bf'
     yellow: '#d19a66'
   bright:
-    black: '#1e2127'
+    # black: '#1e2127'
     blue: '#61afef'
     cyan: '#2bbac5'
     green: '#89ca78'
@@ -34,6 +34,8 @@ cursor:
   style:
     blinking: Never
     shape: Beam
+mouse:
+  hide_when_typing: true
 font:
   bold:
     family: Caskaydia Cove Nerd Font
