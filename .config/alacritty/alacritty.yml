@@ -49,7 +49,7 @@ font:
   normal:
     family: Caskaydia Cove Nerd Font
     style: Regular
-  size: 9
+  size: 10.5
 scrolling:
   history: 50000
 window:
@@ -57,3 +57,5 @@ window:
   padding:
     x: 4
     y: 4
+env:
+  WINIT_X11_SCALE_FACTOR: '1'
