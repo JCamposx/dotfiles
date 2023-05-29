@@ -193,7 +193,7 @@ myKeys =
     ("M-a", spawn "pavucontrol"),
 
     -- File explorer
-    ("M-e", spawn "pcmanfm"),
+    ("M-e", spawn "thunar"),
 
     -- Terminal
     ("M-<Return>", spawn myTerminal),
@@ -238,7 +238,7 @@ myManageHook = composeAll
 
   , className =? "Arandr"           --> doCenterFloat
   , className =? "feh"              --> doCenterFloat
-  , className =? "Pcmanfm"          --> doCenterFloat
+  , className =? "Thunar"           --> doCenterFloat
   , className =? "Gwe"              --> doCenterFloat
   , className =? "Cpupower-gui"     --> doCenterFloat
   , className =? "Nvidia-settings"  --> doCenterFloat
@@ -246,7 +246,7 @@ myManageHook = composeAll
   , className =? "Pavucontrol"      --> doCenterFloat
 
   , title =? "Open Folder"          --> doCenterFloat
-  , title =? "Pantalla en pantalla" --> doFloat
+  , title =? "Picture in picture"   --> doFloat
   , title =? "zoom"                 --> doCenterFloat
 
   , isFullscreen                    -->  doFullFloat
