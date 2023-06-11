@@ -161,10 +161,10 @@ myKeys =
     ("M-<Space>", sendMessage (MT.Toggle NBFULL) >> sendMessage ToggleStruts),
 
     -- Shrink horizontal window width
-    ("M-S-h", sendMessage Shrink),
+    ("M-C-h", sendMessage Shrink),
 
     -- Expand horizontal window width
-    ("M-S-l", sendMessage Expand),
+    ("M-C-l", sendMessage Expand),
 
     -- Shrink vertical window width
     ("M-C-j", sendMessage MirrorShrink),
@@ -194,6 +194,12 @@ myKeys =
 
     -- File explorer
     ("M-e", spawn "thunar"),
+
+    -- Task manager
+    ("M-h", spawn "alacritty -e htop"),
+
+    -- Task manager
+    ("M-l", spawn "feh -Z $CLIPMAN_IMG"),
 
     -- Terminal
     ("M-<Return>", spawn myTerminal),
