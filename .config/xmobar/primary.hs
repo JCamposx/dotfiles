@@ -2,7 +2,7 @@
 
 Config {
     font = "UbuntuMono Nerd Font Bold 11",
-    bgColor = "#050505",
+    bgColor = "#111318",
     fgColor = "#EF596F",
     lowerOnStart = True,
     hideOnStart = False,
