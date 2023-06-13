@@ -27,7 +27,7 @@ colors:
     white: '#abb2bf'
     yellow: '#d19a66'
   primary:
-    background: '#050505'
+    background: '#111318'
     bright_foreground: '#e6efff'
     foreground: '#abb2bf'
 cursor:
@@ -53,7 +53,7 @@ font:
 scrolling:
   history: 50000
 window:
-  opacity: 0.8
+  opacity: 0.975
   padding:
     x: 4
     y: 4
