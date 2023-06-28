@@ -14,13 +14,6 @@ alias sail "[ -f sail ] && bash sail || bash vendor/bin/sail"
 # Prompt
 starship init fish | source
 
-# Transient prompt
-function starship_transient_prompt_func
-  starship module add_newline
-end
-
-enable_transience
-
 # Env variables
 export EDITOR=nvim
 export BROWSER=brave
