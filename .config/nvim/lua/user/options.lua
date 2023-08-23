@@ -38,6 +38,8 @@ local options = {
   swapfile = false,
   autoread = true,
   updatetime = 100,
+  spr = true,
+  sb = true,
 }
 
 vim.opt.matchpairs:append("<:>")

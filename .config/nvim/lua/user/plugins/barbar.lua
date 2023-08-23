@@ -30,24 +30,6 @@ map("n", "<A-c>", "<Cmd>BufferClose<CR>", opts)
 -- Magic buffer-picking mode
 -- map('n', '<C-p>', '<Cmd>BufferPick<CR>', opts)
 
-vim.api.nvim_create_autocmd("BufWinEnter", {
-  pattern = "*",
-  callback = function()
-    if vim.bo.filetype == "NvimTree" then
-      require("bufferline.api").set_offset(31, "FileTree")
-    end
-  end,
-})
-
-vim.api.nvim_create_autocmd("BufWinLeave", {
-  pattern = "*",
-  callback = function()
-    if vim.fn.expand("<afile>"):match("NvimTree") then
-      require("bufferline.api").set_offset(0)
-    end
-  end,
-})
-
 require("bufferline").setup({
   -- Enable/disable animations
   animation = false,
@@ -115,4 +97,8 @@ require("bufferline").setup({
   -- Sets the name of unnamed buffers. By default format is "[Buffer X]"
   -- where X is the buffer number. But only a static string is accepted here.
   no_name_title = nil,
+
+  sidebar_filetypes = {
+    NvimTree = true,
+  },
 })
