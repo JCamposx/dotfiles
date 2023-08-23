@@ -1,5 +1,3 @@
-set fish_greeting ""
-
 # Aliases
 alias grep "grep --color=auto"
 alias cat "bat"
@@ -10,6 +8,7 @@ alias dotfiles "git --git-dir $HOME/.dotfiles/ --work-tree $HOME"
 alias vim "nvim"
 alias rm "rm -i"
 alias sail "[ -f sail ] && bash sail || bash vendor/bin/sail"
+alias pvm "source $HOME/.local/bin/pvm"
 
 # Prompt
 starship init fish | source
