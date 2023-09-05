@@ -186,9 +186,6 @@ myKeys =
     -- VSCode
     ("M-v", spawn "code"),
 
-    -- PDF Reader
-    ("M-p", spawn "okular"),
-
     -- Audio controller
     ("M-a", spawn "pavucontrol"),
 
