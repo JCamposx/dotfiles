@@ -83,7 +83,10 @@ packer.startup(function(use)
 
   use({ "ntpeters/vim-better-whitespace" })
 
-  use({ "lukas-reineke/indent-blankline.nvim" })
+  use({
+    "lukas-reineke/indent-blankline.nvim",
+    commit = "9637670",
+  })
 
   use({ "windwp/nvim-autopairs" })
 
