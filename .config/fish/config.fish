@@ -17,9 +17,11 @@ starship init fish | source
 export EDITOR=nvim
 export BROWSER=brave
 export CLIPMAN_IMG=$HOME/.cache/xfce4/clipman/image0.png
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
-export FZF_DEFAULT_COMMAND='find -L'
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
+export FZF_DEFAULT_COMMAND="fd --type d --hidden"
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
+export FZF_ALT_C_COMMAND=$FZF_DEFAULT_COMMAND
+
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 export ANDROID_HOME="$HOME/.config/Android/Sdk"
