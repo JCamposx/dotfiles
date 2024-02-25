@@ -13,6 +13,13 @@ alias pvm "source $HOME/.local/bin/pvm"
 # Prompt
 starship init fish | source
 
+# Transient prompt
+function starship_transient_prompt_func
+  echo \n
+end
+
+enable_transience
+
 # Env variables
 export EDITOR=nvim
 export BROWSER=brave
