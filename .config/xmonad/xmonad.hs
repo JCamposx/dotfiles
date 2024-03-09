@@ -19,7 +19,7 @@ import XMonad.Hooks.ManageHelpers (doFullFloat, isFullscreen, doCenterFloat, isD
 import XMonad.Hooks.SetWMName
 import XMonad.Hooks.WorkspaceHistory
 import XMonad.Hooks.InsertPosition
-import XMonad.Layout.TrackFloating
+import XMonad.Layout.FocusTracking
 import XMonad.Hooks.RefocusLast (refocusLastLayoutHook, refocusLastWhen, isFloat)
 
 -- Layouts
@@ -81,7 +81,7 @@ floats = renamed [Replace "floats"] $ limitWindows 20 simplestFloat
 
 -- Layout hook
 
-myLayoutHook = refocusLastLayoutHook . trackFloating
+myLayoutHook = refocusLastLayoutHook . focusTracking
     $ avoidStruts
     $ smartBorders
     $ mouseResize
