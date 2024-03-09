@@ -1,7 +1,7 @@
 -- http://projects.haskell.org/xmobar/
 
 Config {
-    font = "UbuntuMono Nerd Font Bold 11",
+    font = "UbuntuMono Nerd Font Bold 10",
     bgColor = "#111318",
     fgColor = "#EF596F",
     lowerOnStart = True,
