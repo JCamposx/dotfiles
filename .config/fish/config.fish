@@ -12,7 +12,8 @@ starship init fish | source
 
 # Transient prompt
 function starship_transient_prompt_func
-  echo \n
+  echo ""
+  starship module character
 end
 
 enable_transience
