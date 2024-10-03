@@ -10,12 +10,12 @@ Config {
     persistent = True,
     position = TopH 26,
     commands = [
-        Run Date "  %d %b %Y %H:%M " "date" 600,
+        Run Date "󰃰  %d %b %Y %H:%M " "date" 600,
         Run Com "bash" ["-c", "checkupdates | wc -l"] "updates" 10,
         Run UnsafeStdinReader
     ],
     alignSep = "}{",
     template = "<fc=#D55FDE>   </fc>%UnsafeStdinReader% }{ \
-        \<fc=#E5C078>  %updates% </fc>\
+        \<fc=#E5C078> 󱑢 %updates% </fc>\
         \<fc=#C678DD> %date% </fc>"
 }
