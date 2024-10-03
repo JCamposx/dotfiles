@@ -21,7 +21,7 @@ symbol = " "
 
 [package]
 format = "[$symbol$version]($style) "
-symbol = " "
+symbol = " "
 
 [aws]
 format = "[$symbol($version )]($style)"
@@ -33,7 +33,7 @@ symbol = " "
 
 [conda]
 format = "[$symbol$version]($style) "
-symbol = " "
+symbol = "🅒 "
 
 [dart]
 format = "[$symbol$version]($style) "
@@ -53,7 +53,7 @@ symbol = " "
 
 [nodejs]
 format = "[$symbol($version )]($style)"
-symbol = " "
+symbol = " "
 
 [php]
 format = "[$symbol($version )]($style)"
@@ -70,7 +70,7 @@ symbol = " "
 
 [lua]
 format = "[$symbol($version )]($style)"
-symbol = "🌙 "
+symbol = "🌙"
 
 [golang]
 format = "[$symbol($version )]($style)"
