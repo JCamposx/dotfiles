@@ -125,12 +125,6 @@ ins_left({
 
 ins_left({
   "filename",
-  symbols = {
-    modified = "[]",
-    readonly = "[]",
-    unnamed = "[]",
-    newfile = "[ﱐ]",
-  },
   cond = conditions.buffer_not_empty,
   color = { fg = colors.fg, gui = "bold" },
 })
@@ -138,7 +132,6 @@ ins_left({
 ins_left({
   "diagnostics",
   sources = { "nvim_diagnostic" },
-  symbols = { error = " ", warn = " ", info = " ", hint = " " },
   diagnostics_color = {
     color_error = { fg = colors.red },
     color_warn = { fg = colors.yellow },
@@ -151,7 +144,7 @@ ins_left({
 ins_right({
   "diff",
   -- Is it me or the symbol for modified us really weird
-  symbols = { added = " ", modified = "柳", removed = " " },
+	symbols = { added = " ", modified = " ", removed = " " },
   diff_color = {
     added = { fg = colors.green },
     modified = { fg = colors.yellow },
