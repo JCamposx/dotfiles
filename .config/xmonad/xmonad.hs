@@ -202,9 +202,9 @@ myKeys =
     ("M-<Return>", spawn myTerminal),
 
     -- Screenshot options
-    ("<Print>", spawn "xfce4-screenshooter -f -c"),
+    ("<Print>", spawn "flameshot screen -c"),
     ("M-<Print>", spawn "xfce4-screenshooter -w --no-border -c"),
-    ("M-S-s", spawn "xfce4-screenshooter -r -c"),
+    ("M-S-s", spawn "flameshot gui -c -r > $CLIPMAN_IMG"),
 
     --------------------- Hardware ---------------------
 
