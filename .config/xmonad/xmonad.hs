@@ -52,7 +52,7 @@ windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace
 
 myStartupHook :: X ()
 myStartupHook = do
-    spawnOnce "trayer --edge top --monitor 0 --widthtype request --width 30 --heighttype pixel --height 14 --align right --transparent true --alpha 0 --tint 0x111318 --iconspacing 4 --distance 7 --padding 4 &"
+    spawnOnce "trayer --edge top --monitor 0 --widthtype request --width 30 --heighttype pixel --height 15 --align right --transparent true --alpha 0 --tint 0x111318 --iconspacing 4 --distance 7 --margin 10 &"
     setWMName "LG3D"
 
 mySpacing :: Integer -> l a -> XMonad.Layout.LayoutModifier.ModifiedLayout Spacing l a
@@ -102,9 +102,9 @@ xmobarEscape = concatMap doubleLts
 
 myWorkspaces :: [String]
 myWorkspaces = clickable . (map xmobarEscape)
-    $ ["www", "dev", "term", "ref", "misc"]
+    $ replicate 6 " \xea71 "
   where
-    clickable l = ["<action=xdotool key super+" ++ show (i) ++ "> " ++ ws ++ "</action>" | (i, ws) <- zip [1 .. 5] l]
+    clickable l = ["<action=xdotool key super+" ++ show (i) ++ "> " ++ ws ++ "</action>" | (i, ws) <- zip [1 .. 6] l]
 
 myKeys :: [(String, X ())]
 myKeys =
@@ -287,17 +287,17 @@ main = do
         logHook = workspaceHistoryHook <+> dynamicLogWithPP xmobarPP {
             ppOutput = \x -> hPutStrLn xmobarMonitor1 x >> hPutStrLn xmobarMonitor2 x,
             -- Current workspace in xmobar
-            ppCurrent = xmobarColor "#98C379" "" . wrap "[" " ]",
+            ppCurrent = xmobarColor "#89ca78" "" . (const "  \xf0baf "),
             -- Visible but not current workspace
-            ppVisible = xmobarColor "#98C379" "",
+            ppVisible = xmobarColor "#E5C07B" "" . (const "  \xf02a0 "),
             -- Hidden workspaces in xmobar
-            ppHidden = xmobarColor "#E9E9E9" "",
+            ppHidden = xmobarColor "#ABB2BF" "" . (const "  \xf02a0 "),
             -- Hidden workspaces (no windows)
-            ppHiddenNoWindows = xmobarColor "#677590" "",
+            ppHiddenNoWindows = xmobarColor "#5C6370" "",
             -- Title of active window in xmobar
             ppTitle = xmobarColor "#61AFEF" "" . shorten 300,
             -- Separators in xmobar
-            ppSep = "<fc=#666666> | </fc>",
+            ppSep = "<fc=#5C6370>  |  </fc>",
             -- Urgent workspace
             ppUrgent = xmobarColor "#EF596F" "" . wrap "" "!",
             -- Number of windows in current workspace

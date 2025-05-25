@@ -8,23 +8,23 @@ Config {
     hideOnStart = False,
     allDesktops = True,
     persistent = True,
-    position = TopH 28,
+    position = TopH 30,
     commands = [
         Run Date "󰃰  %d %b %Y %H:%M" "date" 600,
-        Run Network "eno1" ["-t", "  <rx>kb   <tx>kb"] 10,
-        Run Cpu ["-t", "  <total>%"] 10,
-        Run Memory ["-t", " <used>M"] 10,
-        Run Com "bash" ["-c", "checkupdates | wc -l"] "updates" 10,
-        Run Com "/home/jesus/.config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 10,
+        Run Network "eno1" ["-t", "  <rx>kb   <tx>kb"] 100,
+        Run Cpu ["-t", "  <total>%"] 600,
+        Run Memory ["-t", " <used>M"] 100,
+        Run Com "bash" ["-c", "checkupdates | wc -l"] "updates" 6000,
+        Run Com "/home/jesus/.config/xmobar/trayer-padding-icon.sh" [] "trayerpad" 600,
         Run UnsafeStdinReader
     ],
     sepChar = "%",
     alignSep = "}{",
-    template = "<fc=#D55FDE>   </fc> %UnsafeStdinReader% }{ \
+    template = "<fc=#D55FDE>  </fc> %UnsafeStdinReader% }{ \
         \<fc=#E5C078> 󱑢 %updates% </fc>\
-        \<fc=#98C379> %cpu% </fc>\
+        \<fc=#89ca78> %cpu% </fc>\
         \<fc=#EF596F> %memory% </fc>\
         \<fc=#61AFEF> %eno1% </fc>\
         \<fc=#C678DD> %date% </fc>\
-        \%trayerpad%"
+        \ %trayerpad%"
 }

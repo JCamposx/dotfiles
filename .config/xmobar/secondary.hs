@@ -8,14 +8,14 @@ Config {
     hideOnStart = False,
     allDesktops = True,
     persistent = True,
-    position = TopH 26,
+    position = TopH 28,
     commands = [
         Run Date "󰃰  %d %b %Y %H:%M " "date" 600,
-        Run Com "bash" ["-c", "checkupdates | wc -l"] "updates" 10,
+        Run Com "bash" ["-c", "checkupdates | wc -l"] "updates" 6000,
         Run UnsafeStdinReader
     ],
     alignSep = "}{",
-    template = "<fc=#D55FDE>   </fc>%UnsafeStdinReader% }{ \
+    template = "<fc=#D55FDE>   </fc>%UnsafeStdinReader% }{ \
         \<fc=#E5C078> 󱑢 %updates% </fc>\
         \<fc=#C678DD> %date% </fc>"
 }
