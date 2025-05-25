@@ -7,6 +7,14 @@ return {
       options = {
         transparency = true,
       },
+      styles = {
+        types = "italic",
+        comments = "italic",
+        keywords = "italic",
+        parameters = "italic",
+        conditionals = "italic",
+        virtual_text = "italic",
+      },
     },
   },
   {
