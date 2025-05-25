@@ -8,5 +8,13 @@ return {
   },
   opts = {
     autochdir = true,
+    highlights = {
+      FloatBorder = {
+        guifg = "#5c6370",
+      },
+    },
+    float_opts = {
+      border = "curved",
+    },
   },
 }

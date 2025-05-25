@@ -8,6 +8,7 @@ return {
 
   -- LazyVim LSP
   { import = "plugins.lazyvim.lsp.lsp-config" },
+  { import = "plugins.lazyvim.lsp.mason" },
 
   -- LazyVim UI
   { import = "plugins.lazyvim.ui.bufferline" },
