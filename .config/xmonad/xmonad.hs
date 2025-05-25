@@ -193,7 +193,7 @@ myKeys =
     ("M-e", spawn "thunar"),
 
     -- Task manager
-    ("M-h", spawn "alacritty -e htop"),
+    ("M-h", spawn "kitty -e htop"),
 
     -- Task manager
     ("M-l", spawn "feh -Z $CLIPMAN_IMG"),
@@ -259,7 +259,7 @@ myManageHook = composeAll
 
 myModMask = mod4Mask :: KeyMask
 
-myTerminal = "alacritty" :: String
+myTerminal = "kitty" :: String
 
 myBorderWidth = 1 :: Dimension
 

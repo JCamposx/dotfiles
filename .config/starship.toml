@@ -70,7 +70,7 @@ symbol = " "
 
 [lua]
 format = "[$symbol($version )]($style)"
-symbol = "🌙"
+symbol = "🌙 "
 
 [golang]
 format = "[$symbol($version )]($style)"

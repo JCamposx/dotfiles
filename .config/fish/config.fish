@@ -6,6 +6,7 @@ alias la "exa -a --group-directories-first --header --long"
 alias tree "exa -T"
 alias dotfiles "git --git-dir $HOME/.dotfiles/ --work-tree $HOME"
 alias rm "rm -i"
+alias clear "printf '\033c'"
 
 # Prompt
 starship init fish | source
