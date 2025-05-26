@@ -26,5 +26,5 @@ Config {
         \<fc=#EF596F> %memory% </fc>\
         \<fc=#61AFEF> %eno1% </fc>\
         \<fc=#C678DD> %date% </fc>\
-        \ %trayerpad%"
+        \  %trayerpad%"
 }
