@@ -11,6 +11,8 @@ vim.keymap.del("n", "<leader>fE") -- Open Explorer (cwd)
 vim.keymap.del("n", "<leader>E") -- Open Explorer (cwd)
 vim.keymap.del("n", "<leader>ff") -- Find Files
 vim.keymap.del("n", "<leader>fF") -- Find Files (cwd)
+vim.keymap.del("n", "<leader>ft") -- Open Terminal (Root Dir)
+vim.keymap.del("n", "<leader>fT") -- Open Terminal (cwd)
 -- Buffers
 vim.keymap.del("n", "<leader>bd") -- Delete Buffer
 vim.keymap.del("n", "<leader>bD") -- Delete Buffer and Window

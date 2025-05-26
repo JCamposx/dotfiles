@@ -29,5 +29,4 @@ return {
 
   -- Personal plugins
   { import = "plugins.user.commasemi" },
-  { import = "plugins.user.toggleterm" },
 }

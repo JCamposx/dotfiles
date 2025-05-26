@@ -20,12 +20,12 @@ return {
 
     return opts
   end,
+  -- stylua: ignore
   keys = {
-    -- stylua: ignore
     { "<leader>e", function() Snacks.explorer() end, desc = "Explorer" },
-    -- stylua: ignore
     { "<leader><space>", function() Snacks.picker.files({ cwd = vim.fn.getcwd() }) end, desc = "Find Files" },
-    -- stylua: ignore
     { "<leader>/", function() Snacks.picker.grep({ cwd = vim.fn.getcwd() }) end, desc = "Grep" },
+    { "<C-/>", function() Snacks.terminal.toggle() end, desc = "Toggle Terminal" },
+    { "<C-\\>", function() Snacks.terminal.open(nil, { win = { position = "float", border = "rounded"} }) end, desc = "Open New Terminal" },
   },
 }
