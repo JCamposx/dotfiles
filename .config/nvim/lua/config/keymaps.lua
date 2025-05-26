@@ -4,7 +4,12 @@ local map = LazyVim.safe_keymap_set
 map({ "n", "x" }, "<C-q>", "<Esc>:q<CR>", { desc = "Close Window", noremap = true, silent = true, nowait = true })
 map({ "n", "x" }, "<C-a>", "<Esc>ggVG", { desc = "Select All", noremap = true, silent = true, nowait = true })
 
--- Delete LazyVim default keyMappings
+-- Delete LazyVim default keybinds
+--Snacks
+vim.keymap.del("n", "<leader>E") -- Open Explorer (cwd)
+vim.keymap.del("n", "<leader>ff") -- Find Files
+vim.keymap.del("n", "<leader>fF") -- Find Files (cwd)
+--Buffers
 vim.keymap.del("n", "<leader>bd") -- Delete Buffer
 vim.keymap.del("n", "<leader>bD") -- Delete Buffer and Window
 vim.keymap.del("n", "[b") -- Previous Buffer
