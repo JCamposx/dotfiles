@@ -31,7 +31,6 @@ return {
         lualine_b = { "branch" },
 
         lualine_c = {
-          LazyVim.lualine.root_dir(),
           {
             "diagnostics",
             symbols = {
