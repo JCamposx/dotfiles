@@ -2,6 +2,7 @@
 return {
   -- LazyVim Editor
   { import = "plugins.lazyvim.editor.grug-far" },
+  { import = "plugins.lazyvim.editor.gitsigns" },
 
   -- LazyVim Extras
   { import = "plugins.lazyvim.extras.dap-ui" },
