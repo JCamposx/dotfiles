@@ -102,7 +102,7 @@ xmobarEscape = concatMap doubleLts
 
 myWorkspaces :: [String]
 myWorkspaces = clickable . (map xmobarEscape)
-    $ replicate 6 " \xea71 "
+    $ replicate 6 ""
   where
     clickable l = ["<action=xdotool key super+" ++ show (i) ++ "> " ++ ws ++ "</action>" | (i, ws) <- zip [1 .. 6] l]
 
@@ -293,7 +293,7 @@ main = do
             -- Hidden workspaces in xmobar
             ppHidden = xmobarColor "#ABB2BF" "" . (const "  \xf02a0 "),
             -- Hidden workspaces (no windows)
-            ppHiddenNoWindows = xmobarColor "#5C6370" "",
+            ppHiddenNoWindows = xmobarColor "#5C6370" "" . const("  \xea71 "),
             -- Title of active window in xmobar
             ppTitle = xmobarColor "#61AFEF" "" . shorten 300,
             -- Separators in xmobar
