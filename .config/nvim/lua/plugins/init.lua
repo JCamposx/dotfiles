@@ -14,9 +14,6 @@ return {
   { import = "plugins.lazyvim.lsp.lsp-config" },
   { import = "plugins.lazyvim.lsp.mason" },
 
-  -- LazyVim Recipes
-  { import = "plugins.lazyvim.recipes.supertab" },
-
   -- LazyVim UI
   { import = "plugins.lazyvim.ui.bufferline" },
   { import = "plugins.lazyvim.ui.lualine" },
