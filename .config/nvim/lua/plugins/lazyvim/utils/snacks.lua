@@ -8,7 +8,7 @@ return {
     opts.picker.sources.files = {
       hidden = true,
       ignored = true,
-      exclude = { ".git", "node_modules" },
+      exclude = { ".git", "node_modules", ".angular" },
     }
 
     opts.picker.sources.explorer = {
