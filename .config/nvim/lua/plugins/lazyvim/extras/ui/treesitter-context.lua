@@ -3,7 +3,7 @@ return {
   "nvim-treesitter/nvim-treesitter-context",
   event = "LazyFile",
   opts = {
-    mode = "topline",
-    max_lines = 0,
+    mode = "cursor",
+    max_lines = 5,
   },
 }
