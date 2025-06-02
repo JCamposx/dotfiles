@@ -1,7 +1,6 @@
 local map = LazyVim.safe_keymap_set
 
 -- Custom keymaps
-map({ "n", "x" }, "<C-q>", "<Esc>:q<CR>", { desc = "Close Window", noremap = true, silent = true, nowait = true })
 map({ "n", "x" }, "<C-a>", "<Esc>ggVG", { desc = "Select All", noremap = true, silent = true, nowait = true })
 
 -- Delete LazyVim default keybinds
