@@ -39,29 +39,3 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
     end
   end,
 })
-
--- Set foldlevel based on filetype
-vim.api.nvim_create_autocmd("BufReadPost", {
-  callback = function()
-    local excluded_filetypes = {
-      "markdown",
-      "help",
-      "gitcommit",
-      "text",
-      "lua",
-      "json",
-      "jsonc",
-      "html",
-      "htmlangular",
-    }
-    local ft = vim.bo.filetype
-    for _, excluded in ipairs(excluded_filetypes) do
-      if ft == excluded then
-        vim.opt_local.foldlevel = 99
-        return
-      end
-    end
-
-    vim.opt_local.foldlevel = 0
-  end,
-})
