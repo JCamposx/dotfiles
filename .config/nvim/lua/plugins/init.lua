@@ -1,8 +1,9 @@
 -- Import plugins from children directories
 return {
   -- LazyVim Editor
-  { import = "plugins.lazyvim.editor.grug-far" },
   { import = "plugins.lazyvim.editor.gitsigns" },
+  { import = "plugins.lazyvim.editor.grug-far" },
+  { import = "plugins.lazyvim.editor.todo-comments" },
 
   -- LazyVim Extras
   { import = "plugins.lazyvim.extras.dap-ui" },

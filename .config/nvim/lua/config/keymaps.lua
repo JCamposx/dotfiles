@@ -22,3 +22,10 @@ vim.keymap.del("n", "]B") -- Move Buffer to Next
 -- Grep
 vim.keymap.del("n", "<leader>sg") -- Grep (Root Dir)
 vim.keymap.del("n", "<leader>sG") -- Grep (cwd)
+-- Touble
+vim.keymap.del("n", "<leader>cs") -- Symbols
+vim.keymap.del("n", "<leader>cS") -- LSP References/Definitions
+vim.keymap.del("n", "<leader>xL") -- Location List
+vim.keymap.del("n", "<leader>xQ") -- Quickfix List
+vim.keymap.del("n", "[q") -- Previous Quickfix Item
+vim.keymap.del("n", "]q") -- Next Quickfix Item
