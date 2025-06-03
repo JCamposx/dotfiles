@@ -17,6 +17,8 @@ vim.keymap.del("n", "<leader>bd") -- Delete Buffer
 vim.keymap.del("n", "<leader>bD") -- Delete Buffer and Window
 vim.keymap.del("n", "[b") -- Previous Buffer
 vim.keymap.del("n", "]b") -- Next Buffer
+vim.keymap.del("n", "[B") -- Move Buffer to Previous
+vim.keymap.del("n", "]B") -- Move Buffer to Next
 -- Grep
 vim.keymap.del("n", "<leader>sg") -- Grep (Root Dir)
 vim.keymap.del("n", "<leader>sG") -- Grep (cwd)
