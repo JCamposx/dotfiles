@@ -19,7 +19,11 @@ end
 
 enable_transience
 
-# Env variables
+# Override default environment variables
+set -gx EDITOR nvim
+set -gx BROWSER brave
+
+# Environment variables
 export CLIPMAN_IMG=$HOME/.cache/xfce4/clipman/image0.png
 export FZF_DEFAULT_OPTS="--height 40% --layout reverse --border"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden"
