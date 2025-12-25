@@ -2,6 +2,7 @@ local map = LazyVim.safe_keymap_set
 
 -- Custom keymaps
 map({ "n", "x" }, "<C-a>", "<Esc>ggVG", { desc = "Select All", noremap = true, silent = true, nowait = true })
+map("x", "p", '"_dP', { desc = "Paste without overwriting register", noremap = true, silent = true })
 
 -- Delete LazyVim default keybinds
 -- Snacks
@@ -22,7 +23,7 @@ vim.keymap.del("n", "]B") -- Move Buffer to Next
 -- Grep
 vim.keymap.del("n", "<leader>sg") -- Grep (Root Dir)
 vim.keymap.del("n", "<leader>sG") -- Grep (cwd)
--- Touble
+-- Trouble
 vim.keymap.del("n", "<leader>cs") -- Symbols
 vim.keymap.del("n", "<leader>cS") -- LSP References/Definitions
 vim.keymap.del("n", "<leader>xL") -- Location List

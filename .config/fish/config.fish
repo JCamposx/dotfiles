@@ -1,33 +1,18 @@
-# Aliases
-alias grep "grep --color=auto"
-alias cat "bat"
-alias ls "eza --group-directories-first"
-alias la "eza -a --group-directories-first --header --long"
-alias tree "eza -T"
-alias dotfiles "git --git-dir $HOME/.dotfiles/ --work-tree $HOME"
-alias rm "rm -i"
-alias clear "printf '\033c'"
+# Fish behavior
+set -g fish_greeting
+set -g fish_color_command green
+set -g fish_pager_color_progress black --background=cyan
 
-# Prompt
-starship init fish | source
-
-# Transient prompt
-function starship_transient_prompt_func
-  echo ""
-  starship module character
-end
-
-enable_transience
-
-# Override default environment variables
+# Editor
 set -gx EDITOR nvim
-set -gx BROWSER brave
 
-# Environment variables
-export CLIPMAN_IMG=$HOME/.cache/xfce4/clipman/image0.png
-export FZF_DEFAULT_OPTS="--height 40% --layout reverse --border"
-export FZF_DEFAULT_COMMAND="fd --type f --hidden"
-export FZF_CTRL_T_COMMAND="fd --type f --hidden"
-export FZF_CTRL_T_OPTS="--preview 'bat --color always {}' --bind 'enter:execute(nvim {})+abort'"
-export FZF_ALT_C_COMMAND="fd --type d --hidden"
-export FZF_ALT_C_OPTS="--preview 'eza --color always -T {}'"
+# XDG base directories
+set -gx XDG_CONFIG_HOME $HOME/.config
+set -gx XDG_DATA_HOME $HOME/.local/share
+set -gx XDG_CACHE_HOME $HOME/.cache
+
+# Path handling
+fish_add_path $HOME/.local/bin
+fish_add_path /opt/homebrew/bin/
+set -gx GOPATH $HOME/.go
+fish_add_path $GOPATH/bin

@@ -1,29 +1,8 @@
-# Ignore everything
 /*
 !.gitignore
-
-# Except for the files and folders we want to track
-!alacritty
-!kitty
-!fish
-!starship.toml
-!picom.conf
-!htop
-!nvim
-!nvim.bak
-!rofi
-!vifm
-!ranger
-!qtile
-!spectrwm
-!openbox
-!tint2
-!xmobar
-!dwm
-!dwmblocks
-!xmonad
-!xob
 !bat
-!pycritty
-!neofetch
-!galculator
+!fish
+!kitty
+!nvim
+!ranger
+!starship.toml

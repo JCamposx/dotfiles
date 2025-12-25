@@ -1,0 +1,8 @@
+alias grep "grep --color=auto"
+alias cat "bat"
+alias ls "eza --group-directories-first"
+alias ll "eza -l --group-directories-first"
+alias la "eza -la --group-directories-first"
+alias tree "eza -T --group-directories-first --icons"
+alias dotfiles "git --git-dir $HOME/.dotfiles/ --work-tree $HOME"
+alias clear "command clear; printf '\e[3J'"

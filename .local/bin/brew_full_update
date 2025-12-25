@@ -1,0 +1,34 @@
+#!/bin/bash
+set -e
+
+# Styles
+RESET="\033[0m"
+BOLD="\033[1m"
+ITALIC="\033[3m"
+
+# Colors
+GREEN="\033[32m"
+BLUE="\033[34m"
+YELLOW="\033[33m"
+
+# Print commands in styled format
+print_cmd() {
+    echo -e "${BOLD}${BLUE}Running${RESET} ${ITALIC}${BOLD}${GREEN}$1${RESET}"
+}
+
+print_cmd "brew update"
+brew update
+
+print_cmd "brew upgrade"
+brew upgrade
+
+print_cmd "brew upgrade --cask --greedy"
+brew upgrade --cask --greedy
+
+print_cmd "brew autoremove"
+brew autoremove
+
+print_cmd "brew cleanup --prune all"
+brew cleanup --prune=all
+
+echo -e "${BOLD}${YELLOW}Homebrew successfully updated!${RESET}"

@@ -4,7 +4,6 @@ return {
   { import = "plugins.lazyvim.editor.gitsigns" },
 
   -- LazyVim Extras
-  { import = "plugins.lazyvim.extras.dap-ui" },
   { import = "plugins.lazyvim.extras.ai.copilot-chat" },
   { import = "plugins.lazyvim.extras.coding.cmp" },
   { import = "plugins.lazyvim.extras.ui.treesitter-context" },
@@ -20,9 +19,6 @@ return {
 
   -- LazyVim Utils
   { import = "plugins.lazyvim.utils.snacks" },
-
-  -- DAP tools
-  { import = "plugins.dap.cs" },
 
   -- Personal plugins
   { import = "plugins.user.commasemi" },

@@ -3,6 +3,8 @@
         "undefined-field"
     ],
     "diagnostics.globals": [
-        "Snacks"
+        "Snacks",
+        "LazyVim",
+        "vim"
     ]
 }
