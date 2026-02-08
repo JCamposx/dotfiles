@@ -8,3 +8,6 @@ vim.g.snacks_animate = false
 vim.opt.wrap = true
 vim.opt.breakindent = true
 vim.opt.linebreak = true
+
+-- Enable spell checking for English and Spanish
+vim.opt.spelllang = { "en", "es" }
