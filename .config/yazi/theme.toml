@@ -1,0 +1,33 @@
+[mgr]
+border_symbol = " "
+
+[indicator]
+preview = { reversed = true }
+
+[tabs]
+active   = { fg = "black", bg = "magenta", bold = true }
+inactive = { fg = "magenta", bg = "black" }
+
+[mode]
+normal_main = { fg = "cyan", bg = "reset", bold = true }
+normal_alt  = { fg = "green", bg = "reset" }
+select_main = { fg = "yellow", bg = "reset", bold = true }
+select_alt  = { fg = "yellow", bg = "reset" }
+unset_main = { fg = "magenta", bg = "reset", bold = true }
+unset_alt  = { fg = "magenta", bg = "reset" }
+
+[status]
+overall = { bg = "reset" }
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+progress_label  = { bold = true }
+progress_normal = { fg = "green", bg = "reset" }
+progress_error  = { fg = "red", bg = "reset" }
+
+[confirm]
+btn_labels = [" Yes ", " No "]
+
+[notify]
+title_info  = { fg = "green" }
+title_warn  = { fg = "yellow" }
+title_error = { fg = "red" }
