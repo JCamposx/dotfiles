@@ -3,8 +3,8 @@ return {
   "akinsho/bufferline.nvim",
   event = "VeryLazy",
   keys = {
-    { "<C-h>", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer prev" },
-    { "<C-l>", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" },
+    { "<A-S-h>", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer prev" },
+    { "<A-S-l>", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" },
     { "<A-c>", "<cmd>:bd<CR>", desc = "Delete buffer" },
   },
   opts = {
