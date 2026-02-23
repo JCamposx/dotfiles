@@ -1,5 +1,8 @@
 [mgr]
 border_symbol = " "
+count_copied   = { fg = "green", bg = "reset" }
+count_cut      = { fg = "red", bg = "reset" }
+count_selected = { fg = "yellow", bg = "reset" }
 
 [indicator]
 preview = { reversed = true }
@@ -17,17 +20,10 @@ unset_main = { fg = "magenta", bg = "reset", bold = true }
 unset_alt  = { fg = "magenta", bg = "reset" }
 
 [status]
-overall = { bg = "reset" }
 sep_left  = { open = "", close = "" }
 sep_right = { open = "", close = "" }
-progress_label  = { bold = true }
 progress_normal = { fg = "green", bg = "reset" }
 progress_error  = { fg = "red", bg = "reset" }
 
 [confirm]
 btn_labels = [" Yes ", " No "]
-
-[notify]
-title_info  = { fg = "green" }
-title_warn  = { fg = "yellow" }
-title_error = { fg = "red" }
