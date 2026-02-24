@@ -1,3 +1,4 @@
+-- Search and replace with ripgrep
 return {
   "chrisgrieser/nvim-rip-substitute",
   cmd = "RipSubstitute",

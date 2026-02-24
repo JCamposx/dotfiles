@@ -1,3 +1,4 @@
+-- Noice customization
 return {
   "folke/noice.nvim",
   opts = {
