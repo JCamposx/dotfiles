@@ -4,8 +4,6 @@ return {
   { import = "plugins.lazyvim.editor.gitsigns" },
 
   -- LazyVim Extras
-  { import = "plugins.lazyvim.extras.ai.copilot-chat" },
-  { import = "plugins.lazyvim.extras.coding.cmp" },
   { import = "plugins.lazyvim.extras.ui.treesitter-context" },
 
   -- LazyVim LSP
