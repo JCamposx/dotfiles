@@ -4,6 +4,7 @@ return {
   { import = "plugins.lazyvim.editor.gitsigns" },
 
   -- LazyVim Extras
+  { import = "plugins.lazyvim.extras.coding.blink-cmp" },
   { import = "plugins.lazyvim.extras.ui.treesitter-context" },
 
   -- LazyVim LSP
