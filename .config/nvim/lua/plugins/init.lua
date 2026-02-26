@@ -7,6 +7,9 @@ return {
   { import = "plugins.lazyvim.extras.coding.blink-cmp" },
   { import = "plugins.lazyvim.extras.ui.treesitter-context" },
 
+  -- LazyVim Linting
+  { import = "plugins.lazyvim.linting.lint" },
+
   -- LazyVim LSP
   { import = "plugins.lazyvim.lsp.lsp-config" },
   { import = "plugins.lazyvim.lsp.mason" },
