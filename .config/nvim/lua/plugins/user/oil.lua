@@ -1,4 +1,4 @@
--- Oil customization
+-- File explorer like a buffer
 return {
   "stevearc/oil.nvim",
   dependencies = { { "nvim-mini/mini.icons", opts = {} } },
