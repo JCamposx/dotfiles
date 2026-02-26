@@ -6,7 +6,7 @@ vim.api.nvim_create_autocmd("VimLeave", {
 })
 
 -- Disable autoformat
-vim.api.nvim_create_autocmd("filetype", {
+vim.api.nvim_create_autocmd("FileType", {
   pattern = "*",
   callback = function()
     vim.b.autoformat = false
@@ -14,7 +14,7 @@ vim.api.nvim_create_autocmd("filetype", {
 })
 
 -- Enable autoformat for lua files
-vim.api.nvim_create_autocmd("filetype", {
+vim.api.nvim_create_autocmd("FileType", {
   pattern = "lua",
   callback = function()
     vim.b.autoformat = true
