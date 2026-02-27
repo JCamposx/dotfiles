@@ -26,8 +26,8 @@ vim.keymap.del("n", "<leader>sG") -- Grep (cwd)
 
 -- VSCode
 if vim.g.vscode then
-  vim.api.nvim_set_keymap("n", "j", "gj", { noremap = true, silent = true, nowait = true })
-  vim.api.nvim_set_keymap("n", "k", "gk", { noremap = true, silent = true, nowait = true })
+  vim.keymap.set("n", "j", "gj", { remap = true, silent = true })
+  vim.keymap.set("n", "k", "gk", { remap = true, silent = true })
 
   local function vscode_map(mode, lhs, rhs)
     vim.keymap.set(mode, lhs, function()
