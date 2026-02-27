@@ -11,6 +11,14 @@ return {
 /\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ 
 \ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\
  \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
+        keys = {
+          { icon = " ", key = "f", action = ":lua LazyVim.pick()()", desc = " Find File" },
+          { icon = " ", key = "n", action = ":ene | startinsert", desc = " New File" },
+          { icon = " ", key = "s", action = ':lua require("persistence").load()', desc = " Restore Session" },
+          { icon = " ", key = "x", action = ":LazyExtras", desc = " Lazy Extras" },
+          { icon = "󰒲 ", key = "l", action = ":Lazy", desc = " Lazy" },
+          { icon = " ", key = "q", action = ":qa", desc = " Quit" },
+        },
       },
     },
     picker = {
