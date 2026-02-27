@@ -1,26 +1,18 @@
--- OneDark theme configuration
+-- OneDarkPro theme configuration
 return {
-  {
-    "olimorris/onedarkpro.nvim",
-    priority = 1000,
-    opts = {
-      options = {
-        transparency = true,
-      },
-      styles = {
-        types = "italic",
-        comments = "italic",
-        keywords = "italic",
-        parameters = "italic",
-        conditionals = "italic",
-        virtual_text = "italic",
-      },
+  "olimorris/onedarkpro.nvim",
+  priority = 1000,
+  opts = {
+    options = {
+      transparency = true,
     },
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "onedark_vivid",
+    styles = {
+      types = "italic",
+      comments = "italic",
+      keywords = "italic",
+      parameters = "italic",
+      conditionals = "italic",
+      virtual_text = "italic",
     },
   },
 }
