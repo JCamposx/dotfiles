@@ -10,5 +10,16 @@ return {
         border = "rounded",
       },
     },
+    servers = {
+      gopls = {
+        settings = {
+          gopls = {
+            analyses = {
+              ST1000 = false, -- Disable missing package doc comment warning
+            },
+          },
+        },
+      },
+    },
   },
 }

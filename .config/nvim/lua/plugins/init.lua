@@ -5,6 +5,7 @@ return {
 
   -- LazyVim Extras
   { import = "plugins.lazyvim.extras.coding.blink-cmp" },
+  { import = "plugins.lazyvim.extras.formatting.conform" },
   { import = "plugins.lazyvim.extras.ui.treesitter-context" },
 
   -- LazyVim Linting

@@ -9,14 +9,19 @@ vim.api.nvim_create_autocmd("VimLeave", {
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "*",
   callback = function()
-    vim.b.autoformat = false
+    local excluded = { "lua", "go" }
+    local ft = vim.bo.filetype
+    if not vim.tbl_contains(excluded, ft) then
+      vim.b.autoformat = false
+    end
   end,
 })
 
--- Enable autoformat for lua files
+-- Set tab width for C# files
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "lua",
+  pattern = "cs",
   callback = function()
-    vim.b.autoformat = true
+    vim.opt_local.tabstop = 4
+    vim.opt_local.shiftwidth = 4
   end,
 })
