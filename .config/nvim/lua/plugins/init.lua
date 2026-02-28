@@ -24,6 +24,8 @@ return {
 
   -- Personal plugins
   { import = "plugins.user.commasemi" },
+  { import = "plugins.user.diffview" },
+  { import = "plugins.user.neogit" },
   { import = "plugins.user.oil" },
   { import = "plugins.user.rip-substitute" },
 }
