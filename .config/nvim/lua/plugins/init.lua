@@ -7,6 +7,7 @@ return {
   { import = "plugins.lazyvim.extras.coding.blink-cmp" },
   { import = "plugins.lazyvim.extras.dap.dap-ui" },
   { import = "plugins.lazyvim.extras.dap.adapters.dotnet" },
+  { import = "plugins.lazyvim.extras.dap.adapters.go" },
   { import = "plugins.lazyvim.extras.formatting.conform" },
   { import = "plugins.lazyvim.extras.ui.treesitter-context" },
 
