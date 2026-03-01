@@ -25,3 +25,16 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.shiftwidth = 4
   end,
 })
+
+-- Break on all exceptions in DAP
+vim.api.nvim_create_autocmd("User", {
+  pattern = "LazyDone",
+  once = true,
+  callback = function()
+    local ok, dap = pcall(require, "dap")
+    if not ok then
+      return
+    end
+    dap.defaults.fallback.exception_breakpoints = { "all" }
+  end,
+})
