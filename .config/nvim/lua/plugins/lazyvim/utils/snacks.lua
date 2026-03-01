@@ -6,6 +6,7 @@ return {
     { "<leader>e", function() Snacks.explorer() end, desc = "Explorer" },
     { "<leader><space>", function() Snacks.picker.files({ cwd = vim.fn.getcwd() }) end, desc = "Find Files" },
     { "<leader>/", function() Snacks.picker.grep({ cwd = vim.fn.getcwd() }) end, desc = "Grep" },
+    { "<A-c>", function() Snacks.bufdelete() end, desc = "Delete buffer" },
     { "<C-/>", function() Snacks.terminal.toggle() end, desc = "Toggle Terminal" },
     { "<C-\\>", function() Snacks.terminal.open(nil, { win = { position = "float", border = "rounded"} }) end, desc = "Open New Terminal" },
   },
