@@ -1,6 +1,9 @@
 -- Disable animations
 vim.g.snacks_animate = false
 
+-- Prevent folds from opening on block motions
+vim.opt.foldopen:remove("block")
+
 -- Border style for floating windows
 vim.o.winborder = "rounded"
 
