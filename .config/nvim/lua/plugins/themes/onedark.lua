@@ -14,5 +14,8 @@ return {
       conditionals = "italic",
       virtual_text = "italic",
     },
+    highlights = {
+      Pmenu = { bg = "NONE" },
+    },
   },
 }

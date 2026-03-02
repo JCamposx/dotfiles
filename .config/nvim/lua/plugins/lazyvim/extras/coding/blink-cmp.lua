@@ -13,10 +13,5 @@ return {
         preset = "inherit",
       },
     },
-    completion = {
-      menu = {
-        winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
-      },
-    },
   },
 }
