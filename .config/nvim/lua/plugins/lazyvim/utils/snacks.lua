@@ -35,7 +35,7 @@ return {
         files = {
           hidden = true,
           ignored = true,
-          exclude = { ".git", "node_modules", ".angular", "dist" },
+          exclude = { ".git", ".angular", ".next", "node_modules", "dist", "bin", "obj" },
         },
         explorer = {
           replace_netrw = true,
