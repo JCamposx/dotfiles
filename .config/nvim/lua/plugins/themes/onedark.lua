@@ -5,6 +5,7 @@ return {
   opts = {
     options = {
       transparency = true,
+      terminal_colors = false,
     },
     styles = {
       types = "italic",
