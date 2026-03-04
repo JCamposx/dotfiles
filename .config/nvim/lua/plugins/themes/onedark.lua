@@ -11,12 +11,13 @@ return {
       types = "italic",
       comments = "italic",
       keywords = "italic",
-      parameters = "italic",
-      conditionals = "italic",
       virtual_text = "italic",
     },
     highlights = {
       Pmenu = { bg = "NONE" },
+      Cursor = { bg = "#abb2bf", fg = "#111318" },
+      CursorLineNr = { fg = "#abb2bf" },
+      TermCursor = { link = "Cursor" },
     },
   },
 }
