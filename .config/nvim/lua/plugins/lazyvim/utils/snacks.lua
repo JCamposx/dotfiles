@@ -39,6 +39,7 @@ return {
         },
         explorer = {
           replace_netrw = true,
+          diagnostics = false,
           layout = { layout = { position = "right" } },
           hidden = true,
           ignored = true,
