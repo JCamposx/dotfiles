@@ -72,5 +72,15 @@ return {
         callback(base_adapter)
       end
     end
+
+    -- Point Debug configs to the module root, not the current file
+    for _, cfg in ipairs(dap.configurations.go or {}) do
+      if cfg.request == "launch" and cfg.mode ~= "test" and cfg.program == "${file}" then
+        cfg.program = function()
+          local fname = vim.api.nvim_buf_get_name(0)
+          return vim.fs.root(fname, { "go.work", "go.mod" }) or vim.fn.getcwd()
+        end
+      end
+    end
   end,
 }
