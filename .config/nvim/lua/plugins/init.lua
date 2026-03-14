@@ -13,6 +13,7 @@ return {
 
   -- LazyVim Linting
   { import = "plugins.lazyvim.linting.lint" },
+  { import = "plugins.lazyvim.linting.langs.go" },
 
   -- LazyVim LSP
   { import = "plugins.lazyvim.lsp.lsp-config" },
