@@ -35,6 +35,7 @@ if vim.g.vscode then
     end, { noremap = true, silent = true, nowait = true })
   end
 
+  -- Folding
   vscode_map("n", "zM", "editor.foldAll")
   vscode_map("n", "zR", "editor.unfoldAll")
   vscode_map("n", "zc", "editor.fold")
@@ -42,4 +43,31 @@ if vim.g.vscode then
   vscode_map("n", "zo", "editor.unfold")
   vscode_map("n", "zO", "editor.unfoldRecursively")
   vscode_map("n", "za", "editor.toggleFold")
+
+  -- Navigate diagnostics
+  vscode_map("n", "]d", "editor.action.marker.next")
+  vscode_map("n", "[d", "editor.action.marker.prev")
+  vscode_map("n", "]e", "editor.action.marker.next")
+  vscode_map("n", "[e", "editor.action.marker.prev")
+
+  -- Navigate git hunks
+  vscode_map("n", "]h", "workbench.action.editor.nextChange")
+  vscode_map("n", "[h", "workbench.action.editor.previousChange")
+
+  -- Format
+  vscode_map("n", "<leader>cf", "editor.action.formatDocument")
+  vscode_map("x", "<leader>cf", "editor.action.formatDocument")
+
+  -- Navigate buffers (within current group)
+  vscode_map("n", "L", "workbench.action.nextEditorInGroup")
+  vscode_map("n", "H", "workbench.action.previousEditorInGroup")
+
+  -- LSP Navigation
+  vscode_map("n", "gd", "editor.action.revealDefinition")
+  vscode_map("n", "gD", "editor.action.revealDeclaration")
+  vscode_map("n", "gI", "editor.action.goToImplementation")
+  vscode_map("n", "gy", "editor.action.goToTypeDefinition")
+  vscode_map("n", "gr", "editor.action.goToReferences")
+
+  vscode_map("n", "<leader>e", "workbench.view.explorer")
 end
