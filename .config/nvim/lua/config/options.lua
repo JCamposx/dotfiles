@@ -13,10 +13,4 @@ vim.opt.breakindent = true
 vim.opt.linebreak = true
 
 -- Enable spell checking for English and Spanish
-vim.opt.spell = true
 vim.opt.spelllang = { "en", "es" }
-
--- VSCode
-if vim.g.vscode then
-  vim.opt.spell = false
-end
