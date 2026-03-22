@@ -1,10 +1,10 @@
 -- Colorscheme selector
 return {
-  { import = "plugins.themes.onedark" },
+  { import = "plugins.themes.kanagawa" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark_vivid",
+      colorscheme = "kanagawa",
     },
   },
 }
