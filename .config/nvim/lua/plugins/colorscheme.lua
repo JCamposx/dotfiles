@@ -1,10 +1,10 @@
 -- Colorscheme selector
 return {
-  { import = "plugins.themes.kanagawa" },
+  { import = "plugins.themes.gruvbox" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "gruvbox",
     },
   },
 }
