@@ -1,3 +1,6 @@
+-- Cursor style (block in normal, thin in insert/terminal)
+vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:ver25"
+
 -- Disable animations
 vim.g.snacks_animate = false
 
