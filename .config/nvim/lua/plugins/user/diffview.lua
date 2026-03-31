@@ -1,7 +1,9 @@
 -- Git diff viewer
 return {
   "sindrets/diffview.nvim",
-  lazy = true,
+  keys = {
+    { "<leader>gd", "<CMD>DiffviewOpen<CR>", desc = "Git Diff (Diffview)" },
+  },
   opts = {
     view = {
       merge_tool = {

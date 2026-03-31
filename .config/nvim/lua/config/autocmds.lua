@@ -17,6 +17,14 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+-- Close Diffview tab with 'q'
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "DiffviewFiles",
+  callback = function()
+    vim.keymap.set("n", "q", "<CMD>DiffviewClose<CR>", { buffer = true, silent = true })
+  end,
+})
+
 -- Set tab width for C# files
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "cs",

@@ -9,6 +9,7 @@ return {
     { "<A-c>", function() Snacks.bufdelete() end, desc = "Delete buffer" },
     { "<C-/>", function() Snacks.terminal.toggle() end, desc = "Toggle Terminal" },
     { "<C-\\>", function() Snacks.terminal.open(nil, { win = { position = "float", border = "rounded", width = 0.7, height = 0.7 } }) end, desc = "Open New Terminal" },
+    { "<leader>gD", function() Snacks.picker.git_diff() end, desc = "Git Diff (picker)" },
   },
   opts = {
     dashboard = {
