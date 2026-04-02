@@ -11,6 +11,13 @@ return {
       },
     },
     servers = {
+      ["*"] = {
+        -- stylua: ignore
+        keys = {
+          { "<C-k>", false, mode = "i" },
+          { "<C-h>", function() return vim.lsp.buf.signature_help() end, mode = "i", desc = "Signature Help", has = "signatureHelp" },
+        },
+      },
       gopls = {
         settings = {
           gopls = {
