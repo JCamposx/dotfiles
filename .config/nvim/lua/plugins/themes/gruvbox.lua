@@ -23,7 +23,7 @@ return {
       SnacksPickerGitStatusUntracked = { link = "GruvboxGreen" },
 
       ["@lsp.type.variable"] = { link = "GruvboxBlue" },
-      ["@lsp.type.fieldName"] = { link = "GruvboxBlue" },
+      ["@lsp.type.field"] = { link = "GruvboxBlue" },
       ["@lsp.typemod.variable.readonly"] = { link = "GruvboxYellow" },
       ["@lsp.type.constantName"] = { link = "GruvboxYellow" },
       ["@lsp.type.namespace"] = { link = "GruvboxYellow" },
