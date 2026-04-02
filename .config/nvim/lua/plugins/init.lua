@@ -5,6 +5,7 @@ return {
 
   -- LazyVim Extras
   { import = "plugins.lazyvim.extras.coding.blink-cmp" },
+  { import = "plugins.lazyvim.extras.dap.dap-core" },
   { import = "plugins.lazyvim.extras.dap.dap-ui" },
   { import = "plugins.lazyvim.extras.dap.adapters.dotnet" },
   { import = "plugins.lazyvim.extras.dap.adapters.go" },
