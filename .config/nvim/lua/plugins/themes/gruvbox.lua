@@ -8,11 +8,20 @@ return {
     overrides = {
       Pmenu = { bg = "NONE" },
       TabLineFill = { bg = "NONE" },
+
+      CursorLine = { bg = "#32302f" },
+      CursorLineNr = { bg = "#32302f" },
+
+      NonText = { link = "GruvboxBg4" },
+
       LspReferenceRead = { link = "CursorLine" },
       LspReferenceText = { link = "CursorLine" },
       LspReferenceWrite = { link = "CursorLine" },
       LspReferenceTarget = { link = "CursorLine" },
-      SnacksPickerGitStatusUntracked = { link = "Added" },
+
+      SnacksPickerDirectory = { link = "GruvboxBlue" },
+      SnacksPickerGitStatusUntracked = { link = "GruvboxGreen" },
+
       ["@lsp.type.variable"] = { link = "GruvboxBlue" },
       ["@lsp.type.fieldName"] = { link = "GruvboxBlue" },
       ["@lsp.typemod.variable.readonly"] = { link = "GruvboxYellow" },
