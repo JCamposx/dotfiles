@@ -15,7 +15,7 @@ return {
         -- stylua: ignore
         keys = {
           { "<C-k>", false, mode = "i" },
-          { "<C-h>", function() return vim.lsp.buf.signature_help() end, mode = "i", desc = "Signature Help", has = "signatureHelp" },
+          { "<C-h>", function() return vim.lsp.buf.signature_help() end, mode = { "n", "i" }, desc = "Signature Help", has = "signatureHelp" },
         },
       },
       omnisharp = {
