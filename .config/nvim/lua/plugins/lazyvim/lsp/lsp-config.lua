@@ -18,6 +18,9 @@ return {
           { "<C-h>", function() return vim.lsp.buf.signature_help() end, mode = "i", desc = "Signature Help", has = "signatureHelp" },
         },
       },
+      omnisharp = {
+        enabled = false,
+      },
       gopls = {
         settings = {
           gopls = {
