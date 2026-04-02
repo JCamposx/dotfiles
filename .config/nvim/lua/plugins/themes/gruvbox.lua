@@ -11,6 +11,7 @@ return {
 
       CursorLine = { bg = "#32302f" },
       CursorLineNr = { bg = "#32302f" },
+      Visual = { bg = "#3c3836" },
 
       NonText = { link = "GruvboxBg4" },
 
