@@ -38,7 +38,7 @@ return {
             },
           },
           { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
-          { LazyVim.lualine.pretty_path({ length = 100 }) },
+          { LazyVim.lualine.pretty_path({ length = 100, modified_sign = " " }) },
         },
         lualine_x = {
           Snacks.profiler.status(),
