@@ -1,8 +1,32 @@
-local map = LazyVim.safe_keymap_set
+local function map(mode, lhs, rhs, opts)
+  opts = opts or {}
+  opts.silent = opts.silent ~= false
+  opts.nowait = opts.nowait ~= false
+
+  LazyVim.safe_keymap_set(mode, lhs, rhs, opts)
+end
 
 -- Custom keymaps
-map({ "n", "x" }, "<C-a>", "<Esc>ggVG", { desc = "Select All", noremap = true, silent = true, nowait = true })
-map("x", "p", '"_dP', { desc = "Paste without overwriting register", noremap = true, silent = true, nowait = true })
+map({ "n", "x" }, "<C-a>", "<Esc>ggVG", { desc = "Select All" })
+map("x", "p", '"_dP', { desc = "Paste without overwriting register" })
+map("n", "<leader>r", function()
+  local opts = { nowait = true, silent = true }
+  vim.keymap.set("n", "h", "<C-w>3<", opts)
+  vim.keymap.set("n", "l", "<C-w>3>", opts)
+  vim.keymap.set("n", "j", "<C-w>3+", opts)
+  vim.keymap.set("n", "k", "<C-w>3-", opts)
+  vim.keymap.set("n", "=", "<C-w>=", opts)
+  vim.keymap.set("n", "p", "<C-w>p", opts)
+  vim.keymap.set("n", "q", function()
+    vim.keymap.del("n", "h")
+    vim.keymap.del("n", "l")
+    vim.keymap.del("n", "j")
+    vim.keymap.del("n", "k")
+    vim.keymap.del("n", "=")
+    vim.keymap.del("n", "p")
+    vim.keymap.del("n", "q")
+  end, opts)
+end, { desc = "Resize mode" })
 
 -- Delete LazyVim default keybinds
 -- Snacks
