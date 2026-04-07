@@ -7,6 +7,7 @@ return {
     transparent_mode = true,
     overrides = {
       Pmenu = { bg = "NONE" },
+      PMenuSel = { link = "Visual" },
       TabLineFill = { bg = "NONE" },
 
       CursorLine = { bg = "#32302f" },

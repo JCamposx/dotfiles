@@ -16,7 +16,6 @@ return {
     highlights = {
       Pmenu = { bg = "NONE" },
       Cursor = { bg = "#abb2bf", fg = "#111318" },
-      CursorLineNr = { fg = "#abb2bf" },
       TermCursor = { link = "Cursor" },
       SnacksPickerGitStatusUntracked = { link = "Added" },
     },
