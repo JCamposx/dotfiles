@@ -26,8 +26,8 @@ return {
 
       ["@lsp.type.variable"] = { link = "GruvboxBlue" },
       ["@lsp.type.field"] = { link = "GruvboxBlue" },
-      ["@lsp.typemod.variable.readonly"] = { link = "GruvboxYellow" },
-      ["@lsp.type.constantName"] = { link = "GruvboxYellow" },
+      ["@lsp.type.constant"] = { link = "GruvboxYellow" },
+      ["@lsp.mod.readonly"] = { link = "GruvboxYellow" },
       ["@lsp.type.namespace"] = { link = "GruvboxYellow" },
     },
   },
