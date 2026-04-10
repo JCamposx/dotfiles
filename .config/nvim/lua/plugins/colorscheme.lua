@@ -1,10 +1,10 @@
 -- Colorscheme selector
 return {
-  { import = "plugins.themes.gruvbox" },
+  { import = "plugins.themes.onedark" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "onedark_vivid",
     },
   },
 }
