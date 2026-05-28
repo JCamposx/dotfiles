@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -euo pipefail
 
 # Styles
 RESET="\033[0m"
@@ -10,25 +10,22 @@ ITALIC="\033[3m"
 GREEN="\033[32m"
 BLUE="\033[34m"
 YELLOW="\033[33m"
+RED="\033[31m"
 
-# Print commands in styled format
-print_cmd() {
-    echo -e "${BOLD}${BLUE}Running${RESET} ${ITALIC}${BOLD}${GREEN}$1${RESET}"
+# Print failed command on error
+trap 'echo -e "${BOLD}${RED}Failed at:${RESET} $BASH_COMMAND" >&2' ERR
+
+# Print and execute a command
+run() {
+    echo -e "${BOLD}${BLUE}Running${RESET} ${ITALIC}${BOLD}${YELLOW}$*${RESET}"
+    "$@"
 }
 
-print_cmd "brew update"
-brew update
+# Update, upgrade, and clean up Homebrew
+run brew update
+run brew upgrade --greedy
+run brew autoremove
+run brew cleanup --prune all
 
-print_cmd "brew upgrade"
-brew upgrade
-
-print_cmd "brew upgrade --cask --greedy"
-brew upgrade --cask --greedy
-
-print_cmd "brew autoremove"
-brew autoremove
-
-print_cmd "brew cleanup --prune all"
-brew cleanup --prune=all
-
-echo -e "${BOLD}${YELLOW}Homebrew successfully updated!${RESET}"
+# Print styled summary
+echo -e "${BOLD}${GREEN}Homebrew successfully updated${RESET}"
