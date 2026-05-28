@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+# Displays
+## Focus display
+lalt - 0x2B : yabai -m display --focus prev # lalt - comma
+lalt - 0x2F : yabai -m display --focus next # lalt - period
+
+# Windows
+## Focus window
+lalt - h : yabai -m window --focus west
+lalt - j : yabai -m window --focus $(yabai -m query --spaces --space | jq -r 'if .type == "stack" then "stack.next" else "south" end')
+lalt - k : yabai -m window --focus $(yabai -m query --spaces --space | jq -r 'if .type == "stack" then "stack.prev" else "north" end')
+lalt - l : yabai -m window --focus east
+
+## Move window
+lalt + shift - h : yabai -m window --swap west
+lalt + shift - j : yabai -m window --swap $(yabai -m query --spaces --space | jq -r 'if .type == "stack" then "stack.next" else "south" end')
+lalt + shift - k : yabai -m window --swap $(yabai -m query --spaces --space | jq -r 'if .type == "stack" then "stack.prev" else "north" end')
+lalt + shift - l : yabai -m window --swap east
+
+## Move window and split
+lalt + ctrl - h : yabai -m window --warp west
+lalt + ctrl - j : yabai -m window --warp south
+lalt + ctrl - k : yabai -m window --warp north
+lalt + ctrl - l : yabai -m window --warp east
+
+## Move window to display
+lalt + shift - escape : yabai -m window --display recent --focus
+
+## Move window to space
+lalt + shift - 1 : yabai -m window --space 1 ; yabai -m space --focus 1
+lalt + shift - 2 : yabai -m window --space 2 ; yabai -m space --focus 2
+lalt + shift - 3 : yabai -m window --space 3 ; yabai -m space --focus 3
+lalt + shift - 4 : yabai -m window --space 4 ; yabai -m space --focus 4
+lalt + shift - 5 : yabai -m window --space 5 ; yabai -m space --focus 5
+lalt + shift - 6 : yabai -m window --space 6 ; yabai -m space --focus 6
+lalt + shift - 7 : yabai -m window --space 7 ; yabai -m space --focus 7
+lalt + shift - 8 : yabai -m window --space 8 ; yabai -m space --focus 8
+
+## Zoom window
+lalt + shift - 0x2A : yabai -m window --toggle zoom-fullscreen # lalt + shift - backslash
+
+## Toggle window
+lalt + shift - 0x1E : yabai -m window --toggle float # lalt + shift - right_bracket
+
+# Spaces
+## Focus space
+lalt - 1 : yabai -m space --focus 1
+lalt - 2 : yabai -m space --focus 2
+lalt - 3 : yabai -m space --focus 3
+lalt - 4 : yabai -m space --focus 4
+lalt - 5 : yabai -m space --focus 5
+lalt - 6 : yabai -m space --focus 6
+lalt - 7 : yabai -m space --focus 7
+lalt - 8 : yabai -m space --focus 8
+
+## Modify layout
+lalt - tab : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "stack" else "bsp" end')
+
+## Modify window tree
+lalt + shift - 0 : yabai -m space --balance
+lalt + shift - 0x1B : yabai -m space --mirror x-axis # lalt + shift - minus
+lalt + shift - 0x18 : yabai -m space --mirror y-axis # lalt + shift - equal
+
+# Open applications
+lalt - return : open -a WezTerm
