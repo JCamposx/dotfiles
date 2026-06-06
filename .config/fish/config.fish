@@ -2,6 +2,7 @@
 set -g fish_greeting
 set -g fish_color_command green
 set -g fish_pager_color_progress black --background=cyan
+set -g fish_transient_prompt 1
 
 # Vi mode
 fish_vi_key_bindings
