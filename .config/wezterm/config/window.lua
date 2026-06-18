@@ -1,11 +1,11 @@
 return {
-	window_decorations = "TITLE|MACOS_USE_BACKGROUND_COLOR_AS_TITLEBAR_COLOR|RESIZE",
+	window_decorations = "INTEGRATED_BUTTONS|RESIZE",
 
 	window_padding = {
-		left = 0,
-		right = 0,
-		top = 0,
-		bottom = 0,
+		left = "0.5cell",
+		right = "0.5cell",
+		top = "1.25cell",
+		bottom = "0cell",
 	},
 
 	window_background_opacity = 0.95,
