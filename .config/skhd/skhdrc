@@ -26,6 +26,8 @@ lalt + ctrl - l : yabai -m window --warp east
 
 ## Move window to display
 lalt + shift - escape : yabai -m window --display recent --focus
+lalt + shift - 0x2B : yabai -m window --display prev --focus # lalt - comma
+lalt + shift - 0x2F : yabai -m window --display next --focus # lalt - period
 
 ## Move window to space
 lalt + shift - 1 : yabai -m window --space 1 ; yabai -m space --focus 1
@@ -64,3 +66,10 @@ lalt + shift - 0x18 : yabai -m space --mirror y-axis # lalt + shift - equal
 
 # Open applications
 lalt - return : open -a WezTerm
+
+# App-specific bindings
+## Let WezTerm handle cmd+h, block for all other apps
+cmd - h [
+  "WezTerm" ~
+  * : true
+]
