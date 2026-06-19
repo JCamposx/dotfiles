@@ -1,11 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-# Styles
-RESET="\033[0m"
-BOLD="\033[1m"
-GREEN="\033[32m"
-YELLOW="\033[33m"
+source "$(dirname "$0")/_styles"
 
 # Target directory (defaults to current)
 TARGET_PATH="${1:-.}"
@@ -15,21 +11,23 @@ if [ ! -d "$TARGET_PATH" ]; then
   exit 1
 fi
 
-# Temp file for counting without interfering with stdout
+# Temp file to count successful deletions
 countfile=$(mktemp)
 trap 'rm -f "$countfile"' EXIT
 
-# Find and delete .DS_Store files
-find -P "$TARGET_PATH" -name ".DS_Store" -type f \
-  -print -delete \
-  -exec sh -c 'printf x >> "$1"' _ "$countfile" \;
+# Find, delete, and print each file as it is removed
+find -P -- "$TARGET_PATH" -name ".DS_Store" -type f \
+    -exec sh -c '
+        if rm -- "$1"; then
+            echo "$1"
+            printf x >> "$2"
+        else
+            echo "Warning: could not delete $1" >&2
+        fi
+    ' _ {} "$countfile" \;
 
 # Count deleted files
-if [ -s "$countfile" ]; then
-  count=$(wc -c < "$countfile" | tr -d ' ')
-else
-  count=0
-fi
+count=$(wc -c < "$countfile" | tr -d ' ')
 
 # Print styled summary
 if [ "$count" -eq 0 ]; then
