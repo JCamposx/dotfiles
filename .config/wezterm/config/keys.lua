@@ -200,23 +200,23 @@ return {
 		-- Resize pane
 		{
 			key = "h",
-			mods = "CMD|CTRL",
-			action = wezterm.action.AdjustPaneSize({ "Left", 5 }),
+			mods = "CMD|CTRL|SHIFT",
+			action = wezterm.action.AdjustPaneSize({ "Left", 3 }),
 		},
 		{
 			key = "j",
-			mods = "CMD|CTRL",
-			action = wezterm.action.AdjustPaneSize({ "Down", 5 }),
+			mods = "CMD|CTRL|SHIFT",
+			action = wezterm.action.AdjustPaneSize({ "Down", 3 }),
 		},
 		{
 			key = "k",
-			mods = "CMD|CTRL",
-			action = wezterm.action.AdjustPaneSize({ "Up", 5 }),
+			mods = "CMD|CTRL|SHIFT",
+			action = wezterm.action.AdjustPaneSize({ "Up", 3 }),
 		},
 		{
 			key = "l",
-			mods = "CMD|CTRL",
-			action = wezterm.action.AdjustPaneSize({ "Right", 5 }),
+			mods = "CMD|CTRL|SHIFT",
+			action = wezterm.action.AdjustPaneSize({ "Right", 3 }),
 		},
 
 		-- Close pane
