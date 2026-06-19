@@ -60,9 +60,15 @@ lalt - 8 : yabai -m space --focus 8
 lalt - tab : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "stack" else "bsp" end')
 
 ## Modify window tree
-lalt + shift - 0 : yabai -m space --balance
-lalt + shift - 0x1B : yabai -m space --mirror x-axis # lalt + shift - minus
-lalt + shift - 0x18 : yabai -m space --mirror y-axis # lalt + shift - equal
+lalt + ctrl + shift - 0 : yabai -m space --balance
+lalt + ctrl + shift - 0x1B : yabai -m space --mirror x-axis # lalt + ctrl + shift - minus
+lalt + ctrl + shift - 0x18 : yabai -m space --mirror y-axis # lalt + ctrl + shift - equal
+
+## Resize window
+lalt + ctrl + shift - h : $XDG_CONFIG_HOME/skhd/smart-resize.sh h 40
+lalt + ctrl + shift - j : $XDG_CONFIG_HOME/skhd/smart-resize.sh j 40
+lalt + ctrl + shift - k : $XDG_CONFIG_HOME/skhd/smart-resize.sh k 40
+lalt + ctrl + shift - l : $XDG_CONFIG_HOME/skhd/smart-resize.sh l 40
 
 # Open applications
 lalt - return : open -a WezTerm
