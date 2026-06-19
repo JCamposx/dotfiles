@@ -11,12 +11,6 @@ return {
 	window_background_opacity = 0.95,
 	macos_window_background_blur = 20,
 
-	window_frame = {
-		font_size = 12,
-		active_titlebar_bg = "none",
-		inactive_titlebar_bg = "none",
-	},
-
 	front_end = "WebGpu",
 	max_fps = 120,
 }

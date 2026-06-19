@@ -1,15 +1,16 @@
-local M = require("colors.onedark")
+local theme = require("colors.onedark")
+local M = setmetatable({ bg = "#111318" }, { __index = theme })
 
 return {
+	palette = M,
+
 	colors = {
 		foreground = M.fg,
 		background = M.bg,
 
-		cursor_bg = M.cursor,
-		cursor_fg = M.bg,
-		cursor_border = M.cursor,
+		cursor_border = M.fg,
 
-		selection_fg = M.selection_fg,
+		selection_fg = M.fg,
 		selection_bg = M.selection_bg,
 
 		scrollbar_thumb = M.bg,
@@ -38,15 +39,7 @@ return {
 		},
 
 		tab_bar = {
-			active_tab = {
-				bg_color = M.blue,
-				fg_color = M.bg,
-			},
-			inactive_tab = {
-				bg_color = M.bg,
-				fg_color = M.blue,
-			},
-			inactive_tab_edge = M.blue,
+			background = M.bg,
 		},
 	},
 }

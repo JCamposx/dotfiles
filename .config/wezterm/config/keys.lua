@@ -67,7 +67,7 @@ return {
 			}),
 		},
 
-		-- Naigate between tabs
+		-- Navigate between tabs
 		{
 			key = "Tab",
 			mods = "CTRL",
@@ -98,16 +98,11 @@ return {
 			action = wezterm.action.ReloadConfiguration,
 		},
 
-		-- Close / Hide application
+		-- Quit application
 		{
 			key = "q",
 			mods = "CMD",
 			action = wezterm.action.QuitApplication,
-		},
-		{
-			key = "h",
-			mods = "CMD",
-			action = wezterm.action.HideApplication,
 		},
 
 		-- Zoom pane

@@ -1,11 +1,8 @@
 local M = {}
 
 -- UI base
-M.bg = "#111318"
 M.fg = "#abb2bf"
-M.cursor = "#d7dae0"
 M.selection_bg = "#4f5666"
-M.selection_fg = "#000000"
 
 -- Normal
 M.black = "#3f4451"
