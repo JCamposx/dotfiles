@@ -1,4 +1,7 @@
 #!/bin/bash
+# Remove all .DS_Store files under a directory
+# Usage: clean-dsstore [path]   (defaults to current directory)
+
 set -euo pipefail
 
 source "$(dirname "$0")/_styles"

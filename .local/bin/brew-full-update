@@ -1,4 +1,6 @@
 #!/bin/bash
+# Update, upgrade, and clean up Homebrew
+
 set -Eeuo pipefail
 
 source "$(dirname "$0")/_styles"
