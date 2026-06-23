@@ -1,5 +1,20 @@
 local wezterm = require("wezterm")
 
+local function rotate_panes_follow_focus(direction)
+	return wezterm.action_callback(function(window, pane)
+		local tab = window:active_tab()
+		local pane_id = pane:pane_id()
+		window:perform_action(wezterm.action.RotatePanes(direction), pane)
+		for _, info in ipairs(tab:panes_with_info()) do
+			if info.pane:pane_id() == pane_id then
+				window:perform_action(wezterm.action.ActivatePaneByIndex(info.index), pane)
+				return
+			end
+		end
+		wezterm.log_warn("rotate_panes: original pane not found after rotation")
+	end)
+end
+
 return {
 	send_composed_key_when_left_alt_is_pressed = false,
 	send_composed_key_when_right_alt_is_pressed = true,
@@ -179,22 +194,22 @@ return {
 		{
 			key = "h",
 			mods = "CMD|SHIFT",
-			action = wezterm.action.RotatePanes("CounterClockwise"),
+			action = rotate_panes_follow_focus("CounterClockwise"),
 		},
 		{
 			key = "j",
 			mods = "CMD|SHIFT",
-			action = wezterm.action.RotatePanes("Clockwise"),
+			action = rotate_panes_follow_focus("Clockwise"),
 		},
 		{
 			key = "k",
 			mods = "CMD|SHIFT",
-			action = wezterm.action.RotatePanes("CounterClockwise"),
+			action = rotate_panes_follow_focus("CounterClockwise"),
 		},
 		{
 			key = "l",
 			mods = "CMD|SHIFT",
-			action = wezterm.action.RotatePanes("Clockwise"),
+			action = rotate_panes_follow_focus("Clockwise"),
 		},
 
 		-- Resize pane
