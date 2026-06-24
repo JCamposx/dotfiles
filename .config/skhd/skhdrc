@@ -25,9 +25,13 @@ lalt + ctrl - k : yabai -m window --warp north
 lalt + ctrl - l : yabai -m window --warp east
 
 ## Move window to display
+lalt + shift - 0x2B : yabai -m window --display prev # lalt + shift - comma
+lalt + shift - 0x2F : yabai -m window --display next # lalt + shift - period
+
+## Move window to display and focus
 lalt + shift - escape : yabai -m window --display recent --focus
-lalt + shift - 0x2B : yabai -m window --display prev --focus # lalt - comma
-lalt + shift - 0x2F : yabai -m window --display next --focus # lalt - period
+lalt + ctrl + shift - 0x2B : yabai -m window --display prev --focus # lalt + ctrl + shift - comma
+lalt + ctrl + shift - 0x2F : yabai -m window --display next --focus # lalt + ctrl + shift - period
 
 ## Move window to space
 lalt + shift - 1 : yabai -m window --space 1
