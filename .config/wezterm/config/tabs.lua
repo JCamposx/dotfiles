@@ -43,6 +43,7 @@ end)
 
 return {
 	use_fancy_tab_bar = false,
+	tab_max_width = 64,
 	tab_bar_at_bottom = true,
 	hide_tab_bar_if_only_one_tab = true,
 	show_tab_index_in_tab_bar = false,
