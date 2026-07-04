@@ -1,5 +1,22 @@
 local wezterm = require("wezterm")
 
+local function activate_tab_by_number_keys()
+	local keys = {}
+	for i = 1, 8 do
+		table.insert(keys, {
+			key = tostring(i),
+			mods = "CMD",
+			action = wezterm.action.ActivateTab(i - 1),
+		})
+	end
+	table.insert(keys, {
+		key = "9",
+		mods = "CMD",
+		action = wezterm.action.ActivateTab(-1),
+	})
+	return keys
+end
+
 local function rotate_panes_follow_focus(direction)
 	return wezterm.action_callback(function(window, pane)
 		local tab = window:active_tab()
@@ -15,7 +32,7 @@ local function rotate_panes_follow_focus(direction)
 	end)
 end
 
-return {
+local config = {
 	send_composed_key_when_left_alt_is_pressed = false,
 	send_composed_key_when_right_alt_is_pressed = true,
 	disable_default_key_bindings = true,
@@ -242,3 +259,10 @@ return {
 		},
 	},
 }
+
+-- Append the generated number-key bindings to the static keys table.
+for _, key in ipairs(activate_tab_by_number_keys()) do
+	table.insert(config.keys, key)
+end
+
+return config
