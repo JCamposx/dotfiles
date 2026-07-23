@@ -1,0 +1,56 @@
+onboarding = false
+
+[theme]
+name = "terminal"
+
+[theme.custom]
+panel_bg = "#111318"
+surface0 = "#333842"
+surface1 = "#4f5666"
+surface_dim = "#333842"
+overlay0 = "#c5cad3"
+overlay1 = "#c5cad3"
+text = "#c5cad3"
+subtext0 = "#c5cad3"
+accent = "#42b3c2"
+mauve = "#c162de"
+green = "#8cc265"
+yellow = "#d18f52"
+red = "#e05561"
+blue = "#4aa5f0"
+teal = "#42b3c2"
+peach = "#f0a45d"
+
+[ui]
+hide_tab_bar_when_single_tab = true
+prompt_new_tab_name = false
+sidebar_start_collapsed = true
+
+[keys]
+prefix = "ctrl+a"
+
+# Pane splits
+split_vertical = "prefix+v"
+split_horizontal = "prefix+s"
+
+# Tab navigation and management
+next_tab = "prefix+."
+previous_tab = "prefix+,"
+new_tab = "prefix+t"
+rename_tab = "prefix+shift+t"
+
+# Workspace navigation and management
+navigate_workspace_up = "k"
+navigate_workspace_down = "j"
+navigate_pane_left = "h"
+navigate_pane_right = "l"
+new_workspace = "prefix+n"
+rename_pane = "prefix+shift+r"
+next_workspace = "prefix+ctrl+j"
+previous_workspace = "prefix+ctrl+k"
+switch_workspace = "prefix+shift+1..9"
+
+# Agent navigation
+next_agent = "prefix+ctrl+."
+previous_agent = "prefix+ctrl+,"
+focus_agent = "prefix+ctrl+1..9"
