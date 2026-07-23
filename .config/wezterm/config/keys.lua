@@ -1,22 +1,18 @@
 local wezterm = require("wezterm")
+local act = wezterm.action
 
-local function activate_tab_by_number_keys()
-	local keys = {}
-	for i = 1, 8 do
-		table.insert(keys, {
-			key = tostring(i),
-			mods = "CMD",
-			action = wezterm.action.ActivateTab(i - 1),
-		})
+-- Status bar indicator
+wezterm.on("update-right-status", function(window, _)
+	local name = window:active_key_table()
+	if name then
+		name = "  " .. name:upper() .. "  "
+	elseif window:leader_is_active() then
+		name = "  LEADER  "
 	end
-	table.insert(keys, {
-		key = "9",
-		mods = "CMD",
-		action = wezterm.action.ActivateTab(-1),
-	})
-	return keys
-end
+	window:set_right_status(name or "")
+end)
 
+-- Rotate panes and keep focus on the originally-focused pane
 local function rotate_panes_follow_focus(direction)
 	return wezterm.action_callback(function(window, pane)
 		local tab = window:active_tab()
@@ -32,60 +28,116 @@ local function rotate_panes_follow_focus(direction)
 	end)
 end
 
+-- Tab number bindings (1-9, 0 = last)
+local function tab_number_keys()
+	local keys = {}
+	for i = 1, 9 do
+		table.insert(keys, {
+			key = tostring(i),
+			mods = "LEADER",
+			action = wezterm.action.ActivateTab(i - 1),
+		})
+	end
+	table.insert(keys, {
+		key = "0",
+		mods = "LEADER",
+		action = wezterm.action.ActivateTab(-1),
+	})
+	return keys
+end
+
+-- Key bindings
 local keys = {
 	-- Clipboard
-	{
-		key = "c",
-		mods = "CMD",
-		action = wezterm.action.CopyTo("Clipboard"),
-	},
-	{
-		key = "v",
-		mods = "CMD",
-		action = wezterm.action.PasteFrom("Clipboard"),
-	},
+	{ key = "c", mods = "CMD", action = act.CopyTo("Clipboard") },
+	{ key = "v", mods = "CMD", action = act.PasteFrom("Clipboard") },
 
-	-- Window / Tab spawn
-	{
-		key = "n",
-		mods = "CMD",
-		action = wezterm.action.SpawnWindow,
-	},
-	{
-		key = "t",
-		mods = "CMD",
-		action = wezterm.action.SpawnTab("CurrentPaneDomain"),
-	},
+	-- Window spawn
+	{ key = "n", mods = "CMD", action = act.SpawnCommandInNewWindow({ cwd = wezterm.home_dir }) },
 
 	-- Font size
+	{ key = "-", mods = "CMD", action = act.DecreaseFontSize },
+	{ key = "=", mods = "CMD", action = act.IncreaseFontSize },
+	{ key = "0", mods = "CMD", action = act.ResetFontSize },
+
+	-- Quit
+	{ key = "q", mods = "CMD", action = act.QuitApplication },
+
+	-- Resize mode
 	{
-		key = "-",
-		mods = "CMD",
-		action = wezterm.action.DecreaseFontSize,
+		key = "r",
+		mods = "LEADER",
+		action = act.ActivateKeyTable({
+			name = "resize_pane",
+			one_shot = false,
+			until_unknown = true,
+		}),
 	},
+
+	-- Split mode
 	{
-		key = "=",
-		mods = "CMD",
-		action = wezterm.action.IncreaseFontSize,
+		key = "s",
+		mods = "LEADER",
+		action = act.ActivateKeyTable({
+			name = "split_pane",
+			one_shot = true,
+			until_unknown = true,
+		}),
 	},
+
+	-- Close pane
 	{
-		key = "0",
-		mods = "CMD",
-		action = wezterm.action.ResetFontSize,
+		key = "x",
+		mods = "LEADER",
+		action = act.CloseCurrentPane({ confirm = true }),
 	},
 
 	-- Close tab
 	{
-		key = "w",
-		mods = "CMD",
-		action = wezterm.action.CloseCurrentTab({ confirm = true }),
+		key = "X",
+		mods = "LEADER",
+		action = act.CloseCurrentTab({ confirm = true }),
 	},
+
+	-- Toggle pane zoom
+	{ key = "z", mods = "LEADER", action = act.TogglePaneZoomState },
+
+	-- Pane select by number
+	{ key = "p", mods = "LEADER", action = act.PaneSelect },
+
+	-- Rotate prev / next pane
+	{
+		key = "{",
+		mods = "LEADER",
+		action = rotate_panes_follow_focus("CounterClockwise"),
+	},
+	{
+		key = "}",
+		mods = "LEADER",
+		action = rotate_panes_follow_focus("Clockwise"),
+	},
+
+	-- Copy mode
+	{ key = "[", mods = "LEADER", action = act.ActivateCopyMode },
+
+	-- Navigate panes
+	{ key = "h", mods = "LEADER", action = act.ActivatePaneDirection("Left") },
+	{ key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
+	{ key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
+	{ key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
+
+	-- Tab navigation
+	{ key = ".", mods = "LEADER", action = act.ActivateTabRelative(1) },
+	{ key = ",", mods = "LEADER", action = act.ActivateTabRelative(-1) },
+
+	-- New tab
+	{ key = "t", mods = "LEADER", action = act.SpawnCommandInNewTab({ cwd = wezterm.home_dir }) },
 
 	-- Rename tab
 	{
-		key = "R",
-		mods = "CMD|SHIFT",
-		action = wezterm.action.PromptInputLine({
+		key = "T",
+		mods = "LEADER",
+		action = act.PromptInputLine({
 			description = "Rename tab",
 			action = wezterm.action_callback(function(window, _, line)
 				if line then
@@ -94,175 +146,43 @@ local keys = {
 			end),
 		}),
 	},
-
-	-- Navigate between tabs
-	{
-		key = "Tab",
-		mods = "CTRL",
-		action = wezterm.action.ActivateTabRelative(1),
-	},
-	{
-		key = "Tab",
-		mods = "CTRL|SHIFT",
-		action = wezterm.action.ActivateTabRelative(-1),
-	},
-
-	-- Move tabs
-	{
-		key = "]",
-		mods = "CMD|SHIFT",
-		action = wezterm.action.MoveTabRelative(1),
-	},
-	{
-		key = "[",
-		mods = "CMD|SHIFT",
-		action = wezterm.action.MoveTabRelative(-1),
-	},
-
-	-- Reload configuration
-	{
-		key = "r",
-		mods = "CMD",
-		action = wezterm.action.ReloadConfiguration,
-	},
-
-	-- Quit application
-	{
-		key = "q",
-		mods = "CMD",
-		action = wezterm.action.QuitApplication,
-	},
-
-	-- Zoom pane
-	{
-		key = "z",
-		mods = "CMD|SHIFT",
-		action = wezterm.action.TogglePaneZoomState,
-	},
-
-	-- Navigate between panes
-	{
-		key = "h",
-		mods = "CMD",
-		action = wezterm.action.ActivatePaneDirection("Left"),
-	},
-	{
-		key = "j",
-		mods = "CMD",
-		action = wezterm.action.ActivatePaneDirection("Down"),
-	},
-	{
-		key = "k",
-		mods = "CMD",
-		action = wezterm.action.ActivatePaneDirection("Up"),
-	},
-	{
-		key = "l",
-		mods = "CMD",
-		action = wezterm.action.ActivatePaneDirection("Right"),
-	},
-
-	-- Choose pane
-	{
-		key = "p",
-		mods = "CMD",
-		action = wezterm.action.PaneSelect,
-	},
-
-	-- Split pane
-	{
-		key = "h",
-		mods = "CMD|ALT",
-		action = wezterm.action.SplitPane({
-			direction = "Left",
-			size = { Percent = 50 },
-		}),
-	},
-	{
-		key = "j",
-		mods = "CMD|ALT",
-		action = wezterm.action.SplitPane({
-			direction = "Down",
-			size = { Percent = 50 },
-		}),
-	},
-	{
-		key = "k",
-		mods = "CMD|ALT",
-		action = wezterm.action.SplitPane({
-			direction = "Up",
-			size = { Percent = 50 },
-		}),
-	},
-	{
-		key = "l",
-		mods = "CMD|ALT",
-		action = wezterm.action.SplitPane({
-			direction = "Right",
-			size = { Percent = 50 },
-		}),
-	},
-
-	-- Rotate panes
-	{
-		key = "h",
-		mods = "CMD|SHIFT",
-		action = rotate_panes_follow_focus("CounterClockwise"),
-	},
-	{
-		key = "j",
-		mods = "CMD|SHIFT",
-		action = rotate_panes_follow_focus("Clockwise"),
-	},
-	{
-		key = "k",
-		mods = "CMD|SHIFT",
-		action = rotate_panes_follow_focus("CounterClockwise"),
-	},
-	{
-		key = "l",
-		mods = "CMD|SHIFT",
-		action = rotate_panes_follow_focus("Clockwise"),
-	},
-
-	-- Resize pane
-	{
-		key = "h",
-		mods = "CMD|CTRL|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Left", 3 }),
-	},
-	{
-		key = "j",
-		mods = "CMD|CTRL|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Down", 3 }),
-	},
-	{
-		key = "k",
-		mods = "CMD|CTRL|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Up", 3 }),
-	},
-	{
-		key = "l",
-		mods = "CMD|CTRL|SHIFT",
-		action = wezterm.action.AdjustPaneSize({ "Right", 3 }),
-	},
-
-	-- Close pane
-	{
-		key = "d",
-		mods = "CMD|SHIFT",
-		action = wezterm.action.CloseCurrentPane({ confirm = true }),
-	},
 }
 
--- Append the generated number-key bindings before assembling the config.
-for _, key in ipairs(activate_tab_by_number_keys()) do
+-- Append tab number bindings (LEADER+1-9, LEADER+0)
+for _, key in ipairs(tab_number_keys()) do
 	table.insert(keys, key)
 end
+
+-- Key Tables (modal layers)
+local key_tables = {
+	resize_pane = {
+		-- Resize in small step
+		{ key = "h", action = act.AdjustPaneSize({ "Left", 3 }) },
+		{ key = "j", action = act.AdjustPaneSize({ "Down", 3 }) },
+		{ key = "k", action = act.AdjustPaneSize({ "Up", 3 }) },
+		{ key = "l", action = act.AdjustPaneSize({ "Right", 3 }) },
+		-- Resize in large step
+		{ key = "H", action = act.AdjustPaneSize({ "Left", 10 }) },
+		{ key = "J", action = act.AdjustPaneSize({ "Down", 10 }) },
+		{ key = "K", action = act.AdjustPaneSize({ "Up", 10 }) },
+		{ key = "L", action = act.AdjustPaneSize({ "Right", 10 }) },
+		-- Exit mode
+		{ key = "Escape", action = "PopKeyTable" },
+	},
+	split_pane = {
+		-- Split
+		{ key = "h", action = act.SplitPane({ direction = "Left", size = { Percent = 50 } }) },
+		{ key = "j", action = act.SplitPane({ direction = "Down", size = { Percent = 50 } }) },
+		{ key = "k", action = act.SplitPane({ direction = "Up", size = { Percent = 50 } }) },
+		{ key = "l", action = act.SplitPane({ direction = "Right", size = { Percent = 50 } }) },
+	},
+}
 
 return {
 	send_composed_key_when_left_alt_is_pressed = false,
 	send_composed_key_when_right_alt_is_pressed = true,
 	disable_default_key_bindings = true,
+	leader = { key = "b", mods = "CTRL" },
 	keys = keys,
+	key_tables = key_tables,
 }
