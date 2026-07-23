@@ -7,7 +7,7 @@ local PADDING = 2
 local ELLIPSIS = "…"
 local ELLIPSIS_WIDTH = 1
 
--- Returns the explicit tab title if set, otherwise falls back to the active pane title.
+-- Returns the explicit tab title if set, otherwise falls back to the active pane title
 local function tab_title(tab)
 	local title = tab.tab_title
 	if title and #title > 0 then
@@ -24,6 +24,9 @@ wezterm.on("format-tab-title", function(tab, _, _, _, _, max_width)
 	end
 
 	local title = tab_title(tab)
+
+	-- Tab index prefix (1-based, like tmux's status bar)
+	title = tostring(tab.tab_index + 1) .. ": " .. title
 
 	local max_title = max_width - PADDING - SEP_WIDTH
 	if wezterm.column_width(title) > max_title then
@@ -46,6 +49,6 @@ return {
 	tab_max_width = 64,
 	tab_bar_at_bottom = true,
 	hide_tab_bar_if_only_one_tab = true,
-	show_tab_index_in_tab_bar = false,
+	show_tab_index_in_tab_bar = true,
 	show_new_tab_button_in_tab_bar = false,
 }
