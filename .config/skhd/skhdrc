@@ -85,11 +85,4 @@ lalt + ctrl + shift - k : $XDG_CONFIG_HOME/skhd/smart-resize.sh k 40
 lalt + ctrl + shift - l : $XDG_CONFIG_HOME/skhd/smart-resize.sh l 40
 
 # Open applications
-lalt - return : open -a WezTerm
-
-# App-specific bindings
-## Let WezTerm handle cmd+h, block for all other apps
-cmd - h [
-  "WezTerm" ~
-  * : true
-]
+lalt - return : open -a Ghostty

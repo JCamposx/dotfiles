@@ -1,0 +1,37 @@
+# Command
+command = herdr
+
+# Theme
+theme = onedark
+
+# Font
+font-family = CaskaydiaCove Nerd Font
+font-size = 12
+font-thicken = false
+adjust-cell-height = 20%
+font-feature = +calt, +liga, +dlig
+
+# Window
+background-opacity = 0.925
+background-blur = 25
+
+# Titlebar
+title = " "
+macos-titlebar-proxy-icon = hidden
+
+# Cursor
+cursor-style = bar
+cursor-style-blink = false
+
+# Mouse
+mouse-hide-while-typing = true
+
+# Miscellaneous
+macos-option-as-alt = left
+window-save-state = never
+quit-after-last-window-closed = true
+link-previews = false
+
+# Keybinds
+keybind = cmd+t=unbind
+keybind = cmd+n=unbind

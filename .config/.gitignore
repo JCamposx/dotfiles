@@ -2,6 +2,7 @@
 !.gitignore
 !bat
 !fish
+!ghostty
 !herdr
 !kitty
 !nvim
