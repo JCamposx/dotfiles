@@ -7,6 +7,11 @@ set -g fish_transient_prompt 1
 # Vi mode
 fish_vi_key_bindings
 
+# Key bindings
+bind -M default alt-v true
+bind -M insert alt-v true
+bind -M visual alt-v true
+
 # Editor
 set -gx EDITOR nvim
 
