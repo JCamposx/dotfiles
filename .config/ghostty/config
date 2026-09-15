@@ -1,6 +1,3 @@
-# Command
-command = herdr
-
 # Theme
 theme = onedark
 
@@ -13,10 +10,9 @@ font-feature = +calt, +liga, +dlig
 
 # Window
 background-opacity = 0.925
-background-blur = 25
+background-blur = true
 
 # Titlebar
-title = " "
 macos-titlebar-proxy-icon = hidden
 
 # Cursor
@@ -33,5 +29,11 @@ quit-after-last-window-closed = true
 link-previews = false
 
 # Keybinds
+keybind = cmd+a=unbind
+keybind = cmd+d=unbind
+keybind = cmd+shift+d=unbind
+keybind = cmd+f=unbind
 keybind = cmd+t=unbind
-keybind = cmd+n=unbind
+keybind = cmd+,=unbind
+keybind = cmd+enter=unbind
+keybind = cmd+shift+enter=unbind
