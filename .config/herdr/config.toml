@@ -8,11 +8,13 @@ panel_bg = "#111318"
 surface0 = "#333842"
 surface1 = "#4f5666"
 surface_dim = "#333842"
-overlay0 = "#c5cad3"
+active_row_bg = "#333842"
+selection_bg = "#333842"
+overlay0 = "#7f848e"
 overlay1 = "#c5cad3"
 text = "#c5cad3"
 subtext0 = "#c5cad3"
-accent = "#42b3c2"
+accent = "#4aa5f0"
 mauve = "#c162de"
 green = "#8cc265"
 yellow = "#d18f52"
@@ -24,7 +26,11 @@ peach = "#f0a45d"
 [ui]
 hide_tab_bar_when_single_tab = true
 prompt_new_tab_name = false
-sidebar_start_collapsed = true
+status_indicators = "symbols"
+window_title = "{workspace}"
+
+[ui.toast]
+delivery = "herdr"
 
 [keys]
 prefix = "ctrl+a"
